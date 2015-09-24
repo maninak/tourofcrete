@@ -1,0 +1,21 @@
+.ngg-singlepic {
+    background-color: #FFFFFF;
+    display: block;
+    padding: 0px;
+}
+
+.ngg-gallery-singlepic-image img {
+    border: medium none;
+    margin: 0;
+    max-width: 134px;
+
+}
+
+.ngg-gallery-singlepic-image
+{
+	margin-bottom:6px;
+}
+.ngg-singlepic {
+	width: 134px;
+	height: 91px;
+}

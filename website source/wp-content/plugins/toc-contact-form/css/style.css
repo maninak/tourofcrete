@@ -1,0 +1,164 @@
+/* Registration contactform Style
+--------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    color: #666;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+span.required, span.required-text {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #D72222;
+    vertical-align: top;
+}
+
+.entry {
+    padding: 0!important;
+}
+
+	.contactBox{
+		width:100%; 
+		height:auto; 
+		overflow:hidden
+	}
+	
+		.contactBox .leftCol{
+			width:70%; 
+			height:auto; 
+			overflow:hidden; 
+			float:left;
+		}
+		
+		.contactBox .rightCol{
+			width:30%; 
+			height:auto; 
+			overflow:hidden; 
+			float:left;
+		}
+		
+			.contactBox .rightCol .info{
+				width:250px; 
+				height:auto; 
+				overflow:hidden; 
+				background:#353535; 
+				color:#FFF; 
+				padding:20px;
+				
+			}
+			
+			.contactBox .rightCol .info p{
+				font-weight:bold; 
+				font-size:15px;
+				margin:0;
+				padding:0 0 8px 0;
+				color: #FFFFFF;
+			}
+			
+			.contactBox .rightCol .info table{ 
+				font-size:12px;
+				margin:0 0 20px 0;
+				
+			}
+			.contactBox .rightCol .info table td{ 
+				font-size:12px;
+				margin:0 0 20px 0;
+				color: #FFFFFF;
+				border: 0px;
+				text-align: right;
+				
+			}			
+
+			.contactBox .rightCol .info table span.title{
+				font-weight:bold; 
+				font-size:13px;
+				color: #FFFFFF;
+			}
+
+.contactform{
+	width:100%;	
+	height:auto;
+	overflow:hidden;
+	padding:10px 0;
+    color: #fff;
+}
+
+.contactform h2{
+	padding:30px 0 0 0;
+}
+	.contactform h2 font{
+		font-size:12px;
+		font-weight:normal;
+	}
+
+.contactform textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+	border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    background: #DFDFDF;
+}	
+.contactform input[type="text"], .contactform input[type="email"], .contactform select {
+    border: none;
+    color: #525252;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    background: #DFDFDF;
+}
+
+
+
+.contactform label {
+	display:block;
+	cursor: pointer;
+	font-weight:bold;
+}
+	.contactform .row{
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		clear:both;
+		margin:8px 0 0 0;
+	}
+	
+	.contactform .OneCol{
+		width:100%;
+		clear:both;
+		height:auto;
+	}
+		.contactform .OneCol input[type="radio"], .contactform .OneCol input[type="checkbox"]{
+			display:inline-block;
+		}
+		
+
+fieldset {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: #ffffff;
+	border: 1px solid #781351;
+}
+
+legend {
+    color: #000000;
+    font-family:Arial, sans-serif;
+    font-size:12px;
+	font-weight: bold;
+}
+
+
