@@ -256,7 +256,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear ".$surname." ".$name." </p>";	
-				$email_message .= "<p>Booking process has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any details.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any outlying details.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -667,7 +667,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                   </div>
                   
                   <div class="FiveCols">
-                    <label for="birthday">Date of Birth <span class="required">*</span></label>
+                    <label for="birthday">Date of Birth (d/m/y) <span class="required">*</span></label>
                     <input type="text" id="birthday" name="birthday" class="hasDatepicker" value="<?php if (isset($birthday)) { echo $birthday; } ?>" placeholder="Birthday"  />					
                   </div>
               </div>
@@ -1232,7 +1232,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear ".$teamleader." </p>";	
-				$email_message .= "<p>Booking process has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any details.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any outlying details.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
@@ -1909,7 +1909,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
               </div>
 
               <div class="row">
-                <div class="NineCols first"><label for="birthday_1">Date of Birth <span class="required">*</span></label></div>
+                <div class="NineCols first"><label for="birthday_1">Date of Birth (d/m/y) <span class="required">*</span></label></div>
                 <?php 
                 for ($i = 1; $i <= 8; $i++) { ?>
                     <div class="NineCols"><input type="text" id="birthday_<?php echo $i; ?>" name="birthday_<?php echo $i; ?>" value="<?php if (isset($birthdayArr[$i-1])) { echo $birthdayArr[$i-1]; } ?>" placeholder="Birthday <?php echo $i; ?>"  /></div>
@@ -2430,7 +2430,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		}else{
 			
 			$email_message = "<p>Dear ".$fullname."</p>";	
-				$email_message .= "<p>Booking process has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any details.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any outlying details.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -2819,7 +2819,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                   </div>
                   
                   <div class="FiveCols">
-                    <label for="birthday">Date of Birth <span class="required">*</span></label>
+                    <label for="birthday">Date of Birth (d/m/y) <span class="required">*</span></label>
                     <input type="text" id="birthday" name="birthday" class="hasDatepicker" value="<?php if (isset($birthday)) { echo $birthday; } ?>" placeholder="Birthday"  />					
                   </div>
               </div>
