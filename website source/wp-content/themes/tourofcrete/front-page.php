@@ -36,7 +36,7 @@ function child_do_custom_loop() {
             <div class="clear"></div>
             <div class="banners">
                 <a href="<?php get_site_url(); ?>/registration/individuals/"><div class="individuals banner"><?php _e('INDIVIDUALS','tourofcrete');?><span> > <?php _e('Register','tourofcrete');?> < </span></div></a>
-                <a href="<?php get_site_url(); ?>/registration/teams/"><div class="teams banner"><?php _e('TEAMS','tourofcrete');?><span> > <?php _e('Register','tourofcrete');?> < </span></div></a>
+                <a href="<?php get_site_url(); ?>/registration/teams/"><div class="teams banner"><?php _e('GROUPS','tourofcrete');?><span> > <?php _e('Register','tourofcrete');?> < </span></div></a>
                 <a href="<?php get_site_url(); ?>/registration/non-cyclists/"><div class="non-cyclists banner"><?php _e('NON CYCLISTS','tourofcrete');?><span> > <?php _e('Register','tourofcrete');?> < </span></div></a>
             </div>
         </div>
