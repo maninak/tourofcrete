@@ -390,7 +390,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		?>
         
       	<div class="step1">
-        	  <h1>Entry Details</h1>
+        	  <h1>Registration Details</h1>
               <h2>Personal Information</h2>
               <div class="row">
                   <div class="FiveCols">
@@ -768,7 +768,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input 	type="text" id="sharedAcco" name="sharedAcco" value="<?php if (isset($sharedAcco)) { echo $sharedAcco; } ?>" placeholder="Shared  Accommodation" />
              	</div>
               </div>
-              <h2>Entry Details</h2>h
+              <h2>Registration Details</h2>
               <p>The Tour of Crete travel service provides the following for each cyclist-participant from May 7th 2016 until May 14th 2016:</p>
               <ul><strong>1. What is included per person:</strong>
                 <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
@@ -1540,7 +1540,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		?>
         
       	<div class="step1">
-        	  <h1>Entry Details</h1>
+        	  <h1>Registration Details</h1>
               <div class="row">
                   <div class="FiveCols">
                     <label for="teamname">Team Name</label>
@@ -2084,7 +2084,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				?>
               </div>
              
-              <h2>Entry Details</h2>
+              <h2>Registration Details</h2>
               <p>The Tour of Crete travel service provides the following for each cyclist-participant from May 7th 2016 until May 14th 2016:</p>
               <ul><strong>1. What is included per person:</strong>
                 <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
@@ -2537,7 +2537,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		?>
         
       	<div class="step1">
-        	  <h1>Entry Details</h1>
+        	  <h1>Registration Details</h1>
               <h2>Personal Information</h2>
               <div class="row">
                   <div class="FiveCols">
@@ -2877,7 +2877,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input 	type="text" id="sharedAcco" name="sharedAcco" value="<?php if (isset($sharedAcco)) { echo $sharedAcco; } ?>" placeholder="Shared  Accommodation" />
              	</div>
               </div>
-              <h2>Entry Details</h2>
+              <h2>Registration Details</h2>
               <p>Tour of Crete travel service provides for each non-cyclist participant from May 7th 2016 until May 14th 2016:</p>
               <ul><strong>1. What is included per person:</strong>
                 <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
