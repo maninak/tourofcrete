@@ -1984,7 +1984,7 @@ Footer Widgets
 	}
 	
 	.sponsors .content{
-		background:#fff;
+		background:#000;
 		width:100%;
 		height:auto;
 		overflow:hidden;
@@ -1993,12 +1993,12 @@ Footer Widgets
 		text-align:center;
 	}
 		
-		.sponsors .content img{
-			
-			margin-right:20px;
-			display:inline-block;
-			border:1px solid #ccc;
-		}
+	.sponsors .content img{
+		
+		margin-right:20px;
+		display:inline-block;
+		border:1px solid #ccc;
+	}
 	
 .footer-widgets {
 	background-color: #333;
