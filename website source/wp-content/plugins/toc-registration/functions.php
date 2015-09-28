@@ -802,7 +802,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <input 	type="radio" name="Package" id="soloPackage" value="soloPackage" <?php if (isset($selectPackage) && $selectPackage=="soloPackage") echo "checked";?> />
                         <label for="soloPackage">Solo Package</label>
                         <div id="soloPackageDiv" class="infoDiv" style="display:none;">
-                    		<p><strong>Solo all-inclusive registration package</strong><br/>Hotel room based on single occupancy: 1070 &euro; (until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)</p>
+                    		<p><strong>Solo all-inclusive registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
                         </div>
                 	</div>
                 </div>
@@ -811,11 +811,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <input type="radio" name="Package" id="TwinPackage" value="TwinPackage" <?php if (isset($selectPackage) && $selectPackage=="TwinPackage") echo "checked";?> />
                          <label for="TwinPackage">Twin Package</label>
                         <div id="TwinPackageDiv" class="infoDiv" style="display:none;"> 
-                        	<p><strong>Double all-inclusive registration package (price / per person)</strong><br/>
+                        	<p><strong>Double all-inclusive registration package (price / per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
                                 <input type="radio" name="PackageOption" id="TwinPackageA1" value="TwinPackageA1" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA1") echo "checked";?> />
-                                <label for="TwinPackageA1">Option A1: Double room or twin room for two riders sharing. Price: 890 &euro; (until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)</label>
+                                <label for="TwinPackageA1">Option A1: Double room or twin room for two riders sharing.</label>
                                 <input type="radio" name="PackageOption" id="TwinPackageA2" value="TwinPackageA2" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA2") echo "checked";?> />
-                                <label for="TwinPackageA2">Option A2: Double room, sharing with non-cyclist participant. Price: 890 &euro; (until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)</label>
+                                <label for="TwinPackageA2">Option A2: Double room, sharing with non-cyclist participant.</label>
                             </p>
                         </div>
                     </div>
@@ -825,8 +825,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <input type="radio" name="Package" id="EntryOnly" value="EntryOnly" <?php if (isset($selectPackage) && $selectPackage=="EntryOnly") echo "checked";?>/>
                         <label for="EntryOnly">Entry-only Package</label>
                          <div id="EntryOnlyDiv" class="infoDiv" style="display:none;">    
-                             <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers)</strong><br/>
-                                    If you wish to organize your own accommodation and meals, this package will suit  you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening. Price: 150 &euro; (until 30/4 - 180 &euro; until 6/5)</p>
+                             <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
+                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
                           </div>
                   </div>
                           
@@ -1753,7 +1753,6 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <option value="JP">Japan</option>
                         <option value="JO">Jordan</option>
                         <option value="KZ">Kazakhstan</option>
-
                         <option value="KE">Kenya</option>
                         <option value="KI">Kiribati</option>
                         <option value="KP">Korea, Republic of</option>
@@ -2112,15 +2111,14 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
             <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
             <p>Please Select Package. If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
             <div class="row" style="margin:24px 0 0;">
-                <p><strong>Solo all-inclusive registration package</strong><br/>Hotel room based on single occupancy: 1070 &euro; (until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)</p>
-                <p><strong>Double all-inclusive registration package (price / per person)</strong><br/>
-                    Option A1: Double room or twin room for two riders sharing. Price: 890 &euro; (until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
-                    Option A2: Double room, sharing with non-cyclist participant. Price: 890 &euro; (until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)
+                <p><strong>Solo all-inclusive registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
+                <p><strong>Double all-inclusive registration package (price / per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
+                    Option A1: Double room or twin room for two riders sharing.<br/>
+                    Option A2: Double room, sharing with non-cyclist participant.
                 </p>   
-                <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers)</strong><br/>
-                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening. Price: 150 &euro; (until 30/4 - 180 &euro; until 6/5)</p>
-                          </div>
-                
+                <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
+                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
+              </div>
               <div class="row">
               	<div class="NineCols"><div class="title">&nbsp;</div></div>
                 <?php 
@@ -2902,7 +2900,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <input 	type="radio" name="Package" id="soloPackage" value="soloPackage" <?php if (isset($selectPackage) && $selectPackage=="soloPackage") echo "checked";?> />
                         <label for="soloPackage">Solo Package</label>
                         <div id="soloPackageDiv" class="infoDiv" style="display:none;">
-                    		<p><strong>Solo all-inclusive package</strong><br/>Hotel room based on single occupancy: 890 &euro; (until 31/1/2016 - 1070 &euro; until 30/4 - 1190 &euro; until 6/5)</p>
+                    		<p><strong>Solo all-inclusive package: 890 &euro; </strong>(until 31/1/2016 - 1070 &euro; until 30/4 - 1190 &euro; until 6/5)
+                    			<br/>Hotel room based on single occupancy.
+                    		</p>
                         </div>
                 	</div>
                 </div>
@@ -2911,11 +2911,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <input type="radio" name="Package" id="TwinPackage" value="TwinPackage" <?php if (isset($selectPackage) && $selectPackage=="TwinPackage") echo "checked";?> />
                          <label for="TwinPackage">Twin Package</label>
                         <div id="TwinPackageDiv" class="infoDiv" style="display:none;"> 
-                        	<p><strong>Double all-inclusive package (price / per person)</strong><br/>
+                        	<p><strong>Double all-inclusive package (price / per person): 740 &euro; </strong>(until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)<br/>
                                 <input type="radio" name="PackageOption" id="TwinPackageB1" value="TwinPackageB1" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageB1") echo "checked";?> />
-                                <label for="TwinPackageB1">Option B1: Double room or twin room for two non-cyclists sharing. Price: 740 &euro; (until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)</label>
+                                <label for="TwinPackageB1">Option B1: Double room or twin room for two non-cyclists sharing.</label>
                                 <input type="radio" name="PackageOption" id="TwinPackageA2" value="TwinPackageA2" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA2") echo "checked";?> />
-                                <label for="TwinPackageA2">Option A2: Double room, sharing with non-cyclist participant. Price: 740 &euro; (until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)</label>
+                                <label for="TwinPackageA2">Option A2: Double room, sharing with non-cyclist participant.</label>
                             </p>
                         </div>
                     </div>
