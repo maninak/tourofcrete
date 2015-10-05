@@ -1041,7 +1041,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		} 
 		
 		if ( $teammembers == "-") {
-			$formErrors .= "<li>Required form field -Team Members- is missing</li>";
+			$formErrors .= "<li>Required form field -Group Members- is missing</li>";
 		}
 		
 		if ( $teammembers <> "-") {
@@ -1236,19 +1236,19 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
-				$email_message .= "<strong>Team Information</strong>\n\n";
+				$email_message .= "<strong>Group Information</strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
-				$email_message .= "Team Name: ".$teamname."\n";
+				$email_message .= "Group Name: ".$teamname."\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
-				$email_message .= "Team Leader: ".$teamleader."\n";
+				$email_message .= "Group Leader: ".$teamleader."\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
 				$email_message .= "Leader Email: ".$leaderemail."\n";
 				$email_message .= "</td></tr>";
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
-				$email_message .= "Team Members: ".$teammembers."\n";
+				$email_message .= "Group Members: ".$teammembers."\n";
 				$email_message .= "</td></tr>";	
 					
 				$email_message .= "<tr>";
@@ -1543,11 +1543,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
         	  <h1>Registration Details</h1>
               <div class="row">
                   <div class="FiveCols">
-                    <label for="teamname">Team Name</label>
+                    <label for="teamname">Group Name</label>
                     <input type="text" id="teamname" name="teamname" value="<?php if (isset($teamname)) { echo $teamname; } ?>" placeholder="Team Name"  />
                   </div>
                   <div class="FiveCols">
-                    <label for="teamleader">Team Leader</label>
+                    <label for="teamleader">Group Leader</label>
                     <input type="text" id="teamleader" name="teamleader" value="<?php if (isset($teamleader)) { echo $teamleader; } ?>" placeholder="Team Leader"  />
                   </div>
                   <div class="FiveCols">
@@ -1555,7 +1555,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input type="text" id="leaderemail" name="leaderemail" value="<?php if (isset($leaderemail)) { echo $leaderemail; } ?>" placeholder="Leader Email"  />
                   </div>
                   <div class="FiveCols">
-                    <label for="teammembers">Team Members <span class="required">*</span></label>
+                    <label for="teammembers">Group Members <span class="required">*</span></label>
                     <select name="teammembers" id="teammembers">
                     	<option value="-">Select...</option>
                         <option value="1">1</option>
