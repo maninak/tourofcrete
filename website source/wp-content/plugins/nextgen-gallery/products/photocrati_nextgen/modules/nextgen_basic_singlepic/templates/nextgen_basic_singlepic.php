@@ -72,7 +72,7 @@
              target='<?php echo esc_attr($target); ?>'
              <?php echo $effect_code ?>>
             <img class="ngg-singlepic"
-             src="<?php echo $thumbnail_url; ?>"
+             src="<?php echo esc_attr($storage->get_image_url($image, 'thumb')); ?>"
              alt="<?php echo esc_attr($image->alttext); ?>"
              title="<?php echo esc_attr($image->alttext); ?>"
              <?php if ($width) { ?> width="<?php echo esc_attr($width); ?>" <?php } ?>
