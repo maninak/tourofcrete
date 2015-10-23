@@ -205,6 +205,13 @@ a {
 a img {
 }
 
+/* Custom class for //registration page -K */
+.imgpricelist {
+	max-width: 65%;
+	position: relative;
+	top: -25px;
+}
+
 a:hover {
 	color: #333;
 }
