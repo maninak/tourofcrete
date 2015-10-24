@@ -24,19 +24,18 @@ function child_do_custom_loop() {
                     <div class="right"></div>
                 </div>
             </div>
-            <div class='slider'>
-                <div id="fader">
-                    <li>
-                    	<a href="https://goo.gl/4ajmXQ">
-                    	<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-1.png" />
-                    	</a>
-                    </li>
-                    <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-2.png" /></li>
-                    <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-3.png" /></li>
-                    <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-4.png" /></li>
-                    <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-5.png" /></li>
-                </div>
-            </div>
+            
+            <a href="https://goo.gl/4ajmXQ">
+		        <div class='slider'>
+		            <div id="fader">
+				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-1.png" /></li>
+				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-2.png" /></li>
+				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-3.png" /></li>
+				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-4.png" /></li>
+				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-5.png" /></li>
+		            </div>
+		        </div>
+		    </a>
             <div class="clear"></div>
             <div class="banners">
                 <a href="<?php get_site_url(); ?>/registration/individuals/"><div class="individuals banner"><?php _e('INDIVIDUALS','tourofcrete');?><span> > <?php _e('Register','tourofcrete');?> < </span></div></a>
