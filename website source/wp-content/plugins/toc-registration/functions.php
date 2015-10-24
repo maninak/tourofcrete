@@ -1543,6 +1543,95 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
         
       	<div class="step1">
         	  <h1>Registration Details</h1>
+        	  
+        	  <h2>Provisions</h2>
+              <p>The Tour of Crete travel service provides the following for each cyclist-participant from May 7th 2016 until May 14th 2016:</p>
+              <ul><strong>1. What is included per person:</strong>
+                <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
+                <li>7 x evening dinner (3-course Menu) at the hotel restaurant</li>
+                <li>Airport shuttle - airport/hotel/airport, for rider and bike</li>
+                <li>Registration fee for all 6 stages</li>
+                <li>Event kit bag of the Tour of Crete</li>
+                <li>Luggage transportation from hotel to hotel</li>
+                <li>Nutrition supply during the event (feed zones)</li>
+                <li>Timing system for all 6 stages</li>
+                <li>Mechanical and technical support</li>
+                <li>Motorbike outriders and lead cars</li>
+                <li>Per request massage session at discounted price</li>
+                <li>Digital photo and film (DVD will be sent) </li>
+                <li>Event's memorabilia T-shirt</li>              
+              </ul>
+             <ul><strong>2. What's NOT included:</strong>
+             	<li>Alcohol and personal expenses</li>
+                <li>Travel insurance</li>
+                <li>Flights</li>
+                <li>Strong legs</li>
+             </ul>
+			
+            
+            <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
+            <p>Please Select Package. If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
+            <div class="row" style="margin:24px 0 0;">
+                <p><strong>Solo all-inclusive registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
+                <p><strong>Double all-inclusive registration package (price / per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
+                    Option A1: Double room or twin room for two riders sharing.<br/>
+                    Option A2: Double room, sharing with non-cyclist participant.
+                </p>   
+                <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
+                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
+              </div>
+              <div class="row">
+              	<div class="NineCols"><div class="title">&nbsp;</div></div>
+                <?php 
+				for ($i = 1; $i <= 8; $i++) {
+					echo "<div class='NineCols'><div class='title'>MEMBER ".$i."</div></div>";
+				} 
+				?>
+              </div>
+              
+              <div class="row">
+              	<div class="NineCols first"><label for="soloPackage_1">Solo Package</label></div>
+                <?php 
+				for ($i = 1; $i <= 8; $i++) { ?>
+					<div class="NineCols">
+                    	<input 	type="radio" name="Package_<?php echo $i; ?>" id="soloPackage_<?php echo $i; ?>" value="soloPackage" <?php if (isset($selectPackageArr[$i-1]) && $selectPackageArr[$i-1]=="soloPackage") echo "checked";?> onchange="togglePackageOption(<?php echo $i; ?>);"/>
+                    </div>
+                <?php	
+				} 
+				?>
+              </div>
+              
+              <div class="row">
+              	<div class="NineCols first"><label for="TwinPackage_1">Twin Package</label></div>
+                <?php 
+				for ($i = 1; $i <= 8; $i++) { ?>
+					<div class="NineCols">
+                        <input type="radio" name="Package_<?php echo $i; ?>" id="TwinPackage_<?php echo $i; ?>" value="TwinPackage" <?php if (isset($selectPackageArr[$i-1]) && $selectPackageArr[$i-1]=="TwinPackage") echo "checked";?> onchange="togglePackageOption(<?php echo $i; ?>);" />
+                        <div id="TwinPackageDiv_<?php echo $i; ?>" class="infoDiv" style="display:none;"> 
+                        	<select name="PackageOption_<?php echo $i; ?>" id="PackageOption_<?php echo $i; ?>">
+                            	<option value="-">Select...</option>
+                        		<option value="TwinPackageA1">Option A1</option>
+                                <option value="TwinPackageA2">Option A2</option>
+                            </select>
+                        </div>
+                    </div>
+                <?php	
+				} 
+				?>
+              </div>
+              
+              <div class="row">
+              	<div class="NineCols first"><label for="EntryOnly_1">Registration-only</label></div>
+                <?php 
+				for ($i = 1; $i <= 8; $i++) { ?>
+					<div class="NineCols">
+                        <input type="radio" name="Package_<?php echo $i; ?>" id="EntryOnly_<?php echo $i; ?>" value="EntryOnly" <?php if (isset($selectPackageArr[$i-1]) && $selectPackageArr[$i-1]=="EntryOnly") echo "checked";?> onchange="togglePackageOption(<?php echo $i; ?>);" />
+                    </div>
+                <?php	
+				} 
+				?>
+              </div>
+        	  
               <div class="row">
                   <div class="FiveCols">
                     <label for="teamname">Group Name</label>
@@ -2085,94 +2174,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				?>
               </div>
              
-              <h2>Registration Details</h2>
-              <p>The Tour of Crete travel service provides the following for each cyclist-participant from May 7th 2016 until May 14th 2016:</p>
-              <ul><strong>1. What is included per person:</strong>
-                <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
-                <li>7 x evening dinner (3-course Menu) at the hotel restaurant</li>
-                <li>Airport shuttle - airport/hotel/airport, for rider and bike</li>
-                <li>Registration fee for all 6 stages</li>
-                <li>Event kit bag of the Tour of Crete</li>
-                <li>Luggage transportation from hotel to hotel</li>
-                <li>Nutrition supply during the event (feed zones)</li>
-                <li>Timing system for all 6 stages</li>
-                <li>Mechanical and technical support</li>
-                <li>Motorbike outriders and lead cars</li>
-                <li>Per request massage session at discounted price</li>
-                <li>Digital photo and film (DVD will be sent) </li>
-                <li>Event's memorabilia T-shirt</li>              
-              </ul>
-             <ul><strong>2. What's NOT included:</strong>
-             	<li>Alcohol and personal expenses</li>
-                <li>Travel insurance</li>
-                <li>Flights</li>
-                <li>Strong legs</li>
-             </ul>
-			
-            
-            <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
-            <p>Please Select Package. If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
-            <div class="row" style="margin:24px 0 0;">
-                <p><strong>Solo all-inclusive registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
-                <p><strong>Double all-inclusive registration package (price / per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
-                    Option A1: Double room or twin room for two riders sharing.<br/>
-                    Option A2: Double room, sharing with non-cyclist participant.
-                </p>   
-                <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
-                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
-              </div>
-              <div class="row">
-              	<div class="NineCols"><div class="title">&nbsp;</div></div>
-                <?php 
-				for ($i = 1; $i <= 8; $i++) {
-					echo "<div class='NineCols'><div class='title'>MEMBER ".$i."</div></div>";
-				} 
-				?>
-              </div>
               
-              <div class="row">
-              	<div class="NineCols first"><label for="soloPackage_1">Solo Package</label></div>
-                <?php 
-				for ($i = 1; $i <= 8; $i++) { ?>
-					<div class="NineCols">
-                    	<input 	type="radio" name="Package_<?php echo $i; ?>" id="soloPackage_<?php echo $i; ?>" value="soloPackage" <?php if (isset($selectPackageArr[$i-1]) && $selectPackageArr[$i-1]=="soloPackage") echo "checked";?> onchange="togglePackageOption(<?php echo $i; ?>);"/>
-                    </div>
-                <?php	
-				} 
-				?>
-              </div>
-              
-              <div class="row">
-              	<div class="NineCols first"><label for="TwinPackage_1">Twin Package</label></div>
-                <?php 
-				for ($i = 1; $i <= 8; $i++) { ?>
-					<div class="NineCols">
-                        <input type="radio" name="Package_<?php echo $i; ?>" id="TwinPackage_<?php echo $i; ?>" value="TwinPackage" <?php if (isset($selectPackageArr[$i-1]) && $selectPackageArr[$i-1]=="TwinPackage") echo "checked";?> onchange="togglePackageOption(<?php echo $i; ?>);" />
-                        <div id="TwinPackageDiv_<?php echo $i; ?>" class="infoDiv" style="display:none;"> 
-                        	<select name="PackageOption_<?php echo $i; ?>" id="PackageOption_<?php echo $i; ?>">
-                            	<option value="-">Select...</option>
-                        		<option value="TwinPackageA1">Option A1</option>
-                                <option value="TwinPackageA2">Option A2</option>
-                            </select>
-                        </div>
-                    </div>
-                <?php	
-				} 
-				?>
-              </div>
-              
-              <div class="row">
-              	<div class="NineCols first"><label for="EntryOnly_1">Registration-only</label></div>
-                <?php 
-				for ($i = 1; $i <= 8; $i++) { ?>
-					<div class="NineCols">
-                        <input type="radio" name="Package_<?php echo $i; ?>" id="EntryOnly_<?php echo $i; ?>" value="EntryOnly" <?php if (isset($selectPackageArr[$i-1]) && $selectPackageArr[$i-1]=="EntryOnly") echo "checked";?> onchange="togglePackageOption(<?php echo $i; ?>);" />
-                    </div>
-                <?php	
-				} 
-				?>
-              </div>
-				
+              				
               <h2>Payment Options</h2>
               <div class="row">
 			 	 <div class="OneCol">
