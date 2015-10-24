@@ -1580,6 +1580,36 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                 <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
                                     If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
               </div>
+              
+              <div class="row">
+                  <div class="FiveCols">
+                    <label for="teamname">Group Name</label>
+                    <input type="text" id="teamname" name="teamname" value="<?php if (isset($teamname)) { echo $teamname; } ?>" placeholder="Team Name"  />
+                  </div>
+                  <div class="FiveCols">
+                    <label for="teamleader">Group Leader</label>
+                    <input type="text" id="teamleader" name="teamleader" value="<?php if (isset($teamleader)) { echo $teamleader; } ?>" placeholder="Team Leader"  />
+                  </div>
+                  <div class="FiveCols">
+                    <label for="leaderemail">Leader Email <span class="required">*</span></label>
+                    <input type="text" id="leaderemail" name="leaderemail" value="<?php if (isset($leaderemail)) { echo $leaderemail; } ?>" placeholder="Leader Email"  />
+                  </div>
+                  <div class="FiveCols">
+                    <label for="teammembers">Group Members <span class="required">*</span></label>
+                    <select name="teammembers" id="teammembers">
+                    	<option value="-">Select...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                  </div>
+              </div>
+              
               <div class="row">
               	<div class="NineCols"><div class="title">&nbsp;</div></div>
                 <?php 
@@ -1632,34 +1662,6 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				?>
               </div>
         	  
-              <div class="row">
-                  <div class="FiveCols">
-                    <label for="teamname">Group Name</label>
-                    <input type="text" id="teamname" name="teamname" value="<?php if (isset($teamname)) { echo $teamname; } ?>" placeholder="Team Name"  />
-                  </div>
-                  <div class="FiveCols">
-                    <label for="teamleader">Group Leader</label>
-                    <input type="text" id="teamleader" name="teamleader" value="<?php if (isset($teamleader)) { echo $teamleader; } ?>" placeholder="Team Leader"  />
-                  </div>
-                  <div class="FiveCols">
-                    <label for="leaderemail">Leader Email <span class="required">*</span></label>
-                    <input type="text" id="leaderemail" name="leaderemail" value="<?php if (isset($leaderemail)) { echo $leaderemail; } ?>" placeholder="Leader Email"  />
-                  </div>
-                  <div class="FiveCols">
-                    <label for="teammembers">Group Members <span class="required">*</span></label>
-                    <select name="teammembers" id="teammembers">
-                    	<option value="-">Select...</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
-                  </div>
-              </div>
              
               <h2>Personal Information</h2>
               <div class="row">
