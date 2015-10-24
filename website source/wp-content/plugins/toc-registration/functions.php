@@ -2543,6 +2543,53 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
         
       	<div class="step1">
         	  <h1>Registration Details</h1>
+        	  
+        	  <h2>Provisions</h2>
+              <p>Tour of Crete travel service provides for each non-cyclist participant from May 7th 2016 until May 14th 2016:</p>
+              <ul><strong>1. What is included per person:</strong>
+                <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
+                <li>7 x evening dinner (3-course Menu) in the hotel</li>
+                <li>Luggage transportation from hotel to hotel</li>
+                <li>6 trips, following the cyclists' route</li>
+                <li>Digital photo and film (DVD will be sent) </li>         
+              </ul>
+             <ul><strong>2. What's NOT included:</strong>
+             	<li>Alcohol and personal expenses</li>
+                <li>Travel insurance</li>
+                <li>Flights</li>
+             </ul>
+			
+              <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
+			   <p>If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
+               <div>
+                <p>Please Select Package:</p>
+                
+                <div class="row">
+              		<div class="OneCol">
+                        <input 	type="radio" name="Package" id="soloPackage" value="soloPackage" <?php if (isset($selectPackage) && $selectPackage=="soloPackage") echo "checked";?> />
+                        <label for="soloPackage">Solo Package</label>
+                        <div id="soloPackageDiv" class="infoDiv" style="display:none;">
+                    		<p><strong>Solo all-inclusive package: 890 &euro; </strong>(until 31/1/2016 - 1070 &euro; until 30/4 - 1190 &euro; until 6/5)
+                    			<br/>Hotel room based on single occupancy.
+                    		</p>
+                        </div>
+                	</div>
+                </div>
+                <div class="row">
+                	<div class="OneCol">
+                         <input type="radio" name="Package" id="TwinPackage" value="TwinPackage" <?php if (isset($selectPackage) && $selectPackage=="TwinPackage") echo "checked";?> />
+                         <label for="TwinPackage">Twin Package</label>
+                        <div id="TwinPackageDiv" class="infoDiv" style="display:none;"> 
+                        	<p><strong>Double all-inclusive package (price / per person): 740 &euro; </strong>(until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)<br/>
+                                <input type="radio" name="PackageOption" id="TwinPackageB1" value="TwinPackageB1" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageB1") echo "checked";?> />
+                                <label for="TwinPackageB1">Option B1: Double room or twin room for two non-cyclists sharing.</label>
+                                <input type="radio" name="PackageOption" id="TwinPackageA2" value="TwinPackageA2" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA2") echo "checked";?> />
+                                <label for="TwinPackageA2">Option A2: Double room, sharing with non-cyclist participant.</label>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+        	  
               <h2>Personal Information</h2>
               <div class="row">
                   <div class="FiveCols">
@@ -2580,7 +2627,6 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <option value="CY">Cyprus</option>
                         <option value="DK">Denmark</option>
                         <option value="FI">Finland</option>
-
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                         <option value="GR">Greece</option>
@@ -2882,51 +2928,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input 	type="text" id="sharedAcco" name="sharedAcco" value="<?php if (isset($sharedAcco)) { echo $sharedAcco; } ?>" placeholder="Shared  Accommodation" />
              	</div>
               </div>
-              <h2>Registration Details</h2>
-              <p>Tour of Crete travel service provides for each non-cyclist participant from May 7th 2016 until May 14th 2016:</p>
-              <ul><strong>1. What is included per person:</strong>
-                <li>7 x nights' accommodation  in various 4 stars hotels including breakfast</li>
-                <li>7 x evening dinner (3-course Menu) in the hotel</li>
-                <li>Luggage transportation from hotel to hotel</li>
-                <li>6 trips, following the cyclists' route</li>
-                <li>Digital photo and film (DVD will be sent) </li>         
-              </ul>
-             <ul><strong>2. What's NOT included:</strong>
-             	<li>Alcohol and personal expenses</li>
-                <li>Travel insurance</li>
-                <li>Flights</li>
-             </ul>
-			
-              <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
-			   <p>If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
-               <div>
-                <p>Please Select Package:</p>
-                
-                <div class="row">
-              		<div class="OneCol">
-                        <input 	type="radio" name="Package" id="soloPackage" value="soloPackage" <?php if (isset($selectPackage) && $selectPackage=="soloPackage") echo "checked";?> />
-                        <label for="soloPackage">Solo Package</label>
-                        <div id="soloPackageDiv" class="infoDiv" style="display:none;">
-                    		<p><strong>Solo all-inclusive package: 890 &euro; </strong>(until 31/1/2016 - 1070 &euro; until 30/4 - 1190 &euro; until 6/5)
-                    			<br/>Hotel room based on single occupancy.
-                    		</p>
-                        </div>
-                	</div>
-                </div>
-                <div class="row">
-                	<div class="OneCol">
-                         <input type="radio" name="Package" id="TwinPackage" value="TwinPackage" <?php if (isset($selectPackage) && $selectPackage=="TwinPackage") echo "checked";?> />
-                         <label for="TwinPackage">Twin Package</label>
-                        <div id="TwinPackageDiv" class="infoDiv" style="display:none;"> 
-                        	<p><strong>Double all-inclusive package (price / per person): 740 &euro; </strong>(until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)<br/>
-                                <input type="radio" name="PackageOption" id="TwinPackageB1" value="TwinPackageB1" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageB1") echo "checked";?> />
-                                <label for="TwinPackageB1">Option B1: Double room or twin room for two non-cyclists sharing.</label>
-                                <input type="radio" name="PackageOption" id="TwinPackageA2" value="TwinPackageA2" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA2") echo "checked";?> />
-                                <label for="TwinPackageA2">Option A2: Double room, sharing with non-cyclist participant.</label>
-                            </p>
-                        </div>
-                    </div>
-                </div> 
+              
+              
 				
               <h2>Payment Options</h2>
               <div class="row">
