@@ -29,6 +29,7 @@ function child_do_custom_loop() {
                     <li>
                     	<a href="https://goo.gl/4ajmXQ">
                     	<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-1.png" />
+                    	</a>
                     </li>
                     <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-2.png" /></li>
                     <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-3.png" /></li>
