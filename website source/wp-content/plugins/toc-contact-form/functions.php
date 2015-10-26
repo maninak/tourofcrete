@@ -67,10 +67,10 @@ require_once(get_template_directory()."/mycaptcha.php");
 		}else{
 		
 				$email_message = "<p>Dear <strong><font color='#ff6600'>".$contact_name."</font></strong>,</p>";	
-				$email_message .= "<p><strong>Thank you for contacting the Tour of Crete support team!</strong></p>";	
-				$email_message .= "<p>One of our members has been notified of your inquiry and will be in touch with you as soon as possible.<br/>Until then, have a good day and why not go for a quick ride!</p>";
+				$email_message .= "<p><strong>Thank you for contacting the Tour of Crete support team.</strong></p>";	
+				$email_message .= "<p>One of our members has been notified of your inquiry and will be in touch with you as soon as possible.<br/>Until then, have a good day and why not have a quick ride!</p>";
 				$email_message .= "<br/>Best regards,</p>";	
-				$email_message .= "<p><strong><font color='#ff6600'>The Tour of Crete Team</font></strong><br/>Website: <a href='http://tourofcrete.com/' target='_blank'>http://www.tourofcrete.com</a><br/>Facebook: <a href='https://www.facebook.com/thetourofcrete' target='_blank'>https://www.facebook.com/thetourofcrete</a></p>";	
+				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:100px;height:100px;padding-right:10px; float:left;'><strong><font face='crillee It BT, impact, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,sans-serif,arial'>The Tour of Crete <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>The Tour of Crete <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p>";
 				$email_message .= "<p><br/><br/>------------ Below follows a copy of the message we received from you ------------</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
