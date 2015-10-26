@@ -66,12 +66,12 @@ require_once(get_template_directory()."/mycaptcha.php");
 			<?php
 		}else{
 		
-				$email_message = "<p>Dear ".$contact_name." </p>";	
-				$email_message .= "<p>Thank you for contacting us.</p>";	
-				$email_message .= "<p>We will be in touch with you very soon.</p>";
+				$email_message = "<p>Dear <strong><font color='#ff6600'>".$contact_name."</font></strong>,</p>";	
+				$email_message .= "<p><strong>Thank you for contacting the Tour of Crete support team!</strong></p>";	
+				$email_message .= "<p>One of our members has been notified of your inquiry and will be in touch with you as soon as possible.<br/>Until then, have a good day and why not go for a quick ride!</p>";
 				$email_message .= "<br/>Best regards,</p>";	
-				$email_message .= "<p><strong>Tour of Crete Team</strong><br/>Website: <a href='http://tourofcrete.com/' target='_blank'>http://www.tourofcrete.com</a></p>";	
-				$email_message .= "<p>---------------A copy of your message---------------</p>";
+				$email_message .= "<p><strong><font color='#ff6600'>The Tour of Crete Team</font></strong><br/>Website: <a href='http://tourofcrete.com/' target='_blank'>http://www.tourofcrete.com</a><br/>Facebook: <a href='https://www.facebook.com/thetourofcrete' target='_blank'>https://www.facebook.com/thetourofcrete</a></p>";	
+				$email_message .= "<p><br/><br/>------------ Below follows a copy of the message we received from you ------------</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
 				$email_message .= "Name: ".$contact_name."\n";
