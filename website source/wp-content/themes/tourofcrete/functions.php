@@ -161,7 +161,7 @@ function news_gallery(){
             <?php
             if( $latest_cat_post->have_posts() ) : while( $latest_cat_post->have_posts() ) : $latest_cat_post->the_post(); ?>
               <div class="new">
-                    <a href="<?php the_permalink() ?>"  title="<?php the_title_attribute(); ?>"><h3><?php the_time('Y')?> <?php the_title(); ?></h3></a>
+                    <a href="<?php the_permalink() ?>"  title="<?php the_title_attribute(); ?>"><h3><?php the_title(); ?></h3></a>
                     <p><?php echo get_the_excerpt(); ?>... <a href="<?php the_permalink() ?>">(read more)</a></p>
                 </div>
             
