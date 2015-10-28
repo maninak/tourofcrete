@@ -86,7 +86,7 @@ function custom_header() {
                 	<div class="lang"></div>
                     <div class="social"><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/social.png" border="0" usemap="#Map" />
                       <map name="Map" id="Map">
-                        <area shape="rect" coords="1,1,23,27" href="https://www.facebook.com/pages/Tour-of-Crete/379541852215948?fref=nf" target="_blank" />
+                        <area shape="rect" coords="1,1,23,27" href="https://goo.gl/jdKycy" target="_blank" />
                       </map>
                 </div>
                 
