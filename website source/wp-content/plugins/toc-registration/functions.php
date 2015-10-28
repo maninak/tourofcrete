@@ -450,7 +450,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <label for="EntryOnly">Entry-only Package</label>
                          <div id="EntryOnlyDiv" class="infoDiv" style="display:none;">    
                              <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
-                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
+                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the all-inclusive package.</p>
                           </div>
                   </div>            
               </div>
@@ -1578,7 +1578,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     Option A2: Double room shared with another non-cyclist participant.
                 </p>   
                 <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
-                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your airport transportation, luggage transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening.</p>
+                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the all-inclusive package.</p>
               </div>
               
               <div class="row">
