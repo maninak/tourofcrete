@@ -105,6 +105,14 @@ span.required, span.required-text {
 			display:inline-block;
 		}
 		
+		.form .OneCol input[type="text"]{
+			width:300px;
+		}
+		
+		.form .OneCol select{
+			width:300px;
+		}
+		
 	.form .TwoCols{
 		width:50%;
 		float:left;
