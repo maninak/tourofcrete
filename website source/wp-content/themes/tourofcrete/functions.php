@@ -173,14 +173,14 @@ function news_gallery(){
             <div style="padding:18px 0 0 57px; clear:both;">
 		<?php
 		global $wpdb;
-		$pictures = $wpdb->get_results("SELECT * FROM wp_ngg_pictures WHERE galleryid = '1' ORDER BY imagedate DESC LIMIT 9");
+		$pictures = $wpdb->get_results("SELECT * FROM wp_ngg_pictures WHERE galleryid = '5' ORDER BY imagedate DESC LIMIT 9");
 		$i=1;
 		foreach( $pictures as $p ) {
 				if ($i <= 3) {
 					echo ('<div class="masked-image">');
-					echo do_shortcode("[singlepic id=".$p->pid.",134,91]");
+					echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
 					$template_dir=get_bloginfo('url');
-					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/tour-of-crete/'.$p->filename.'"><div class="hover-image"></div></a>');
+					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
 					echo ('</div>');
 					
 					}
@@ -189,9 +189,9 @@ function news_gallery(){
 				echo ('</div>');
 				echo ('<div style="padding:6px 0 0 73px; clear:both;">');
 					echo ('<div class="masked-image">');
-					echo do_shortcode("[singlepic id=".$p->pid.",134,91]");
+					echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
 					$template_dir=get_bloginfo('url');
-					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/tour-of-crete/'.$p->filename.'"><div class="hover-image"></div></a>');
+					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
 					echo ('</div>');
 					
 					
@@ -199,9 +199,9 @@ function news_gallery(){
 					else if ($i<=6)
 					{
 					echo ('<div class="masked-image">');
-					echo do_shortcode("[singlepic id=".$p->pid.",134,91]");
+					echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
 					$template_dir=get_bloginfo('url');
-					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/tour-of-crete/'.$p->filename.'"><div class="hover-image"></div></a>');
+					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
 					echo ('</div>');
 					}
 					else if($i==7)
@@ -209,18 +209,18 @@ function news_gallery(){
 				echo ('</div>');
 				echo ('<div style="padding:6px 0 0 89px; clear:both;">');
 					echo ('<div class="masked-image">');
-					echo do_shortcode("[singlepic id=".$p->pid.",134,91]");
+					echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
 					$template_dir=get_bloginfo('url');					
-					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/tour-of-crete/'.$p->filename.'"><div class="hover-image"></div></a>');
+					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
 					echo ('</div>');
 
 					}
 					else if($i>7)
 					{
 					echo ('<div class="masked-image">');
-					echo do_shortcode("[singlepic id=".$p->pid.",134,91]");
+					echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
 					$template_dir=get_bloginfo('url');					
-					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/tour-of-crete/'.$p->filename.'"><div class="hover-image"></div></a>');
+					echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="'.$template_dir.'/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
 					echo ('</div>');					
 					}
 					else if($i>=10) 
