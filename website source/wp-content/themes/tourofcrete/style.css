@@ -1689,10 +1689,11 @@ Content Area
 			line-height:22px;
 		}
 		ul.venues-menu li{
-			width:20%;
+			width:16%;
 			float:left;
 			margin:0;
 			line-height:22px;
+			padding-bottom:2em;
 		}
 		ul.stages-menu a, ul.venues-menu a{
 			color:#ff6600;
