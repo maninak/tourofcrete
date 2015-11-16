@@ -79,7 +79,7 @@ function PayClicked(language)
 {
 	// Check to see if Pay Button has been clicked before
 	if (PayButtonclicked){
-		if (language=='engilsh'){
+		if (language=='english'){
 			// Message displayed
 			alert ("Transaction already sent.");
 		}else if (language=='greek'){
