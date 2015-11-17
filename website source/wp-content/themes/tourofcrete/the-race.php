@@ -76,7 +76,7 @@ function getStageInfo($type, $parentID){
 			echo "</div>";
 			
 			echo '<div class="race-right">';
-				echo "<ul class='stages-menu'>";
+				echo "<ul class='all-stages-menu'>";
 				
 				while ($my_query->have_posts()) : $my_query->the_post(); 
 					$stageDay = get_post_meta($post->ID, 'day', true);
@@ -84,12 +84,14 @@ function getStageInfo($type, $parentID){
 					$stageKilometers = get_post_meta($post->ID, 'kilometers', true);
 					$stageAscent = get_post_meta($post->ID, 'ascent', true);
 					?>
-					<li>
-                    	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                        <div class="day"><?php echo $stageDay; ?></div>
-                        <div class="route"><?php echo $stageRoute; ?></div>
-                        <div class="kilometers"><?php echo $stageKilometers; ?></div>
-                        <div class="ascent"><?php echo $stageAscent; ?></div>
+					<li class="menuitem">
+                    	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                    		<div class="thetitle">	<?php the_title(); ?>			</div>
+		                    <div class="day">		<?php echo $stageDay; ?>		</div>
+		                    <div class="route">		<?php echo $stageRoute; ?>		</div>
+		                    <div class="kilometers"><?php echo $stageKilometers; ?>	</div>
+		                    <div class="ascent">	<?php echo $stageAscent; ?>		</div>
+                        </a>
                     </li>
 					<?php 
 				endwhile; 

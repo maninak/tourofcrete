@@ -25,7 +25,7 @@ function child_do_custom_loop() {
                 </div>
             </div>
             
-            <a href="https://goo.gl/4ajmXQ">
+            <a href="https://goo.gl/4ajmXQ" target="_blank">
 		        <div class='slider'>
 		            <div id="fader">
 				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-1.png" /></li>
