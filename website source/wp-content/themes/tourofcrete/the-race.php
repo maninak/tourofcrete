@@ -97,7 +97,10 @@ function getStageInfo($type, $parentID){
 				endwhile; 
 				echo "</ul>";
 			echo "</div>";
-			?><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/stages.jpg" /> <?php 
+			?>
+			<iframe src="http://www.gpsies.com/viewTracksOnly.do?fileId=tjwiwgjzwpywqlyo&fileId=qwdzmtphurjwqytf&fileId=kcjgvgvsloupzyak&fileId=vwfoszhdewmpmdat&fileId=qxgobumqpertnrkb&fileId=oappxhaziflhgqgs#10_35.3123855_25.1392413_esri" width="841" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<div><br/></div>
+			<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/stages.jpg" /> <?php 
 		}
 		elseif ($type == 'stagedetails') {
 			$stageDescription = get_post_meta($post->ID, 'stage_description', true);
