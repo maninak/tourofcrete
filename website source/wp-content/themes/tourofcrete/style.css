@@ -309,19 +309,18 @@ h4 {
 	font-size: 2rem;
 }
 
-h5 {
-	font-size: 18px;
-	font-size: 1.8rem;
+h5 {														/* -K */
+	font-size: 16px;										/* -K */
+	font-size: 1.6rem;										/* -K */
 }
 
-h6 { /* -K */
-	margin: 0 0 6px;
-	margin: 0 0 0.6rem;
-	font-weight: 700;
-	line-height: 1.2;
-	font-size: 14px;
-	font-size: 1.4rem;
-}
+h6 { 														/* -K */
+	margin: 0 0 6px;										/* -K */
+	font-weight: 700;										/* -K */
+	line-height: 1.2;										/* -K */
+	font-size: 14px;										/* -K */
+	font-size: 1.4rem;										/* -K */
+}															/* -K */
 
 /* Objects
 --------------------------------------------- */
@@ -1505,9 +1504,13 @@ Content Area
 	.FullFrame h2{
 		color:#ff6600;
 		font-weight:bold;
-		font-size:13px;
-		padding:12px 0 12px 0;
+		font-size:14px;									/* -K */
+		padding:10px 0 10px 0;							/* -K */
 	}
+	.FullFrame h6{										/* -K */
+		font-size:12px;									/* -K */
+		margin:0;										/* -K */
+	}													/* -K */
 	
 	.FullFrame ul{
 		margin:0;
@@ -1527,7 +1530,7 @@ Content Area
 			font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
 			font-weight:bold;
 			letter-spacing:0.05em;
-			margin:0;
+			margin: 0px 0px 4px;						/* -K */
 			padding:0 0 0 0;
 			line-height:normal;
 			color:#fff;
