@@ -1371,6 +1371,7 @@ Content Area
 	.frameContent .more{
 		width:auto;
 		height:23px;
+		margin-top:5px;
 	}
 		.frameContent .more .left{
 			background: url(images/more-l.gif) no-repeat left top;
