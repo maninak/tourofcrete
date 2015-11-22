@@ -1435,18 +1435,51 @@ Content Area
 		text-align:center;
 		font-weight:bold;
 		letter-spacing:0.05em;
-		-webkit-transition: all 0.1s ease-out;				/* -K */
-		-moz-transition:    all 0.1s ease-out;				/* -K */
-		-ms-transition:     all 0.1s ease-out;				/* -K */
-		-o-transition:      all 0.1s ease-out;				/* -K */
-		transition:         all 0.1s ease-out;				/* -K */
-		-webkit-box-shadow: 0px 0px 0px 0px #000;			/* -K */
-		box-shadow: 0px 0px 0px 0px #000;					/* -K */
 	}
-		.frameContent .banners:hover{							/* -K */
-			-webkit-box-shadow: -7px 0px 10px 3px #00BAFF;	/* -K */
-			box-shadow: -7px 0px 10px 2px #00BAFF;			/* -K */
-		}
+		#box-shadow-indiv{									/* -K */
+			width: 266px;									/* -K */
+			box-shadow: 0px 0px 0px 0px #000;				/* -K */
+			-webkit-box-shadow: 0px 0px 0px 0px #000;		/* -K */
+			-webkit-transition: all 0.1s ease-out;			/* -K */
+			-moz-transition:    all 0.1s ease-out;			/* -K */
+			-ms-transition:     all 0.1s ease-out;			/* -K */
+			-o-transition:      all 0.1s ease-out;			/* -K */
+			transition:         all 0.1s ease-out;			/* -K */
+		}													/* -K */
+		.banners a:first-child:hover #box-shadow-indiv{		/* -K */
+			box-shadow: 3px 0px 10px 2px #00BAFF;			/* -K */
+			-webkit-box-shadow: 3px 0px 10px 2px #00BAFF;	/* -K */
+		}													/* -K */
+		#box-shadow-teams{									/* -K */
+			margin-left: 293px;								/* -K */
+			width: 257px;									/* -K */
+			box-shadow: 0px 0px 0px 0px #000;				/* -K */
+			-webkit-box-shadow: 0px 0px 0px 0px #000;		/* -K */
+			-webkit-transition: all 0.1s ease-out;			/* -K */
+			-moz-transition:    all 0.1s ease-out;			/* -K */
+			-ms-transition:     all 0.1s ease-out;			/* -K */
+			-o-transition:      all 0.1s ease-out;			/* -K */
+			transition:         all 0.1s ease-out;			/* -K */
+		}													/* -K */
+		.banners a:nth-child(2):hover #box-shadow-teams{	/* -K */
+			box-shadow: -0px 0px 10px 2px #00BAFF;			/* -K */
+			-webkit-box-shadow: 0px 0px 10px 2px #00BAFF;	/* -K */
+		}													/* -K */
+		#box-shadow-noncy{									/* -K */
+			margin-left: 572px;								/* -K */
+			width: 266px;									/* -K */
+			box-shadow: 0px 0px 0px 0px #000;				/* -K */
+			-webkit-box-shadow: 0px 0px 0px 0px #000;		/* -K */
+			-webkit-transition: all 0.1s ease-out;			/* -K */
+			-moz-transition:    all 0.1s ease-out;			/* -K */
+			-ms-transition:     all 0.1s ease-out;			/* -K */
+			-o-transition:      all 0.1s ease-out;			/* -K */
+			transition:         all 0.1s ease-out;			/* -K */
+		}													/* -K */
+		.banners a:last-child:hover #box-shadow-noncy{		/* -K */
+			box-shadow: 0px 0px 10px 2px #00BAFF;			/* -K */
+			-webkit-box-shadow: 0px 0px 10px 2px #00BAFF;	/* -K */
+		}													/* -K */
 		.frameContent .banners a{
 			color:#fff;
 		}
