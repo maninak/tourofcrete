@@ -5,8 +5,8 @@
   Header append Cache-Control "public"
 </filesMatch>
 
-#Set caching on javascript files
-<filesMatch "\.(js|json|geojson)$">
+#Set caching on static files
+<filesMatch "\.(js|json|geojson|ttf|ttc|woff|otf|svg)$">
   ExpiresActive On
   ExpiresDefault "access plus 3 month"
   Header append Cache-Control "public"
