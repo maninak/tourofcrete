@@ -1,0 +1,20 @@
+#------------------------------------------------------------------------------#
+# Created By Kostis Maninakis
+#------------------------------------------------------------------------------#
+
+# Git will ignore tracking everything...
+./*
+
+# Except what is listed below (or within it) and preceded with a '!'
+# Add below any files/folders you want to be tracked by Git
+
+!.gitignore
+!website source
+!httpdocs
+
+
+
+# Also ignores tracking any files within the above listed excluded paths, that 
+# 		still match any of the patterns below.
+
+*~
