@@ -7,12 +7,6 @@ define( 'CHILD_THEME_NAME', 'Genesis Sample Theme' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
 define( 'CHILD_THEME_VERSION', '2.0.1' );
 
-//* Enqueue Lato Google font
-add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
-function genesis_sample_google_fonts() {
-	wp_enqueue_style( 'google-font-lato', '//fonts.googleapis.com/css?family=Lato:300,700', array(), CHILD_THEME_VERSION );
-}
-
 //* Add HTML5 markup structure
 add_theme_support( 'html5' );
 
@@ -22,17 +16,6 @@ add_theme_support( 'genesis-responsive-viewport' );
 add_theme_support( 'post-thumbnails' );
  
 //* Add my theme scripts
-function my_theme_scripts() {
-	if( !is_admin() ) {
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js', false, 'latest', false);
-		wp_register_script('my-jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.js');
-		
-		wp_enqueue_script('jquery#asyncload');
-		wp_enqueue_script( 'my-jquery-ui#asyncload' );
-	}
-}
-
-add_action('init', 'my_theme_scripts');
 
 // Register extra custom menus 
 function register_my_menus() {
