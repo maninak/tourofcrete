@@ -3,14 +3,13 @@
 #------------------------------------------------------------------------------#
 
 # Git will ignore tracking everything...
-./*
+*
 
 # Except what is listed below (or within it) and preceded with a '!'
 # Add below any files/folders you want to be tracked by Git
 
 !.gitignore
-!website source
-!httpdocs
+!httpdocs/*
 
 
 
@@ -18,3 +17,4 @@
 # 		still match any of the patterns below.
 
 *~
+/httpdocs/wp-content/plugins/bwp-minify/cache/*
