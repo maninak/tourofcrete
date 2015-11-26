@@ -1,6 +1,10 @@
 /* Registration contactform Style
 --------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face{
+	font-family: Open Sans;
+	src: url(OpenSans-Regular.ttf);
+}
 
 body {
     color: #666;
