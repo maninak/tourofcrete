@@ -22,7 +22,7 @@ register_activation_hook(__FILE__,'toc_contact_form_plugin_install');
 //SCRIPTS
 function toc_contact_form_plugin_scripts(){
     wp_register_script('toc_contact_form_script',plugin_dir_url( __FILE__ ).'js/toc-scripts.js');
-    wp_enqueue_script('toc_contact_form_script');
+    wp_enqueue_script('toc_contact_form_script#asyncload');
 
 	wp_enqueue_style( 'toc_contact_form_style', plugin_dir_url( __FILE__ ).'css/style.css');
 	wp_enqueue_style( 'ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css');

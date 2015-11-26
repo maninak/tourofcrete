@@ -8,7 +8,7 @@ add_action( 'genesis_loop', 'child_do_custom_loop' );
 add_action( 'genesis_after_content_sidebar_wrap', 'news_gallery' );
  
 function ScriptSlider(){ ?>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/unslider.min.js"></script>
+	<script async src="<?php bloginfo('stylesheet_directory'); ?>/js/unslider.min.js"></script>
 	<?php
 }
 
@@ -28,11 +28,13 @@ function child_do_custom_loop() {
             <a href="https://goo.gl/4ajmXQ" target="_blank">
 		        <div class='slider'>
 		            <div id="fader">
+		            	<ul>
 				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-1.png" /></li>
 				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-2.png" /></li>
 				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-3.png" /></li>
 				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-4.png" /></li>
 				            <li><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/slide-show-5.png" /></li>
+		            	</ul>
 		            </div>
 		        </div>
 		    </a>

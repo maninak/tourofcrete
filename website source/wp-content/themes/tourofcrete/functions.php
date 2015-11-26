@@ -27,8 +27,8 @@ function my_theme_scripts() {
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js', false, 'latest', false);
 		wp_register_script('my-jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.js');
 		
-		wp_enqueue_script('jquery');
-		wp_enqueue_script( 'my-jquery-ui' );
+		wp_enqueue_script('jquery#asyncload');
+		wp_enqueue_script( 'my-jquery-ui#asyncload' );
 	}
 }
 
