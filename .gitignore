@@ -1,4 +1,17 @@
-/**/*~
-/httpdocs/wp-content/plugins/bwp-minify/cache/*
-/logs/*
-/database_backups/*
+bin
+dev
+etc
+lib
+lib64
+logs
+tmp
+usr
+var
+
+database_backups
+manual
+ToC website optimisation
+credentials
+
+**/*~
+httpdocs/wp-content/plugins/bwp-minify/cache/*
