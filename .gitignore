@@ -1,0 +1,25 @@
+# Server folders to ignore
+.bash_history
+.ssh
+bin
+dev
+etc
+lib
+lib64
+logs
+tmp
+tourofcrete.git
+usr
+var
+
+# Local dev-machine files to ingore
+database_backups
+manual
+ToC website optimisation
+credentials
+
+# Additional caches etc to ignore
+httpdocs/wp-content/plugins/bwp-minify/cache/*
+httpdocs/wp-content/uploads/gpx/~cache/*
+**/*~
+**/*.orig
