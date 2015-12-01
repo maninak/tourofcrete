@@ -188,7 +188,7 @@ function show_wp_cart_options_page ()
     </div>
     
     <div class="postbox">
-    <h3><label for="title"><?php _e("Quick Usage Guide", "wordpress-simple-paypal-shopping-cart"); ?></label></h3>
+    <h3 class="hndle"><label for="title"><?php _e("Quick Usage Guide", "wordpress-simple-paypal-shopping-cart"); ?></label></h3>
     <div class="inside">
 	
         <p><strong><?php _e("Step 1) ","wordpress-simple-paypal-shopping-cart"); ?></strong><?php _e("To add an 'Add to Cart' button for a product simply add the shortcode", "wordpress-simple-paypal-shopping-cart"); ?> [wp_cart_button name="<?php _e("PRODUCT-NAME", "wordpress-simple-paypal-shopping-cart"); ?>" price="<?php _e("PRODUCT-PRICE", "wordpress-simple-paypal-shopping-cart"); ?>"] <?php _e("to a post or page next to the product. Replace PRODUCT-NAME and PRODUCT-PRICE with the actual name and price of your product.", "wordpress-simple-paypal-shopping-cart"); ?></p>
@@ -203,7 +203,7 @@ function show_wp_cart_options_page ()
 <?php
 echo '
 	<div class="postbox">
-	<h3><label for="title">'.(__("PayPal and Shopping Cart Settings", "wordpress-simple-paypal-shopping-cart")).'</label></h3>
+	<h3 class="hndle"><label for="title">'.(__("PayPal and Shopping Cart Settings", "wordpress-simple-paypal-shopping-cart")).'</label></h3>
 	<div class="inside">';
 
 echo '
@@ -329,7 +329,7 @@ echo '
 </div></div>
 
 <div class="postbox">
-    <h3><label for="title">'.(__("Testing and Debugging Settings", "wordpress-simple-paypal-shopping-cart")).'</label></h3>
+    <h3 class="hndle"><label for="title">'.(__("Testing and Debugging Settings", "wordpress-simple-paypal-shopping-cart")).'</label></h3>
     <div class="inside">
     
     <table class="form-table"> 
@@ -428,7 +428,7 @@ function show_wp_cart_email_settings_page()
     <input type="hidden" name="info_update" id="info_update" value="true" />
     
     <div class="postbox">
-    <h3><label for="title"><?php _e("Purchase Confirmation Email Settings", "wordpress-simple-paypal-shopping-cart");?></label></h3>
+    <h3 class="hndle"><label for="title"><?php _e("Purchase Confirmation Email Settings", "wordpress-simple-paypal-shopping-cart");?></label></h3>
     <div class="inside">
 
     <p><i><?php _e("The following options affect the emails that gets sent to your buyers after a purchase.", "wordpress-simple-paypal-shopping-cart");?></i></p>
@@ -459,6 +459,8 @@ function show_wp_cart_email_settings_page()
     <br /><p class="description"><?php _e("This is the body of the email that will be sent to the buyer. Do not change the text within the braces {}. You can use the following email tags in this email body field:", "wordpress-simple-paypal-shopping-cart");?>
     <br />{first_name} – <?php _e("First name of the buyer", "wordpress-simple-paypal-shopping-cart");?>
     <br />{last_name} – <?php _e("Last name of the buyer", "wordpress-simple-paypal-shopping-cart");?>
+    <br />{payer_email} – <?php _e("Email Address of the buyer", "wordpress-simple-paypal-shopping-cart");?>
+    <br />{address} – <?php _e("Address of the buyer", "wordpress-simple-paypal-shopping-cart");?>     
     <br />{product_details} – <?php _e("The item details of the purchased product (this will include the download link for digital items).", "wordpress-simple-paypal-shopping-cart");?>   
     <br />{transaction_id} – <?php _e("The unique transaction ID of the purchase", "wordpress-simple-paypal-shopping-cart");?> 
     <br />{purchase_amt} – <?php _e("The amount paid for the current transaction", "wordpress-simple-paypal-shopping-cart");?>
@@ -492,6 +494,7 @@ function show_wp_cart_email_settings_page()
     <br />{first_name} – <?php _e("First name of the buyer", "wordpress-simple-paypal-shopping-cart");?>
     <br />{last_name} – <?php _e("Last name of the buyer", "wordpress-simple-paypal-shopping-cart");?>
     <br />{payer_email} – <?php _e("Email Address of the buyer", "wordpress-simple-paypal-shopping-cart");?>
+    <br />{address} – <?php _e("Address of the buyer", "wordpress-simple-paypal-shopping-cart");?>    
     <br />{product_details} – <?php _e("The item details of the purchased product (this will include the download link for digital items).", "wordpress-simple-paypal-shopping-cart");?>  
     <br />{transaction_id} – <?php _e("The unique transaction ID of the purchase", "wordpress-simple-paypal-shopping-cart");?> 
     <br />{purchase_amt} – <?php _e("The amount paid for the current transaction", "wordpress-simple-paypal-shopping-cart");?>

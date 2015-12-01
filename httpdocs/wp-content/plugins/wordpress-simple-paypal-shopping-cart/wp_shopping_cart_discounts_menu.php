@@ -58,7 +58,7 @@ function show_wp_cart_coupon_discount_settings_page()
     <input type="hidden" name="coupon_settings_update" id="coupon_settings_update" value="true" />
 
     <div class="postbox">
-    <h3><label for="title"><?php _e("Coupon/Discount Settings", "wordpress-simple-paypal-shopping-cart");?></label></h3>
+    <h3 class="hndle"><label for="title"><?php _e("Coupon/Discount Settings", "wordpress-simple-paypal-shopping-cart");?></label></h3>
     <div class="inside">
 
     <form method="post" action="">
@@ -91,7 +91,7 @@ function show_wp_cart_coupon_discount_settings_page()
     <input type="hidden" name="info_update" id="info_update" value="true" />
 
     <div class="postbox">
-    <h3><label for="title"><?php _e("Add Coupon/Discount", "wordpress-simple-paypal-shopping-cart");?></label></h3>
+    <h3 class="hndle"><label for="title"><?php _e("Add Coupon/Discount", "wordpress-simple-paypal-shopping-cart");?></label></h3>
     <div class="inside">
 
     <form method="post" action="">

@@ -41,7 +41,7 @@ class paypal_ipn_handler {
         $zip = $this->ipn_data['address_zip'];
         $country = $this->ipn_data['address_country'];
         $phone = $this->ipn_data['contact_phone'];
-        $address = $street_address.", ".$city.", ".$state.", ".$zip.", ".$country;
+        $address = $street_address.", ".$city.", ".$state.", ".$zip.", ".$country;        
         $custom_values = wp_cart_get_custom_var_array($custom_value_str);
         $this->debug_log('Payment Status: '.$payment_status,true);
         if($payment_status == "Completed" || $payment_status == "Processed" ){
@@ -237,7 +237,8 @@ class paypal_ipn_handler {
         $args = array();
         $args['product_details'] = $product_details;
         $args['order_id'] = $post_id;
-        $args['coupon_code'] = $applied_coupon_code;        
+        $args['coupon_code'] = $applied_coupon_code; 
+        $args['address'] = $address;
         update_post_meta($post_id, 'wpspsc_items_ordered', $product_details);
         $from_email = get_option('wpspc_buyer_from_email');
         $subject = get_option('wpspc_buyer_email_subj');

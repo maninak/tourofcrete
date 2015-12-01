@@ -56,7 +56,7 @@ function print_wp_shopping_cart($args = array()) {
     global $plugin_dir_name;
     $output .= '<div class="shopping_cart">';
     if (!get_option('wp_shopping_cart_image_hide')) {
-        $output .= "<img src='" . WP_CART_URL . "/images/shopping_cart_icon.png' class='wspsc_cart_header_image' value='" . (__("Cart", "wordpress-simple-paypal-shopping-cart")) . "' title='" . (__("Cart", "wordpress-simple-paypal-shopping-cart")) . "' />";
+        $output .= "<img src='" . WP_CART_URL . "/images/shopping_cart_icon.png' class='wspsc_cart_header_image' value='" . (__("Cart", "wordpress-simple-paypal-shopping-cart")) . "' alt='" . (__("Cart", "wordpress-simple-paypal-shopping-cart")) . "' />";
     }
     if (!empty($title)) {
         $output .= '<h2>';
@@ -73,7 +73,7 @@ function print_wp_shopping_cart($args = array()) {
     $form = '';
     if ($_SESSION['simpleCart'] && is_array($_SESSION['simpleCart'])) {
         $output .= '
-        <tr>
+        <tr class="wspsc_cart_item_row">
         <th class="wspsc_cart_item_name_th">' . (__("Item Name", "wordpress-simple-paypal-shopping-cart")) . '</th><th class="wspsc_cart_qty_th">' . (__("Quantity", "wordpress-simple-paypal-shopping-cart")) . '</th><th class="wspsc_cart_price_th">' . (__("Price", "wordpress-simple-paypal-shopping-cart")) . '</th><th></th>
         </tr>';
         $item_total_shipping = 0;
@@ -95,10 +95,10 @@ function print_wp_shopping_cart($args = array()) {
 
         foreach ($_SESSION['simpleCart'] as $item) {
             
-            $output .= "<tr><td style='overflow: hidden;'>";
+            $output .= '<tr class="wspsc_cart_item_thumb"><td style="overflow: hidden;">';
             $output .= '<div class="wp_cart_item_info">';
             if(isset($args['show_thumbnail'])){
-                $output .= '<span class="wp_cart_item_thumbnail"><img src="'.$item['thumbnail'].'" class="wp_cart_thumb_image" ></span>';
+                $output .= '<span class="wp_cart_item_thumbnail"><img src="'.$item['thumbnail'].'" class="wp_cart_thumb_image" alt="'.$item['name'].'" ></span>';
             }
             $item_info = apply_filters('wspsc_cart_item_name', '<a href="'.$item['cartLink'].'">'.$item['name'].'</a>', $item);
             $output .= '<span class="wp_cart_item_name">'.$item_info.'</span>';
@@ -138,18 +138,18 @@ function print_wp_shopping_cart($args = array()) {
     if ($count) {
         if ($postage_cost != 0) {
             $output .= "
-                <tr><td colspan='2' style='font-weight: bold; text-align: right;'>" . (__("Subtotal", "wordpress-simple-paypal-shopping-cart")) . ": </td><td style='text-align: center'>" . print_payment_currency($total, $paypal_symbol, $decimal) . "</td><td></td></tr>
-                <tr><td colspan='2' style='font-weight: bold; text-align: right;'>" . (__("Shipping", "wordpress-simple-paypal-shopping-cart")) . ": </td><td style='text-align: center'>" . print_payment_currency($postage_cost, $paypal_symbol, $decimal) . "</td><td></td></tr>";
+                <tr class='wspsc_cart_subtotal'><td colspan='2' style='font-weight: bold; text-align: right;'>" . (__("Subtotal", "wordpress-simple-paypal-shopping-cart")) . ": </td><td style='text-align: center'>" . print_payment_currency($total, $paypal_symbol, $decimal) . "</td><td></td></tr>
+                <tr class='wspsc_cart_shipping'><td colspan='2' style='font-weight: bold; text-align: right;'>" . (__("Shipping", "wordpress-simple-paypal-shopping-cart")) . ": </td><td style='text-align: center'>" . print_payment_currency($postage_cost, $paypal_symbol, $decimal) . "</td><td></td></tr>";
         }
 
-        $output .= "<tr><td colspan='2' style='font-weight: bold; text-align: right;'>" . (__("Total", "wordpress-simple-paypal-shopping-cart")) . ": </td><td style='text-align: center'>" . print_payment_currency(($total + $postage_cost), $paypal_symbol, $decimal) . "</td><td></td></tr>";
+        $output .= "<tr class='wspsc_cart_total'><td colspan='2' style='font-weight: bold; text-align: right;'>" . (__("Total", "wordpress-simple-paypal-shopping-cart")) . ": </td><td style='text-align: center'>" . print_payment_currency(($total + $postage_cost), $paypal_symbol, $decimal) . "</td><td></td></tr>";
 
         if (isset($_SESSION['wpspsc_cart_action_msg']) && !empty($_SESSION['wpspsc_cart_action_msg'])) {
-            $output .= '<tr><td colspan="4"><span class="wpspsc_cart_action_msg">' . $_SESSION['wpspsc_cart_action_msg'] . '</span></td></tr>';
+            $output .= '<tr class="wspsc_cart_action_msg"><td colspan="4"><span class="wpspsc_cart_action_msg">' . $_SESSION['wpspsc_cart_action_msg'] . '</span></td></tr>';
         }
 
         if (get_option('wpspsc_enable_coupon') == '1') {
-            $output .= '<tr><td colspan="4">
+            $output .= '<tr class="wspsc_cart_coupon_row"><td colspan="4">
                 <div class="wpspsc_coupon_section">
                 <span class="wpspsc_coupon_label">' . (__("Enter Coupon Code", "wordpress-simple-paypal-shopping-cart")) . '</span>
                 <form  method="post" action="" >
