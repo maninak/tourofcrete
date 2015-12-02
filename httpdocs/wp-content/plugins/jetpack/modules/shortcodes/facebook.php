@@ -64,12 +64,8 @@ function jetpack_facebook_shortcode_handler( $atts ) {
 	if ( empty( $atts['url'] ) )
 		return;
 
-	if ( ! preg_match( JETPACK_FACEBOOK_EMBED_REGEX, $atts['url'] )
-	&& ! preg_match( JETPACK_FACEBOOK_PHOTO_EMBED_REGEX, $atts['url'] )
-	&& ! preg_match( JETPACK_FACEBOOK_VIDEO_EMBED_REGEX, $atts['url'] )
-	&& ! preg_match( JETPACK_FACEBOOK_VIDEO_ALTERNATE_EMBED_REGEX, $atts['url'] )  ) {
+	if ( ! preg_match( JETPACK_FACEBOOK_EMBED_REGEX, $atts['url'] ) && ! preg_match( JETPACK_FACEBOOK_PHOTO_EMBED_REGEX, $atts['url'] ) )
 		return;
-	}
 
 	return $wp_embed->shortcode( $atts, $atts['url'] );
 }
