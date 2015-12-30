@@ -1,21 +1,21 @@
 #Set caching on image files
 <filesMatch "\.(ico|gif|jpg|JPG|jpeg|png)$">
   ExpiresActive On
-  ExpiresDefault "access plus 3 month"
+  ExpiresDefault "access 3 month"
   Header append Cache-Control "public"
 </filesMatch>
 
 #Set caching on static files
 <filesMatch "\.(js|json|geojson|ttf|ttc|woff|otf|svg)$">
   ExpiresActive On
-  ExpiresDefault "access plus 3 month"
+  ExpiresDefault "access 3 month"
   Header append Cache-Control "public"
 </filesMatch>
 
 #Set caching on css files
 <filesMatch "\.(css)$">
   ExpiresActive On
-  ExpiresDefault "access plus 1 week"
+  ExpiresDefault "access 1 week"
   Header append Cache-Control "public"
 </filesMatch>
 
