@@ -1592,6 +1592,17 @@ Content Area
 				line-height:16px;						/* -K */
 				margin: 2px 0px 2px 24px;				/* -K */
 			}
+					
+		.FullFrame ol li {								/* -K */
+			margin: 8px 0px 8px 24px;					/* -K */
+			line-height: 16px;							/* -K */
+		}												/* -K */
+			
+			.FullFrame ol li ol li {					/* -K */
+				list-style-type: lower-alpha;			/* -K */
+				line-height: 16px;						/* -K */
+				margin: 2px 0px 2px 24px;				/* -K */
+			}											/* -K */
 		
 		.FullFrame ul.rules{
 			margin:0 0 12px 0;
