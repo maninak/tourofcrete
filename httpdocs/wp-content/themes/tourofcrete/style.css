@@ -1566,7 +1566,7 @@ Content Area
 	}
 	
 		.FullFrame ul li{
-			margin: 8px 0px 8px 24px;					/* -K */
+			margin: 2px 0px 2px 24px;					/* -K */
 			font-size:12px;
 			line-height:16px;							/* -K */
 			list-style-type:none;
