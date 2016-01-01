@@ -1693,7 +1693,7 @@ Content Area
 		width:147px;
 		height:auto;
 		overflow:hidden;
-		margin-top:5px;						 			/* -K */
+		margin-top:-2px;						 			/* -K */
 	}
 	
 	.race-left .entry{
