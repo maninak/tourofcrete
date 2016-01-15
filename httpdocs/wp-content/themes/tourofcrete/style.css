@@ -2167,15 +2167,25 @@ Footer Widgets
 		width:100%;
 		height:auto;
 		overflow:hidden;
-		padding:10px 20px;
+		padding:15px;							/* -K */
 		margin:0 auto;
 		text-align:center;
 	}
 		
 	.sponsors .content img{
-		margin: 0px 1px 0px 1px;
+		margin: 0px 1px 0px 1px;				/* -K */
 		display:inline-block;
+		-webkit-transition: all 0.1s ease-out;	/* -K */
+		-moz-transition:    all 0.1s ease-out;	/* -K */
+		-ms-transition:     all 0.1s ease-out;	/* -K */
+		-o-transition:      all 0.1s ease-out;	/* -K */
+		transition:         all 0.1s ease-out;	/* -K */
+		-webkit-box-shadow: 0px 0px 0px 0px #000;/* -K */
+		box-shadow: 0px 0px 0px 0px #000;		/* -K */
 	}
+	.sponsors img:hover {						/* -K */
+    box-shadow: 0px 0px 10px 1px #00BAFF;		/* -K */
+}
 	
 .footer-widgets {
 	background-color: #333;
