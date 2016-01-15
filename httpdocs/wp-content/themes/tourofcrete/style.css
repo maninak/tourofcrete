@@ -2144,7 +2144,6 @@ Footer Widgets
 .sponsors{
 	clear: both;
 	height: auto;
-	max-height: 220px;
 	overflow: hidden;
 	width: 100%;
 	min-width: 1024px;
@@ -2174,10 +2173,9 @@ Footer Widgets
 	}
 		
 	.sponsors .content img{
-		
-		margin-right:20px;
+		margin: 0px 5px 5px;
 		display:inline-block;
-		border:1px solid #ccc;
+		border:1px solid #333;
 	}
 	
 .footer-widgets {

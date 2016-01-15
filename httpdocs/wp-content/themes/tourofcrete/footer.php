@@ -37,6 +37,12 @@ echo '</div>'; //* end .site-container or #wrap
             <a href="#" alt="Cyclomania">
                <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/cyclomania.jpg" title="Cyclomania" border="0" />
             </a>
+            <a href="http://www.minoan.gr/en/crete" alt="Minoan Lines">
+               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/minoan.jpg" title="Minoan Lines" border="0" />
+            </a>
+            <a href="http://www.mbike.gr/" alt="MBike">
+               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/mbike.jpg" title="MBike" border="0" />
+            </a>
         </div>
     </div>
 <?php
