@@ -2153,13 +2153,13 @@ Footer Widgets
 	.sponsors .title{
 		background: url(images/sponsors-frame.png) no-repeat center top;
 		width:956px;
-		height:101px;
+		height:70px;							/* -K */
 		margin:0 auto;
 	}
 	
 	.sponsors h2{
 		text-align:center;
-		padding:32px 0 0 0;
+		padding:25px 0 0 0;						/* -K */
 	}
 	
 	.sponsors .content{
@@ -2174,6 +2174,7 @@ Footer Widgets
 		
 	.sponsors .content img{
 		margin: 0px 1px 0px 1px;				/* -K */
+		height: 70px;							/* -K */
 		display:inline-block;
 		-webkit-transition: all 0.1s ease-out;	/* -K */
 		-moz-transition:    all 0.1s ease-out;	/* -K */
