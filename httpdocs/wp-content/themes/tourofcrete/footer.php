@@ -28,8 +28,8 @@ echo '</div>'; //* end .site-container or #wrap
         	<h2><?php _e('SPONSORED BY','tourofcrete');?></h2>
         </div>
     	<div class="content" align="center">
-            <a href="http://www.cretansportscycling.gr/" target="_blank" alt="Adventure Guided Tours">
-               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/a-g-t.jpg" title="Adventure Guided Tours" border="0" />
+            <a href="http://www.cretansportscycling.gr/" target="_blank" alt="Cretan Sports Cycling">
+               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/csc.jpg" title="Adventure Guided Tours" border="0" />
             </a>
             <a href="http://fotomaris.gr/" target="_blank" alt="Foto Maris">
                <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/fotomaris.jpg" title="Foto Maris" border="0" />
