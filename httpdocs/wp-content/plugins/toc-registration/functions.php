@@ -256,7 +256,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear ".$surname." ".$name." </p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any outlying details.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -340,20 +340,20 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";		
 				if ($selectPackage == "soloPackage"){ 
-					$email_message .= "Solo package - Hotel room based on single occupancy. Price: ".number_format($soloPackageValue)." &euro; \n"; 
+					$email_message .= "Solo all-inclusive package - Hotel room based on single occupancy. Price: ".number_format($soloPackageValue)." &euro; \n"; 
 					$formCost += $soloPackageValue;
 				}
 				if ($selectPackage == "TwinPackage"){ 
 					if ($PackageOption == "TwinPackageA1"){
-						$email_message .= "Twin Package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Double all-inclusive registration package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					else{
-						$email_message .= "Twin Package - Option A2: Double room, shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Double all-inclusive registration package - Option A2: Double room, shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					$formCost += $TwinPackageValue;
 				}				
 				if ($selectPackage == "EntryOnly"){ 
-					$email_message .= "Registration-only. Price: ".$EntryOnlyValue." &euro; \n"; 
+					$email_message .= "Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers). Price: ".$EntryOnlyValue." &euro; \n"; 
 					$formCost += $EntryOnlyValue;
 				}		
 				$email_message .= "<tr><td><br/>";	
@@ -371,11 +371,10 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "<em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
-				$email_message .= "<p>In order to complete this transaction user read and accepted the terms and conditions.</p>";	
-				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible. <br/>You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
-				$email_message .= "<p><a href='http://tourofcrete.com/wp-content/uploads/pdf/MEDICAL_FORM_toc.pdf' target='_blank'>Click here</a> to download the medical form.</p>";	
-				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
-				$email_message .= "<p><strong>The Tour of Crete Team</strong><br/>Website: <a href='http://tourofcrete.com/' target='_blank'>http://www.tourofcrete.com</a></p>";	
+				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
+				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
+				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";
+				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:80px;height:80px;padding-right:20px; float:left;'><strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'>Visit our <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p><br/>";	
 				
 				foreach ($_POST as $key => $value){
 					echo "<input type=\"hidden\" name=\"".htmlspecialchars($key).
@@ -436,7 +435,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <input type="radio" name="Package" id="TwinPackage" value="TwinPackage" <?php if (isset($selectPackage) && $selectPackage=="TwinPackage") echo "checked";?> />
                          <label for="TwinPackage">Double Package</label>
                         <div id="TwinPackageDiv" class="infoDiv" style="display:none;"> 
-                        	<p><strong>Double all-inclusive registration package (price / per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
+                        	<p><strong>Double all-inclusive registration package (price per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
                                 <input type="radio" name="PackageOption" id="TwinPackageA1" value="TwinPackageA1" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA1") echo "checked";?> />
                                 <label for="TwinPackageA1">Option A1: Double room or twin room (one double bed or two single beds) shared with another rider.</label>
                                 <input type="radio" name="PackageOption" id="TwinPackageA2" value="TwinPackageA2" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA2") echo "checked";?> />
@@ -450,7 +449,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                         <input type="radio" name="Package" id="EntryOnly" value="EntryOnly" <?php if (isset($selectPackage) && $selectPackage=="EntryOnly") echo "checked";?>/>
                         <label for="EntryOnly">Entry-only Package</label>
                          <div id="EntryOnlyDiv" class="infoDiv" style="display:none;">    
-                             <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
+                             <p><strong>Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
                                     If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the all-inclusive package.</p>
                           </div>
                   </div>            
@@ -752,9 +751,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <label for="raceCategory">Category <span class="required">*</span></label>
                     <select id="raceCategory" name="raceCategory">
                       <option value="-">Select...</option>
-                      <option value="From 18 untill 36 years old">From 18 untill 36 years old</option>
-                      <option value="From 36 untill 55 years old">From 36 untill 55 years old</option>
-                      <option value="From 55 untill + years old">From 55 untill + years old</option>
+                      <option value="From 18 until 35 years old">From 18 until 35 years old</option>
+                      <option value="From 36 until 55 years old">From 36 until 55 years old</option>
+                      <option value="From 56 years old and above">From 56 years old and above</option>
                     </select>
                   </div>
                   <div class="FiveCols">
@@ -845,12 +844,12 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              </div>
              <div class="row"> 	
              	<div class="OneCol">					 
-                     <p><strong>Safe Online Payments</strong><br/>
+                     <p><br/><strong>Safe Online Payments</strong><br/>
                          Your safety is our priority. We chose to use the best online payment solutions. You can now safely pay online for your bookings because:
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>Pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>Yoy can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -860,7 +859,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              <div class="row"> 
              	<div class="OneCol">
                     <input type="checkbox" name="terms" id="terms" <?php if(isset($_POST['terms'])) echo "checked='checked'"; ?> />
-                    <label for="terms">Please accept <a href="/terms-conditions/" target="_blank">Terms and Conditions</a></label>
+                    <label for="terms">I have read and accept the <a href="/terms-conditions/" target="_blank">Terms and Conditions</a></label>
                 </div> 
 			 </div>
 
@@ -1235,7 +1234,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear ".$teamleader." </p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any outlying details.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
@@ -1475,25 +1474,25 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					$email_message .= "<td>";	
 					
 					if ($selectPackageArr[$i-1] == "soloPackage"){ 
-						$email_message .= "Solo package: ".number_format($soloPackageValue)." &euro;";
+						$email_message .= "Solo all-inclusive package: ".number_format($soloPackageValue)." &euro;";
 						$formCost += $soloPackageValue;
 					} 
 					
 					else if ($selectPackageArr[$i-1] == "TwinPackage"){
 						
 						if ($PackageOptionArr[$i-1] == "TwinPackageA1"){
-							$email_message .= "Twin package A1: ".number_format($TwinPackageValue)." &euro;";
+							$email_message .= "Double all-inclusive registration package - A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro;";
 							$formCost += $TwinPackageValue;
 						}
 						else if ($PackageOptionArr[$i-1] == "TwinPackageA2"){
-							$email_message .= "Twin package A2: ".number_format($TwinPackageValue)." &euro;";
+							$email_message .= "Double all-inclusive registration package - Option A2: Double room, shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro;";
 							$formCost += $TwinPackageValue;
 						}
 						
 					} 
 					
 					else{
-						$email_message .= "Entry Only: ".number_format($EntryOnlyValue)." &euro;";
+						$email_message .= "Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers): ".number_format($EntryOnlyValue)." &euro;";
 						$formCost += $EntryOnlyValue;
 					}
 					
@@ -1521,11 +1520,10 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
-				$email_message .= "<p>In order to complete this transaction user read and accepted the terms and conditions.</p>";	
-				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible. <br/>You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
-				$email_message .= "<p><a href='http://tourofcrete.com/wp-content/uploads/pdf/MEDICAL_FORM_toc.pdf' target='_blank'>Click here</a> to download the medical form.</p>";	
+				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
+				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
-				$email_message .= "<p><strong>The Tour of Crete Team</strong><br/>Website: <a href='http://tourofcrete.com/' target='_blank'>http://www.tourofcrete.com</a></p>";
+				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:80px;height:80px;padding-right:20px; float:left;'><strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'>Visit our <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p><br/>";
 				
 				
 				foreach ($_POST as $key => $value){
@@ -1574,11 +1572,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
             <p>Please Select Package. If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
             <div class="row" style="margin:24px 0 0;">
                 <p><strong>Solo all-inclusive registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
-                <p><strong>Double all-inclusive registration package (price / per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
+                <p><strong>Double all-inclusive registration package (price per person): 890 &euro; </strong>(until 31/1/2016 - 1050 &euro; until 30/4 - 1190 &euro; until 6/5)<br/>
                     Option A1: Double room or twin room (one double bed or two single beds) shared with another rider.<br/>
                     Option A2: Double room shared with another non-cyclist participant.
                 </p>   
-                <p><strong>Registration-only package (i.e. no accommodation or airport/hotel/luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
+                <p><strong>Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
                                     If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the all-inclusive package.</p>
               </div>
               
@@ -2038,7 +2036,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                           <option value="-">Select...</option>
                           <option value="From 18 until 35 years old">From 18 until 35 years old</option>
                           <option value="From 36 until 55 years old">From 36 until 55 years old</option>
-                          <option value="From 56 until + years old">From 56 until + years old</option>
+                          <option value="From 56 years old and above">From 56 years old and above</option>
                         </select>
                     </div>
                 <?php	
@@ -2190,12 +2188,12 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              </div>
              <div class="row"> 	
              	<div class="OneCol">					 
-                     <p><strong>Safe Online Payments</strong><br/>
+                     <p><br/><strong>Safe Online Payments</strong><br/>
                          Your safety is our priority. We chose to use the best online payment solutions. You can now safely pay online for your bookings because:
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>Pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>Yoy can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -2205,7 +2203,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              <div class="row"> 
              	<div class="OneCol">
                     <input type="checkbox" name="terms" id="terms" <?php if(isset($_POST['terms'])) echo "checked='checked'"; ?> />
-                    <label for="terms">Please accept <a href="/terms-conditions/" target="_blank">Terms and Conditions</a></label>
+                    <label for="terms">I have read and accept the <a href="/terms-conditions/" target="_blank">Terms and Conditions</a></label>
                 </div> 
 			 </div>
 
@@ -2436,7 +2434,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		}else{
 			
 			$email_message = "<p>Dear ".$fullname."</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has completed succesfully! Your transaction number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you as soon as possible to arrange any outlying details.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -2495,15 +2493,15 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";		
 				if ($selectPackage == "soloPackage"){ 
-					$email_message .= "Solo package - Hotel room based on single occupancy. Price: ".number_format($soloPackageValue)." &euro; \n"; 
+					$email_message .= "Solo all-inclusive package - Hotel room based on single occupancy. Price: ".number_format($soloPackageValue)." &euro; \n"; 
 					$formCost += $soloPackageValue;
 				}
 				if ($selectPackage == "TwinPackage"){ 
 					if ($PackageOption == "TwinPackageB1"){
-						$email_message .= "Twin Package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Double all-inclusive registration package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					else{
-						$email_message .= "Twin Package - Option A2: Double room shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Double all-inclusive registration package - Option A2: Double room shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					$formCost += $TwinPackageValue;
 				}				
@@ -2522,11 +2520,10 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
-				$email_message .= "<p>In order to complete this transaction user read and accepted the terms and conditions.</p>";	
-				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible. <br/>You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
-				$email_message .= "<p><a href='http://tourofcrete.com/wp-content/uploads/pdf/MEDICAL_FORM_toc.pdf' target='_blank'>Click here</a> to download the medical form.</p>";	
+				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
+				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
-				$email_message .= "<p><strong>The Tour of Crete Team</strong><br/>Website: <a href='http://tourofcrete.com/' target='_blank'>http://www.tourofcrete.com</a></p>";
+				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:80px;height:80px;padding-right:20px; float:left;'><strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'>Visit our <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p><br/>";
 				
 								
 				foreach ($_POST as $key => $value){
@@ -2581,7 +2578,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <input type="radio" name="Package" id="TwinPackage" value="TwinPackage" <?php if (isset($selectPackage) && $selectPackage=="TwinPackage") echo "checked";?> />
                          <label for="TwinPackage">Double Package</label>
                         <div id="TwinPackageDiv" class="infoDiv" style="display:none;"> 
-                        	<p><strong>Double all-inclusive package (price / per person): 740 &euro; </strong>(until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)<br/>
+                        	<p><strong>Double all-inclusive package (price per person): 740 &euro; </strong>(until 31/1/2016 - 890 &euro; until 30/4 - 990 &euro; until 6/5)<br/>
                                 <input type="radio" name="PackageOption" id="TwinPackageB1" value="TwinPackageB1" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageB1") echo "checked";?> />
                                 <label for="TwinPackageB1">Option A1: Double room or twin room (one double bed or two single beds) shared with another rider.</label>
                                 <input type="radio" name="PackageOption" id="TwinPackageA2" value="TwinPackageA2" <?php if (isset($PackageOption) && $PackageOption=="TwinPackageA2") echo "checked";?> />
@@ -2943,12 +2940,12 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              </div>
              <div class="row"> 	
              	<div class="OneCol">					 
-                     <p><strong>Safe Online Payments</strong><br/>
+                     <p><br/><strong>Safe Online Payments</strong><br/>
                          Your safety is our priority. We chose to use the best online payment solutions. You can now safely pay online for your bookings because:
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>Pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>Yoy can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -2958,7 +2955,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              <div class="row"> 
              	<div class="OneCol">
                     <input type="checkbox" name="terms" id="terms" <?php if(isset($_POST['terms'])) echo "checked='checked'"; ?> />
-                    <label for="terms">Please accept <a href="/terms-conditions/" target="_blank">Terms and Conditions</a></label>
+                    <label for="terms">I have read and accept the <a href="/terms-conditions/" target="_blank">Terms and Conditions</a></label>
                 </div> 
 			 </div>
 				   <div class="row">
