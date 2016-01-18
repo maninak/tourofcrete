@@ -416,7 +416,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                 <li>Strong legs</li>
              </ul>
 			
-              <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
+              <h2>Registration Options <font>(You must select one package from below)</font></h2>
 			   <p>If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
                <div>
                 <p>Please Select Package:</p>
@@ -1568,7 +1568,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              </ul>
 			
             
-            <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
+            <h2>Registration Options <font>(You must select one package from below)</font></h2>
             <p>Please Select Package. If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
             <div class="row" style="margin:24px 0 0;">
                 <p><strong>Solo all-inclusive registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
@@ -1577,7 +1577,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     Option A2: Double room shared with another non-cyclist participant.
                 </p>   
                 <p><strong>Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
-                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the all-inclusive package.</p>
+                                    If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the all-inclusive package.</p><br/>
               </div>
               
               <div class="row">
@@ -2557,7 +2557,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                 <li>Flights</li>
              </ul>
 			
-              <h2>Registration Options <font>(You must select one package from below, you will then be able to choose your payment option)</font></h2>
+              <h2>Registration Options <font>(You must select one package from below)</font></h2>
 			   <p>If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
                <div>
                 <p>Please Select Package:</p>
