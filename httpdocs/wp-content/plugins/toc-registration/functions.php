@@ -105,10 +105,10 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
     <form class="form" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
 	<?php 
 	date_default_timezone_set('Europe/Athens');
-	$date = date('d/m/Y h:i:s a', time());
-	$random_number = rand(0, 100);
-	$transNum = "TOCI-" . date('dmy') ."-".$random_number;
-	
+	$date = date('d/m/Y H:i:s a', time());
+	$random_number = rand(0, 1000);
+	$transNum = "TOCI-" . date('ymd-His') ."-".$random_number;
+		
 	if(isset($_POST['submit'])){
 		
 		$formCost = "";
@@ -146,6 +146,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$PackageOption = $_POST['PackageOption'];	
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
+		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
+		$signature = "<p><br/><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:70px;height:70px; padding-right:10px;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br/>"
 		
 		$DietaryReq = $_POST['DietaryReq'];		
 		
@@ -255,7 +257,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			</script>
 			<?php
 		}else{
-				$email_message = "<p>Dear ".$surname." ".$name." </p>";	
+				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$surname." ".$name."</strong></font>,</p>";	
 				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
@@ -363,18 +365,18 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>Νational Bank of Greece <br/>IBAN: GR80 0110 2050 0000 2053 8216 845 <br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
-				$email_message .= "Transaction Number: ".$transNum."<br/>";
+				$email_message .= "Transaction Number: <strong>".$transNum."</strong><br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
-				$email_message .= "<em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
+				$email_message .= "<br/><em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
 				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";
-				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:80px;height:80px;padding-right:20px; float:left;'><strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'>Visit our <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p><br/>";	
+				$email_message .= $signature;	
 				
 				foreach ($_POST as $key => $value){
 					echo "<input type=\"hidden\" name=\"".htmlspecialchars($key).
@@ -979,9 +981,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
     <form class="form" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
 	<?php 
 	date_default_timezone_set('Europe/Athens');
-	$date = date('d/m/Y h:i:s a', time());
-	$random_number = rand(0, 100);
-	$transNum = "TOCT-" . date('dmy') ."-".$random_number;
+	$date = date('d/m/Y H:i:s a', time());
+	$random_number = rand(0, 1000);
+	$transNum = "TOCI-" . date('ymd-His') ."-".$random_number;
 	
 	if(isset($_POST['submit'])){
 		
@@ -1029,6 +1031,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$EntryOnlyValue = 150;			
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
+		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
+		$signature = "<p><br/><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:70px;height:70px; padding-right:10px;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br/>"
 		
 		$DietaryReq = $_POST['DietaryReq'];		
 		
@@ -1233,7 +1237,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			</script>
 			<?php
 		}else{
-				$email_message = "<p>Dear ".$teamleader." </p>";	
+				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$teamleader."</strong></font>,</p>";	
 				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
@@ -1513,17 +1517,18 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>Eurobank <br/>Account No: GR 2801 1075 5000 0075 5701 37879 <br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
-				$email_message .= "Transaction Number: ".$transNum."<br/>";
+				$email_message .= "Transaction Number: <strong>".$transNum."</strong><br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
+				$email_message .= "<br/><em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
 				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
-				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:80px;height:80px;padding-right:20px; float:left;'><strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'>Visit our <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p><br/>";
+				$email_message .= $signature;
 				
 				
 				foreach ($_POST as $key => $value){
@@ -2316,9 +2321,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
     <form class="form" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
 	<?php 
 	date_default_timezone_set('Europe/Athens');
-	$date = date('d/m/Y h:i:s a', time());
-	$random_number = rand(0, 100);
-	$transNum = "TOCN-" . date('dmy') ."-".$random_number;
+	$date = date('d/m/Y H:i:s a', time());
+	$random_number = rand(0, 1000);
+	$transNum = "TOCI-" . date('ymd-His') ."-".$random_number;
 	
 	if(isset($_POST['submit'])){
 		
@@ -2350,6 +2355,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$PackageOption = $_POST['PackageOption'];	
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
+		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
+		$signature = "<p><br/><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:70px;height:70px; padding-right:10px;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br/>"
 		
 		$DietaryReq = $_POST['DietaryReq'];		
 		
@@ -2433,7 +2440,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 			
-			$email_message = "<p>Dear ".$fullname."</p>";	
+			$email_message = "<p>Dear <font color=\"#f60\"><strong>".$fullname."</strong></font>,</p>";	
 				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
@@ -2513,17 +2520,18 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>Eurobank <br/>Account No: GR 2801 1075 5000 0075 5701 37879 <br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
-				$email_message .= "Transaction Number: ".$transNum."<br/>";
+				$email_message .= "Transaction Number: <strong>".$transNum."</strong><br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
+				$email_message .= "<br/><em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
 				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
-				$email_message .= "<p><br/><img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:80px;height:80px;padding-right:20px; float:left;'><strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/><font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'>Visit our <a href='http://tourofcrete.com/' target='_blank'>Official website</a><br/>Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a></font></p><br/>";
+				$email_message .= $signature;
 				
 								
 				foreach ($_POST as $key => $value){
