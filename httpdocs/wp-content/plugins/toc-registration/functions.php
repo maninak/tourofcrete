@@ -363,11 +363,12 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>Eurobank <br/>Account No: GR 2801 1075 5000 0075 5701 37879 <br/>";
+					$email_message .= "Bank Deposit <br/>Νational Bank of Greece <br/>IBAN: GR80 0110 2050 0000 2053 8216 845 <br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Transaction Number: ".$transNum."<br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
+				$email_message .= "<em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction user read and accepted the terms and conditions.</p>";	
