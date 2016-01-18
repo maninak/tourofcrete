@@ -34,7 +34,7 @@ echo '</div>'; //* end .site-container or #wrap
             <a href="http://fotomaris.gr/" target="_blank" alt="Foto Maris">
                <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/fotomaris.jpg" title="Foto Maris" border="0" />
             </a>
-            <a href="#" alt="Cyclomania" target="_blank" alt="Cyclomania">
+            <a href="https://www.facebook.com/Delta-Carbon-Works-785460848159497" target="_blank" alt="Cyclomania" target="_blank" alt="Cyclomania">
                <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/cyclomania.jpg" title="Cyclomania" border="0" />
             </a>
             <a href="http://www.minoan.gr/en/crete" target="_blank" alt="Minoan Lines">
