@@ -841,7 +841,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input type="radio" name="paymentmethod" id="paypal" value="paypal" <?php if (isset($PaymentMethod) && $PaymentMethod=="paypal") echo "checked";?> />
                     <label for="paypal">I am going to pay using Paypal</label>
 					<input type="radio" name="paymentmethod" id="deposit" value="deposit" <?php if (isset($PaymentMethod) && $PaymentMethod=="deposit") echo "checked";?> />
-                	<label for="deposit">I am going to pay using Bank deposit</label>
+                	<label for="deposit">I am going to pay using Bank Deposit</label>
 				</div>
              </div>
              <div class="row"> 	
@@ -851,7 +851,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>Yoy can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>You can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -2188,7 +2188,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input type="radio" name="paymentmethod" id="paypal" value="paypal" <?php if (isset($PaymentMethod) && $PaymentMethod=="paypal") echo "checked";?> />
                     <label for="paypal">I am going to pay using Paypal</label>
 					<input type="radio" name="paymentmethod" id="deposit" value="deposit" <?php if (isset($PaymentMethod) && $PaymentMethod=="deposit") echo "checked";?> />
-                	<label for="deposit">I am going to pay using Bank deposit</label>
+                	<label for="deposit">I am going to pay using Bank Deposit</label>
 				</div>
              </div>
              <div class="row"> 	
@@ -2198,7 +2198,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>Yoy can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>You can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -2943,7 +2943,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <input type="radio" name="paymentmethod" id="paypal" value="paypal" <?php if (isset($PaymentMethod) && $PaymentMethod=="paypal") echo "checked";?> />
                     <label for="paypal">I am going to pay using Paypal</label>
 					<input type="radio" name="paymentmethod" id="deposit" value="deposit" <?php if (isset($PaymentMethod) && $PaymentMethod=="deposit") echo "checked";?> />
-                	<label for="deposit">I am going to pay using Bank deposit</label>
+                	<label for="deposit">I am going to pay using Bank Deposit</label>
 				</div>
              </div>
              <div class="row"> 	
@@ -2953,7 +2953,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>Yoy can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>You can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
