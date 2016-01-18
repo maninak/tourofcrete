@@ -64,7 +64,7 @@ class MyCaptcha {
    */     
   protected function getText() {
 	$f = '<label>%s<input type="text" name="%s" value="" autocomplete="off" /></label>';
-	return sprintf( $f, __('Type the captcha:<br>', 'your-textdomain'),  md5(__CLASS__) );
+	return sprintf( $f, __('<br/>Please type in the field below the characters you see in the image above:', 'your-textdomain'),  md5(__CLASS__) );
   }
 
   /**
