@@ -107,7 +107,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
 	$random_number = rand(0, 1000);
-	$transNum = "TOCI-" . date('ymd-His') ."-".$random_number;
+	$regCode = "TOCI-" . date('ymd-His') ."-".$random_number;
 		
 	if(isset($_POST['submit'])){
 		
@@ -258,7 +258,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$surname." ".$name."</strong></font>,</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -368,9 +368,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
-				$email_message .= "Transaction Number: <strong>".$transNum."</strong><br/>";
+				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
-				$email_message .= "<br/><em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
+				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
@@ -383,7 +383,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					 "\" value=\"".htmlspecialchars($value)."\"/>\n";
 				}
 				
-				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $transNum);
+				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $regCode);
 			
 			}
 		
@@ -983,7 +983,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
 	$random_number = rand(0, 1000);
-	$transNum = "TOCI-" . date('ymd-His') ."-".$random_number;
+	$regCode = "TOCI-" . date('ymd-His') ."-".$random_number;
 	
 	if(isset($_POST['submit'])){
 		
@@ -1238,7 +1238,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$teamleader."</strong></font>,</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
@@ -1520,9 +1520,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
-				$email_message .= "Transaction Number: <strong>".$transNum."</strong><br/>";
+				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
-				$email_message .= "<br/><em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
+				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
@@ -1537,7 +1537,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				}
 				
 				
-				sendmail($email_message, $incomingcategory['category'], $leaderemail, $PaymentMethod, $formCost, $transNum);
+				sendmail($email_message, $incomingcategory['category'], $leaderemail, $PaymentMethod, $formCost, $regCode);
 			
 			}
 		
@@ -2323,7 +2323,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
 	$random_number = rand(0, 1000);
-	$transNum = "TOCI-" . date('ymd-His') ."-".$random_number;
+	$regCode = "TOCI-" . date('ymd-His') ."-".$random_number;
 	
 	if(isset($_POST['submit'])){
 		
@@ -2441,7 +2441,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		}else{
 			
 			$email_message = "<p>Dear <font color=\"#f60\"><strong>".$fullname."</strong></font>,</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Transaction Number is: <strong>".$transNum."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -2523,9 +2523,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
-				$email_message .= "Transaction Number: <strong>".$transNum."</strong><br/>";
+				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
 				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
-				$email_message .= "<br/><em>Make sure you attach your Full Name and Transaction Number when submitting your payment.</em><br/>";
+				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
@@ -2539,7 +2539,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					 "\" value=\"".htmlspecialchars($value)."\"/>\n";
 				}
 				
-				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $transNum);
+				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $regCode);
 			
 			}
 		
@@ -3010,7 +3010,7 @@ function redirect($url){
     echo $string;
 }
 
-function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost, $transNum){
+function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost, $regCode){
 
 	$subject = 'Tour of Crete: Registration for '.$formType;
 	$body = $email_message;
@@ -3027,7 +3027,7 @@ mail($to, $subject, $body, $headers);
 	
 	session_start();
 	$_SESSION['formCost'] = $formCost;
-	$_SESSION['transNum'] = $transNum;
+	$_SESSION['transNum'] = $regCode;
 
 	if ($PaymentMethod == "paypal"){
 		redirect('http://tourofcrete.com/registration/payment-method-paypal-gateway/');
