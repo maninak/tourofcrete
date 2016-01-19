@@ -67,9 +67,8 @@ if(isset($_SESSION['formCost'])&&isset($_SESSION['transNum'])){
     //echo $_SESSION['formCost']; // display the form cost
 	$transNum=$_SESSION['transNum'];
 	$totalcost=$_SESSION['formCost'];
-	echo "The booking is completed! Your transaction number is: $transNum";
-	echo "<br>";
-	echo "Please add this number in the paypal field 'Note fot the seller'";
+	echo "The booking is completed! Your Registration Code is: ".$transNum."</strong><br/>";
+	echo "<em>Please add this number in the paypal field 'Note for the seller'.</em><br/>";
 	
     unset($_SESSION['formCost']); // clear the value so that it doesn't display again
 } 
@@ -83,8 +82,8 @@ updateItemPP($buttonid,$totalcost,"Total Cost");
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="HY7D8WP27PJQE">
-<input class="button" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input class="button" type="image" src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/paypal_paynow.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/paypal_paynow.jpg" width="1" height="1">
 </form>
 
 
