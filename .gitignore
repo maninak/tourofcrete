@@ -21,5 +21,6 @@ credentials
 # Additional caches etc to ignore
 httpdocs/wp-content/plugins/bwp-minify/cache/*
 httpdocs/wp-content/uploads/gpx/~cache/*
+httpdocs/wp-content/cache/*
 **/*~
 **/*.orig
