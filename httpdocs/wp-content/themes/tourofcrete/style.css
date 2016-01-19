@@ -1528,7 +1528,7 @@ Content Area
 /* Inner Pages
 --------------------------------------------- */
 .FullFrame{
-	background:#000;
+	background: rgba(0, 0, 0, 0.9) none repeat scroll 0% 0%;	/* -K */
 	width:902px;
 	height:auto; 
 	overflow:hidden;
@@ -2163,7 +2163,7 @@ Footer Widgets
 	}
 	
 	.sponsors .content{
-		background:#000;
+		background: rgba(0, 0, 0, 0.9) none repeat scroll 0% 0%;	/* -K */
 		width:100%;
 		height:auto;
 		overflow:hidden;
