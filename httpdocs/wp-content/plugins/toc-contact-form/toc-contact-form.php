@@ -21,7 +21,7 @@ register_activation_hook(__FILE__,'toc_contact_form_plugin_install');
 
 //SCRIPTS
 function toc_contact_form_plugin_scripts(){
-    wp_register_script('toc_contact_form_script',plugin_dir_url( __FILE__ ).'js/toc-scripts.js');
+    //wp_register_script('toc_contact_form_script',plugin_dir_url( __FILE__ ).'js/toc-scripts.js'); // File is empty -K
     wp_enqueue_script('toc_contact_form_script#asyncload');
 
 	wp_enqueue_style( 'toc_contact_form_style', plugin_dir_url( __FILE__ ).'css/style.css');

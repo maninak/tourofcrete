@@ -21,7 +21,7 @@ register_activation_hook(__FILE__,'toc_registration_plugin_install');
 
 //SCRIPTS
 function toc_registration_plugin_scripts(){
-    wp_register_script('toc_registration_script',plugin_dir_url( __FILE__ ).'js/toc-scripts.js');
+    //wp_register_script('toc_registration_script',plugin_dir_url( __FILE__ ).'js/toc-scripts.js'); // File is empty -K
     wp_enqueue_script('toc_registration_script#asyncload');
 
 	wp_enqueue_style( 'toc_registration_style', plugin_dir_url( __FILE__ ).'css/style.css');
