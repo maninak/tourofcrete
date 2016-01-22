@@ -449,7 +449,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				<div class="row">
                 	<div class="OneCol">
                         <input type="radio" name="Package" id="EntryOnly" value="EntryOnly" <?php if (isset($selectPackage) && $selectPackage=="EntryOnly") echo "checked";?>/>
-                        <label for="EntryOnly">Entry-only Package</label>
+                        <label for="EntryOnly">Registration-only Package</label>
                          <div id="EntryOnlyDiv" class="infoDiv" style="display:none;">    
                              <p><strong>Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers): 150 &euro; </strong>(until 30/4 - 180 &euro; until 6/5)<br/>
                                     If you wish to organize your own accommodation and meals, this package will suit you best. You will be responsible for arranging your (air)port transportation, accommodation, breakfast and evening meals. The package does include the finale celebration dinner on Friday evening and everything else as described in the package.</p>
@@ -1573,7 +1573,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              </ul>
 			
             
-            <h2>Registration Options <font>(You must select one package from below)</font></h2>
+            <h2>Registration Options <font>(Select a package from below for more info)</font></h2>
             <p>Please Select Package. If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
             <div class="row" style="margin:24px 0 0;">
                 <p><strong>Solo Room registration package: 1070 &euro; </strong>(until 31/1/2016 - 1260 &euro; until 30/4 - 1430 &euro; until 6/5)<br/>Hotel room based on single occupancy.</p>
