@@ -418,7 +418,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                 <li>Strong legs</li>
              </ul>
 			
-              <h2>Registration Options <font>(You must select one package from below)</font></h2>
+              <h2>Registration Options <font>(Select a package from below for more info)</font></h2>
 			   <p>If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
                <div>
                 <p>Please Select Package:</p>
@@ -2565,7 +2565,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                 <li>Flights</li>
              </ul>
 			
-              <h2>Registration Options <font>(You must select one package from below)</font></h2>
+              <h2>Registration Options <font>(Select a package from below for more info)</font></h2>
 			   <p>If your desired package is not available to select below then this has Sold Out. Please contact <a href="mailto:info@tourofcrete.com">info@tourofcrete.com</a>  to be added to the waiting list for this package.</p>
                <div>
                 <p>Please Select Package:</p>
