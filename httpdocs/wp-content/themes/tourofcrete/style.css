@@ -222,8 +222,9 @@ a img {
 
 /* Custom class for //registration page -K */
 .imgpricelist {
-	max-width: 70%;
-	position: relative;
+	max-width: 66%;										/* -K */
+	position: relative;									/* -K */
+	border: 3px solid #292929;							/* -K */
 }
 
 p {
