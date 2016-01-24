@@ -98,8 +98,22 @@ function getStageInfo($type, $parentID){
 				echo "</ul>";
 			echo "</div>";
 			?>
-			<iframe src="http://www.gpsies.com/viewTracksOnly.do?fileId=tjwiwgjzwpywqlyo&fileId=qwdzmtphurjwqytf&fileId=kcjgvgvsloupzyak&fileId=vwfoszhdewmpmdat&fileId=qxgobumqpertnrkb&fileId=oappxhaziflhgqgs#10_35.3123855_25.1392413_esri" width="841" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-			<div><br/></div>
+			<div id='map'></div>
+			<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+			<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+			<!-- For fullscreen mode button -K -->
+			<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/Leaflet.fullscreen.min.js'></script>
+			<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/leaflet.fullscreen.css' rel='stylesheet' />
+			<script>
+				L.mapbox.accessToken = 'pk.eyJ1IjoibWFuaW5hcyIsImEiOiJjaWpzYmRvZW4wMGFodmxtN3M3bHV6cXhrIn0.Xf1uqAaJ4QSFgmM_UinFkg';
+				var map = L.mapbox.map('map', 'mapbox.streets')
+						.setView([35.2275941, 24.7696794], 8);
+				var featureLayer = L.mapbox.featureLayer()
+						.loadURL('https://gist.githubusercontent.com/anonymous/dbcb9fbc1adf5958471e/raw/f326fc0fa63acade63146c74bfdbb8021afa5bdc/map.geojson')
+						.addTo(map);  
+			 	L.control.fullscreen().addTo(map);
+			</script>
+			<br>
 			<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/stages.jpg" /> <?php 
 		}
 		elseif ($type == 'stagedetails') {
