@@ -29,20 +29,24 @@ echo '</div>'; //* end .site-container or #wrap
         </div>
     	<div class="content" align="center">
             <a href="http://www.cretansportscycling.gr/" target="_blank" alt="Cretan Sports Cycling">
-               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/csc.png" title="Cretan Sports Cycling" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/csc.png" title="Cretan Sports Cycling" border="0" />
             </a>
             <a href="http://fotomaris.gr/" target="_blank" alt="Foto Maris">
-               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/fotomaris.png" title="Foto Maris" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/fotomaris.png" title="Foto Maris" border="0" />
             </a>
             <a href="https://www.facebook.com/Delta-Carbon-Works-785460848159497" target="_blank" alt="Cyclomania" target="_blank" alt="Cyclomania">
-               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/cyclomania.png" title="Cyclomania" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/cyclomania.png" title="Cyclomania" border="0" />
             </a>
             <a href="http://www.minoan.gr/en/crete" target="_blank" alt="Minoan Lines">
-               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/minoan.png" title="Minoan Lines" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/minoan.png" title="Minoan Lines" border="0" />
             </a>
             <a href="http://www.mbike.gr/" target="_blank" alt="MBike">
-               <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/mbike.png" title="MBike" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mbike.png" title="MBike" border="0" />
             </a>
+            <a href="http://www.hellenic-cycling.gr/" target="_blank" alt="ΕΟΠ">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
+            </a>
+
         </div>
     </div>
 <?php
