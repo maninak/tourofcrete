@@ -1693,12 +1693,6 @@ Content Area
 
 /* The Race
 --------------------------------------------- */
-
-#map {														/* -K */
-	height: 400px; 											/* -K */
-	width:	841px;											/* -K */
-}
-
 .mainFrame .mainFrameFull{
 	background: url(images/main-frame.png) no-repeat left top;
 	width:960px;
