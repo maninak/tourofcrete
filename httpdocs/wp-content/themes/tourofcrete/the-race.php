@@ -109,7 +109,7 @@ function getStageInfo($type, $parentID){
 				var map = L.mapbox.map('map', 'mapbox.streets')
 						.setView([35.2275941, 24.7696794], 8);
 				var featureLayer = L.mapbox.featureLayer()
-						.loadURL('https://gist.githubusercontent.com/anonymous/dbcb9fbc1adf5958471e/raw/f326fc0fa63acade63146c74bfdbb8021afa5bdc/map.geojson')
+						.loadURL('http://tourofcrete.com/wp-content/themes/tourofcrete/geojson/ToC_allstages_N7.geojson')
 						.addTo(map);  
 			 	L.control.fullscreen().addTo(map);
 			</script>
