@@ -98,8 +98,51 @@ function getStageInfo($type, $parentID){
 				echo "</ul>";
 			echo "</div>";
 			?>
-			<iframe src="http://www.gpsies.com/viewTracksOnly.do?fileId=tjwiwgjzwpywqlyo&fileId=qwdzmtphurjwqytf&fileId=kcjgvgvsloupzyak&fileId=vwfoszhdewmpmdat&fileId=qxgobumqpertnrkb&fileId=oappxhaziflhgqgs#10_35.3123855_25.1392413_esri" width="841" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-			<div><br/></div>
+			<div id='map'></div>
+			<!-- For mapbox map container -K -->
+			<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+			<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+			<!-- For fullscreen mode button -K -->
+			<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/Leaflet.fullscreen.min.js'></script>
+			<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/leaflet.fullscreen.css' rel='stylesheet' />
+			<!-- For labels -K -->
+			<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+			<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+			<script>
+				L.mapbox.accessToken = 'pk.eyJ1IjoibWFuaW5hcyIsImEiOiJjaWpzYmRvZW4wMGFodmxtN3M3bHV6cXhrIn0.Xf1uqAaJ4QSFgmM_UinFkg';
+				var map = L.mapbox.map('map', 'mapbox.streets', {attributionControl: false}).setView([35.2275941, 24.7696794], 8);
+				var featureLayer = L.mapbox.featureLayer()
+						.loadURL('https://gist.githubusercontent.com/maninak/1ce96dbbfde8d05b45a7/raw/9baea41e5725b47f5ff302a6e8ec20f35c68a2a8/gistfile1.geojson')
+						.addTo(map);  
+				L.control.fullscreen().addTo(map);
+				
+				map.once('move', function() {
+					featureLayer.eachLayer(function(marker) {
+						if (marker.toGeoJSON().properties.name === 'S1  Heraklion - Elounda 114Km') {
+							marker.bindLabel('Stage 1: Heraklion - Elounda 114Km').addTo(map);
+						}
+						else if (marker.toGeoJSON().properties.name === 'S2 Elounda - Ierapetra 139Km') {
+							marker.bindLabel('Stage 2: Elounda - Ierapetra 139Km').addTo(map);
+						}
+						else if (marker.toGeoJSON().properties.name === 'S3 Ierapetra - Agia Galinini 147Km') {
+							marker.bindLabel('Stage 3: Ierapetra - Agia Galinini 147Km').addTo(map);
+						}
+						else if (marker.toGeoJSON().properties.name === 'S4 Agia Galini - Plakias 51Km') {
+							marker.bindLabel('Stage 4: Agia Galini - Plakias 51Km').addTo(map);
+						}
+						else if (marker.toGeoJSON().properties.name === 'S5 Agia Galini - Rethymnon 84Km') {
+							marker.bindLabel('Stage 5: Agia Galini - Rethymnon 84Km').addTo(map);
+						}
+						else if (marker.toGeoJSON().properties.name === 'S6 Rethymnon - Heraklion 71Km') {
+							marker.bindLabel('Stage 6: Rethymnon - Heraklion 71Km').addTo(map);
+						}
+						else {
+							marker.bindLabel('Stage start').addTo(map);
+						}
+					 });
+				});
+			</script>
+			<div><br></div>
 			<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/stages.jpg" /> <?php 
 		}
 		elseif ($type == 'stagedetails') {

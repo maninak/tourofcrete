@@ -1691,8 +1691,17 @@ Content Area
 		font-style:italic;
 	}
 
-/* The Race
---------------------------------------------- */
+/* The Race --------------------------------------------- */
+
+#map {														/* -K */
+	height: 400px; 											/* -K */
+	width:	841px;											/* -K */
+}
+
+.leaflet-overlay-pane, .leaflet-marker-pane {	/* Workaround fix for maproute overlay being offsetted for some reason -K */
+    margin-top: 15px;										/* -K */
+}
+
 .mainFrame .mainFrameFull{
 	background: url(images/main-frame.png) no-repeat left top;
 	width:960px;
