@@ -47,7 +47,7 @@ echo '</div>'; //* end .site-container or #wrap
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
             </a>
             <a href="http://www.ruraltourismincrete.com/en" target="_blank" alt="Rural Tourism and Agrotourism Union of Crete">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/agro-union.png" title="Hellenic Cycling Association" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/agro-union.png" title="Rural Tourism and Agrotourism Union of Crete" border="0" />
             </a>
         </div>
     </div>
