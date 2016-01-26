@@ -112,7 +112,7 @@ function getStageInfo($type, $parentID){
 				L.mapbox.accessToken = 'pk.eyJ1IjoibWFuaW5hcyIsImEiOiJjaWpzYmRvZW4wMGFodmxtN3M3bHV6cXhrIn0.Xf1uqAaJ4QSFgmM_UinFkg';
 				var map = L.mapbox.map('map', 'mapbox.streets', {attributionControl: false}).setView([35.2275941, 24.7696794], 8);
 				var featureLayer = L.mapbox.featureLayer()
-						.loadURL('https://gist.githubusercontent.com/maninak/1ce96dbbfde8d05b45a7/raw/9baea41e5725b47f5ff302a6e8ec20f35c68a2a8/gistfile1.geojson')
+						.loadURL('http://tourofcrete.com/wp-content/themes/tourofcrete/geojson/ToC_allstages_lowres_N6_dark.geojson')
 						.addTo(map);  
 				L.control.fullscreen().addTo(map);
 				
@@ -142,8 +142,9 @@ function getStageInfo($type, $parentID){
 					 });
 				});
 			</script>
-			<div><br></div>
-			<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/stages.jpg" /> <?php 
+			<!-- <div><br></div>
+			<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/stages.jpg" /> --> 
+			<?php 
 		}
 		elseif ($type == 'stagedetails') {
 			$stageDescription = get_post_meta($post->ID, 'stage_description', true);
