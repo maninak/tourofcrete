@@ -1698,8 +1698,8 @@ Content Area
 	width:	841px;											/* -K */
 }
 
-.leaflet-overlay-pane, .leaflet-marker-pane {	/* Workaround fix for maproute overlay being offsetted for some reason -K */
-    margin-top: 15px;										/* -K */
+.leaflet-tile-pane {	/* Workaround fix for maproute overlay being offsetted for some reason -K */
+    margin-top: -15px;										/* -K */
 }
 
 .mainFrame .mainFrameFull{
