@@ -147,7 +147,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
 		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
-		$signature = "<p><br/><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:70px;height:70px; padding-right:10px;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br/>";
+		$signature = "<br><p><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:5rem;height:5rem; padding-right:1rem;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br>";
 		
 		$DietaryReq = $_POST['DietaryReq'];		
 		
@@ -1032,7 +1032,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
 		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
-		$signature = "<p><br/><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:70px;height:70px; padding-right:10px;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br/>";
+		$signature = "<br><p><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:5rem;height:5rem; padding-right:1rem;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br>";
 		
 		$DietaryReq = $_POST['DietaryReq'];		
 		
@@ -2356,7 +2356,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
 		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
-		$signature = "<p><br/><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:70px;height:70px; padding-right:10px;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br/>";
+		$signature = "<br><p><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:5rem;height:5rem; padding-right:1rem;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br>";
 		
 		$DietaryReq = $_POST['DietaryReq'];		
 		
