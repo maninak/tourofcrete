@@ -22,7 +22,7 @@ require_once(get_template_directory()."/mycaptcha.php");
 	//echo $incomingcategory['category'];
 	//echo realpath(dirname(__FILE__));
 
-if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
+if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 ?>
 	<script language="javascript">
         jQuery(document).ready(function(){
@@ -895,7 +895,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 <?php
 	}//END INDIVIDUAL FORM
 	
-	elseif ($incomingcategory['category'] == 'teams'){ //START TEAMS FORM
+	elseif ($incomingcategory['category'] == 'Group'){ //START Groups FORM
 ?>
 	<script language="javascript">
         jQuery(document).ready(function(){
@@ -2245,7 +2245,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
     </form>	
     
     <?php
-	}//END TEAMS FORM
+	}//END Groups FORM
 	else{ //START NON CYCLIST FORM
 	?>
 	<script language="javascript">
