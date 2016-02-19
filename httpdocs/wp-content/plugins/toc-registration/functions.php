@@ -983,7 +983,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
 	$random_number = rand(0, 1000);
-	$regCode = "TOCI-" . date('ymd-His') ."-".$random_number;
+	$regCode = "TOCG-" . date('ymd-His') ."-".$random_number;
 	
 	if(isset($_POST['submit'])){
 		
@@ -2323,7 +2323,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
 	$random_number = rand(0, 1000);
-	$regCode = "TOCI-" . date('ymd-His') ."-".$random_number;
+	$regCode = "TOCN-" . date('ymd-His') ."-".$random_number;
 	
 	if(isset($_POST['submit'])){
 		
@@ -3023,7 +3023,7 @@ function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost
 	$headers .= "Content-Type: text/html\r\n";
 	
 
-mail($to, $subject, $body, $headers);
+	mail($to, $subject, $body, $headers);
 	
 	session_start();
 	$_SESSION['formCost'] = $formCost;
