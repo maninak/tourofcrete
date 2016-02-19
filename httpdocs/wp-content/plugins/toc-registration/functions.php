@@ -259,7 +259,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		}else{
 				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$surname." ".$name."</strong></font>,</p>";	
 				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
-				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
+				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
 				$email_message .= "<strong>Personal Information</strong>\n\n";
@@ -1239,7 +1239,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		}else{
 				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$teamleader."</strong></font>,</p>";	
 				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
-				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";	
+				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
 				$email_message .= "<strong>Group Information</strong>\n\n";
@@ -2442,7 +2442,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			
 			$email_message = "<p>Dear <font color=\"#f60\"><strong>".$fullname."</strong></font>,</p>";	
 				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
-				$email_message .= "<p>Please review all following information and contact us in case of an error or correction:</p>";
+				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
 				$email_message .= "<strong>Personal Information</strong>\n\n";
