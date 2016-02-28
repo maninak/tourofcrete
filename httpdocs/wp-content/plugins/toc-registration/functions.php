@@ -146,7 +146,7 @@ if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 		$PackageOption = $_POST['PackageOption'];	
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
-		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
+		$IBAN = "GR28 0110 7550 0000 7557 0137 879";
 		$signature = "<br><p><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:5rem;height:5rem; padding-right:1rem;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br>";
 		
 		$DietaryReq = $_POST['DietaryReq'];		
@@ -365,7 +365,7 @@ if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
@@ -1031,7 +1031,7 @@ if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 		$EntryOnlyValue = 150;			
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
-		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
+		$IBAN = "GR28 0110 7550 0000 7557 0137 879";
 		$signature = "<br><p><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:5rem;height:5rem; padding-right:1rem;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br>";
 		
 		$DietaryReq = $_POST['DietaryReq'];		
@@ -1517,7 +1517,7 @@ if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
@@ -2355,7 +2355,7 @@ if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 		$PackageOption = $_POST['PackageOption'];	
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
-		$IBAN = "GR80 0110 2050 0000 2053 8216 845";
+		$IBAN = "GR28 0110 7550 0000 7557 0137 879";
 		$signature = "<br><p><table border='0'><tr><td> <img src='http://tourofcrete.com/wp-content/uploads/2015/10/cropped-ToC_logo-150x150.png' alt='The Tour of Crete logo' style='width:5rem;height:5rem; padding-right:1rem;'></td><td> <strong><font face='crillee It BT, impact, Segoe UI, courier new' color='#ff6600'>The Tour of Crete Team</font></strong><br/> <font face='open sans light, open sans,helvetica,News Gothic MT,sans-serif,arial'> Visit our <a href='http://tourofcrete.com/' target='_blank'>Official Website</a><br/> Like our <a href='https://www.facebook.com/thetourofcrete' target='_blank'>Facebook page</a> </font></td></tr></table></p><br>";
 		
 		$DietaryReq = $_POST['DietaryReq'];		
@@ -2520,7 +2520,7 @@ if ($incomingcategory['category'] == "Individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
