@@ -31,23 +31,41 @@ echo '</div>'; //* end .site-container or #wrap
             <a href="http://www.cretansportscycling.gr/" target="_blank" alt="Cretan Sports Cycling">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/csc.png" title="Cretan Sports Cycling" border="0" />
             </a>
+            <a href="https://www.facebook.com/Cretan-Mountain-Bike-Trails-1449332925370770/?fref=ts" target="_blank" alt="Cretan Mountain Bike Trails">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mtbtrails.png" title="Cretan Mountain Bike Trails" border="0" />
+            </a>
+            <a href="http://en.aegeanair.com/" target="_blank" alt="Aegean Airlines">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/aegean_white.png" title="Aegean Airlines" border="0" />
+            </a>
+            <a href="http://www.minoan.gr/en/crete" target="_blank" alt="Minoan Lines">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/minoan.png" title="Minoan Lines" border="0" />
+            </a>
+            <a href="http://www.hellenic-cycling.gr/" target="_blank" alt="ΕΟΠ">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
+            </a>
+            <a href="http://www.mbike.gr/" target="_blank" alt="MBike">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mbike.png" title="MBike" border="0" />
+            </a>
             <a href="http://fotomaris.gr/" target="_blank" alt="Foto Maris">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/fotomaris.png" title="Foto Maris" border="0" />
             </a>
             <a href="https://www.facebook.com/Delta-Carbon-Works-785460848159497" target="_blank" alt="Cyclomania" target="_blank" alt="Cyclomania">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/cyclomania.png" title="Cyclomania" border="0" />
             </a>
-            <a href="http://www.minoan.gr/en/crete" target="_blank" alt="Minoan Lines">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/minoan.png" title="Minoan Lines" border="0" />
-            </a>
-            <a href="http://www.mbike.gr/" target="_blank" alt="MBike">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mbike.png" title="MBike" border="0" />
-            </a>
-            <a href="http://www.hellenic-cycling.gr/" target="_blank" alt="ΕΟΠ">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
-            </a>
             <a href="http://www.ruraltourismincrete.com/en" target="_blank" alt="Rural Tourism and Agrotourism Union of Crete">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/agro-union.png" title="Rural Tourism and Agrotourism Union of Crete" border="0" />
+            </a>
+            <a href="http://www.incrediblecrete.gr/" target="_blank" alt="Region of Crete">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/periferiakritis70.png" title="Region of Crete" border="0" />
+            </a>
+            <a href="http://www.heraklion.gr/en" target="_blank" alt="Municipality of Heraklion">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/Heraklion_munic.png" title="Municipality of Heraklion" border="0" />
+            </a>
+            <a href="http://www.samarites.gr/start/en" target="_blank" alt="Samaritans Division of Hellenic Red Cross">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/samarites.png" title="Samaritans Division of Hellenic Red Cross" border="0" />
+            </a>
+            <a href="http://www.redcross.gr/" target="_blank" alt="Hellenic Red Cross">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/red_cross_hellenic.png" title="Hellenic Red Cross" border="0" />
             </a>
         </div>
     </div>
