@@ -34,14 +34,14 @@ echo '</div>'; //* end .site-container or #wrap
             <a href="https://www.facebook.com/Cretan-Mountain-Bike-Trails-1449332925370770/?fref=ts" target="_blank" alt="Cretan Mountain Bike Trails">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mtbtrails.png" title="Cretan Mountain Bike Trails" border="0" />
             </a>
+            <a href="http://www.hellenic-cycling.gr/" target="_blank" alt="ΕΟΠ">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
+            </a>
             <a href="http://en.aegeanair.com/" target="_blank" alt="Aegean Airlines">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/aegean_white.png" title="Aegean Airlines" border="0" />
             </a>
             <a href="http://www.minoan.gr/en/crete" target="_blank" alt="Minoan Lines">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/minoan.png" title="Minoan Lines" border="0" />
-            </a>
-            <a href="http://www.hellenic-cycling.gr/" target="_blank" alt="ΕΟΠ">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
             </a>
             <a href="http://www.mbike.gr/" target="_blank" alt="MBike">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mbike.png" title="MBike" border="0" />
