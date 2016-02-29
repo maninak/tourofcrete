@@ -138,9 +138,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$sharedAcco = $_POST['sharedAcco'];				
 		$selectPackage = $_POST['Package'];		
 		$soloPackage = $_POST['soloPackage'];					
-		$soloPackageValue = 1070;						
+		$soloPackageValue = 1260;						
 		$TwinPackage = $_POST['TwinPackage'];						
-		$TwinPackageValue = 890;							
+		$TwinPackageValue = 1050;							
 		$EntryOnly = $_POST['EntryOnly'];			
 		$EntryOnlyValue = 150;
 		$PackageOption = $_POST['PackageOption'];	
@@ -1024,9 +1024,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			$PackageOptionArr[] = $_POST['PackageOption_'.$i];	
 		} 
 		$soloPackage = $_POST['soloPackage'];					
-		$soloPackageValue = 1070;						
+		$soloPackageValue = 1260;						
 		$TwinPackage = $_POST['TwinPackage'];						
-		$TwinPackageValue = 890;							
+		$TwinPackageValue = 1050;							
 		$EntryOnly = $_POST['EntryOnly'];			
 		$EntryOnlyValue = 150;			
 		$PaymentMethod = $_POST['paymentmethod'];
@@ -2349,9 +2349,9 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		$sharedAcco = $_POST['sharedAcco'];				
 		$selectPackage = $_POST['Package'];
 		$soloPackage = $_POST['soloPackage'];					
-		$soloPackageValue = 890;						
+		$soloPackageValue = 1070;						
 		$TwinPackage = $_POST['TwinPackage'];						
-		$TwinPackageValue = 740;		
+		$TwinPackageValue = 1050;		
 		$PackageOption = $_POST['PackageOption'];	
 		$PaymentMethod = $_POST['paymentmethod'];
 		$Terms = $_POST['terms'];
