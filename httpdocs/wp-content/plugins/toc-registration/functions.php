@@ -365,11 +365,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
-				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
+				$email_message .= "Total Cost: <strong>".number_format($formCost)." &euro;</strong><br/>";
 				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
@@ -1517,7 +1517,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
@@ -2520,7 +2520,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
