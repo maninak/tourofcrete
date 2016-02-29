@@ -25,7 +25,7 @@ echo '</div>'; //* end .site-container or #wrap
 ?>
 	<div class="sponsors">
     	<div class="title">
-        	<h2><?php _e('SPONSORED BY','tourofcrete');?></h2>
+        	<h2><?php _e('SPONSORED AND SUPPORTED BY','tourofcrete');?></h2>
         </div>
     	<div class="content" align="center">
             <a href="http://www.cretansportscycling.gr/" target="_blank" alt="Cretan Sports Cycling">
