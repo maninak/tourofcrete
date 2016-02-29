@@ -43,6 +43,12 @@ echo '</div>'; //* end .site-container or #wrap
             <a href="http://www.minoan.gr/en/crete" target="_blank" alt="Minoan Lines">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/minoan.png" title="Minoan Lines" border="0" />
             </a>
+            <a href="http://www.yamahamoraitis.gr/" target="_blank" alt="i-Moto Yamaha Moraitis">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/i-moto.png" title="i-Moto Yamaha Moraitis" border="0" />
+            </a>
+            <a href="http://www.fujibikes.com/" target="_blank" alt="Fuji Bikes">
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/fuji.png" title="Fuji Bikes" border="0" />
+            </a>
             <a href="http://www.mbike.gr/" target="_blank" alt="MBike">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/mbike.png" title="MBike" border="0" />
             </a>
