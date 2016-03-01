@@ -1602,7 +1602,6 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
                     <label for="teammembers">Group Members <span class="required">*</span></label>
                     <select name="teammembers" id="teammembers">
                     	<option value="-">Select...</option>
-                        <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
