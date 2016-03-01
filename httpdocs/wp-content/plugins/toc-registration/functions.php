@@ -365,7 +365,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				if ($PaymentMethod == "paypal"){
 					$email_message .= "Paypal <br/>";
 				}else{
-					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
+					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
