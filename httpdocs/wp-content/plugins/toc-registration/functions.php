@@ -262,7 +262,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
-				$email_message .= "<strong>Personal Information</strong>\n\n";
+				$email_message .= "<strong><u>Personal Information</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";	
 				$email_message .= "Surname: ".$surname."\n";
@@ -338,28 +338,28 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "If opting for shared accommodation, who do you want to room with?: ".$sharedAcco."\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td><br/>";	
-				$email_message .= "<strong>Package Option</strong>\n\n";
+				$email_message .= "<strong><u>Package Option</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";		
 				if ($selectPackage == "soloPackage"){ 
-					$email_message .= "Solo Room package - Hotel room based on single occupancy. Price: ".number_format($soloPackageValue)." &euro; \n"; 
+					$email_message .= "Solo Room package - Hotel room based on single occupancy. <br>Price: ".number_format($soloPackageValue)." &euro; \n"; 
 					$formCost += $soloPackageValue;
 				}
 				if ($selectPackage == "TwinPackage"){ 
 					if ($PackageOption == "TwinPackageA1"){
-						$email_message .= "Shared Room registration package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Shared Room registration package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. <br>Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					else{
-						$email_message .= "Shared Room registration package - Option A2: Double room, shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Shared Room registration package - Option A2: Double room, shared with another non-cyclist participant. <br>Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					$formCost += $TwinPackageValue;
 				}				
 				if ($selectPackage == "EntryOnly"){ 
-					$email_message .= "Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers). Price: ".$EntryOnlyValue." &euro; \n"; 
+					$email_message .= "Registration-only package (i.e. no accommodation or (air)port/hotel luggage transfers). <br>Price: ".$EntryOnlyValue." &euro; \n"; 
 					$formCost += $EntryOnlyValue;
 				}		
 				$email_message .= "<tr><td><br/>";	
-				$email_message .= "<strong>Payment Method</strong>\n\n";
+				$email_message .= "<strong><u>Payment Method</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";	
 				if ($PaymentMethod == "paypal"){
@@ -1242,7 +1242,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
-				$email_message .= "<strong>Group Information</strong>\n\n";
+				$email_message .= "<strong><u>Group Information</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
 				$email_message .= "Group Name: ".$teamname."\n";
@@ -1473,7 +1473,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				
 				
 				$email_message .= "<tr>";
-				$email_message .= "<td><strong>Package Option</strong></td>";
+				$email_message .= "<td><strong><u>Package Option</u></strong></td>";
 				for ($i = 1; $i <= $_POST['teammembers']; $i++) {
 					$email_message .= "<td>";	
 					
@@ -1485,11 +1485,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					else if ($selectPackageArr[$i-1] == "TwinPackage"){
 						
 						if ($PackageOptionArr[$i-1] == "TwinPackageA1"){
-							$email_message .= "Shared Room registration package - A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro;";
+							$email_message .= "Shared Room registration package - A1: Double room or twin room (one double bed or two single beds) shared with another rider. <br>Price: ".number_format($TwinPackageValue)." &euro;";
 							$formCost += $TwinPackageValue;
 						}
 						else if ($PackageOptionArr[$i-1] == "TwinPackageA2"){
-							$email_message .= "Shared Room registration package - Option A2: Double room, shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro;";
+							$email_message .= "Shared Room registration package - Option A2: Double room, shared with another non-cyclist participant. <br>Price: ".number_format($TwinPackageValue)." &euro;";
 							$formCost += $TwinPackageValue;
 						}
 						
@@ -1511,7 +1511,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				
 				$email_message .= "<table>";
 				$email_message .= "<tr><td>";	
-				$email_message .= "<strong>Payment Method</strong>\n\n";
+				$email_message .= "<strong><u>Payment Method</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";	
 				if ($PaymentMethod == "paypal"){
@@ -1521,7 +1521,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
-				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
+				$email_message .= "Total Cost: <strong>".number_format($formCost)." &euro;</strong><br/>";
 				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
@@ -2445,7 +2445,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
-				$email_message .= "<strong>Personal Information</strong>\n\n";
+				$email_message .= "<strong><u>Personal Information</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";	
 				$email_message .= "Full Name: ".$fullname."\n";
@@ -2496,25 +2496,25 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "If opting for shared accommodation, who do you want to room with?: ".$sharedAcco."\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td><br/>";	
-				$email_message .= "<strong>Package Option</strong>\n\n";
+				$email_message .= "<strong><u>Package Option</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";		
 				if ($selectPackage == "soloPackage"){ 
-					$email_message .= "Solo Room package - Hotel room based on single occupancy. Price: ".number_format($soloPackageValue)." &euro; \n"; 
+					$email_message .= "Solo Room package - Hotel room based on single occupancy. <br>Price: ".number_format($soloPackageValue)." &euro; \n"; 
 					$formCost += $soloPackageValue;
 				}
 				if ($selectPackage == "TwinPackage"){ 
 					if ($PackageOption == "TwinPackageB1"){
-						$email_message .= "Shared Room registration package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Shared Room registration package - Option A1: Double room or twin room (one double bed or two single beds) shared with another rider. <br>Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					else{
-						$email_message .= "Shared Room registration package - Option A2: Double room shared with another non-cyclist participant. Price: ".number_format($TwinPackageValue)." &euro; \n"; 
+						$email_message .= "Shared Room registration package - Option A2: Double room shared with another non-cyclist participant. <br>Price: ".number_format($TwinPackageValue)." &euro; \n"; 
 					}
 					$formCost += $TwinPackageValue;
 				}				
 		
 				$email_message .= "<tr><td><br/>";	
-				$email_message .= "<strong>Payment Method</strong>\n\n";
+				$email_message .= "<strong><u>Payment Method</u></strong>\n\n";
 				$email_message .= "</td></tr>";	
 				$email_message .= "<tr><td>";	
 				if ($PaymentMethod == "paypal"){
@@ -2524,7 +2524,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				}
 				$email_message .= "Transaction Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
-				$email_message .= "Total Cost: ".number_format($formCost)." &euro;<br/>";
+				$email_message .= "Total Cost: <strong>".number_format($formCost)." &euro;</strong><br/>";
 				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
