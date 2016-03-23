@@ -74,7 +74,7 @@ echo '</div>'; //* end .site-container or #wrap
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/cyclomania.png" title="Cyclomania" border="0" />
             </a>
             <a href="http://www.mindev.gov.gr/" target="_blank" alt="Hellenic Ministry of Economy Development and Tourism">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/.png" title="Hellenic Ministry of Economy Development and Tourism" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/ministry_economy.png" title="Hellenic Ministry of Economy Development and Tourism" border="0" />
             </a>
             <a href="http://www.ruraltourismincrete.com/en" target="_blank" alt="Rural Tourism and Agrotourism Union of Crete">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/agro-union.png" title="Rural Tourism and Agrotourism Union of Crete" border="0" />
