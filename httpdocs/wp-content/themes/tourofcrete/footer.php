@@ -38,7 +38,7 @@ echo '</div>'; //* end .site-container or #wrap
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/EOP.png" title="Hellenic Cycling Association" border="0" />
             </a>
             <a href="http://www.garmin.com/en-US" target="_blank" alt="Garmin">
-               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/garmin.png" title="Garmin" border="0" />
+               <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/garmin-white.png" title="Garmin" border="0" />
             </a>
             <a href="http://en.aegeanair.com/" target="_blank" alt="Aegean Airlines">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/aegean_white.png" title="Aegean Airlines" border="0" />
