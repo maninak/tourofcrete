@@ -2202,13 +2202,13 @@ Footer Widgets
 		-ms-transition:     all 0.1s ease-out;	/* -K */
 		-o-transition:      all 0.1s ease-out;	/* -K */
 		transition:         all 0.1s ease-out;	/* -K */
-		-webkit-box-shadow: 0px 0px 0px 0px #000;/* -K */
-		box-shadow: 0px 0px 0px 0px #000;		/* -K */
+    	-webkit-filter: drop-shadow(0px 0px 0px #000);/* -K */
+    	filter: drop-shadow(0px 0px 0px #000);/* -K */
 	}
 	.sponsors img:hover {						/* -K */
+    	-webkit-filter: drop-shadow(0px 0px 5px #00BAFF);/* -K */
     	filter: drop-shadow(0px 0px 5px #00BAFF);/* -K */
 	}
-}
 	
 .footer-widgets {
 	background-color: #333;
