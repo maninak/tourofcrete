@@ -167,13 +167,13 @@ Defaults
 html {
 	font-size: 62.5%; /* 10px browser default */
 	background: black url(images/bg.jpg) no-repeat center top fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/bg.jpg', sizingMethod='scale');
-    min-width: 1024px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/bg.jpg', sizingMethod='scale');
+	min-width: 1024px;
 }
 
 body {
@@ -232,7 +232,7 @@ a {
 }
 
 .imgpricelist:hover {									/* -K */
-    box-shadow: 0px 0px 10px #00BAFF;					/* -K */
+	box-shadow: 0px 0px 10px #00BAFF;					/* -K */
 }
 
 p {
@@ -452,24 +452,24 @@ table {
 }
 
 .tablepress thead th {
-    text-align:center;
+	text-align:center;
 	background-color:#ff6600!important;
 	font-size:11px!important;
 	border-bottom:none!important;
 }
 
 .tablepress .even td, .tablepress td {
-    background-color: #111!important;
+	background-color: #111!important;
 	color:#fff!important;
 }
 
 .tablepress .odd td {
-    background-color: #222!important;
+	background-color: #222!important;
 	color:#fff!important;
 }
 
 .tablepress tbody td, .tablepress tfoot th {
-    border-top: 1px solid #000!important;
+	border-top: 1px solid #000!important;
 }
 
 th,
@@ -1304,8 +1304,8 @@ Content Area
 	}
 	
 		.mainFrame-m .slider .banner {position: relative; overflow: auto; }
-    		.mainFrame-m .slider .banner li {list-style: none; }
-        	.mainFrame-m .slider .banner ul li {float: left; }
+			.mainFrame-m .slider .banner li {list-style: none; }
+			.mainFrame-m .slider .banner ul li {float: left; }
 			
 	.mainFrame-m  .individuals{
 		background: url(images/individuals.png) no-repeat left top;
@@ -1431,8 +1431,8 @@ Content Area
 	}
 	
 		.frameContent .slider .banner {position: relative; overflow: auto; }
-    		.frameContent .slider .banner li {list-style: none; }
-        	.frameContent .slider .banner ul li {float: left; }
+			.frameContent .slider .banner li {list-style: none; }
+			.frameContent .slider .banner ul li {float: left; }
 	
 	.frameContent .banners{
 		font-size:34px;
@@ -1678,7 +1678,7 @@ Content Area
 }
 
 .leaflet-tile-pane {	/* Workaround fix for maproute overlay being offsetted for some reason -K */
-    margin-top: -15px;										/* -K */
+	margin-top: -15px;										/* -K */
 }
 
 .mainFrame .mainFrameFull{
@@ -1760,7 +1760,7 @@ Content Area
 	
 	
 	ul.all-stages-menu, ul.venues-menu{
-		margin:0 0 20px 0;								/* -K */
+		margin:-3px 0 20px 0;								/* -K */
 		list-style-type:none;
 		font-size:13px;
 		line-height:22px;
@@ -1850,7 +1850,7 @@ Content Area
 		}												/* -K */
 		ul.all-stages-menu li .thetitle{				/* -K */
 			letter-spacing: 0em;						/* -K */
-			padding-bottom:10px;						/* -K */
+			padding-bottom:7px;							/* -K */
 			border-bottom:1px solid #f60;				/* -K */
 			margin-bottom: -4px;						/* -K */
 			-webkit-transition: all 0.1s ease-out;		/* -K */
@@ -2163,12 +2163,12 @@ Footer Widgets
 		-ms-transition:     all 0.1s ease-out;	/* -K */
 		-o-transition:      all 0.1s ease-out;	/* -K */
 		transition:         all 0.1s ease-out;	/* -K */
-    	-webkit-filter: drop-shadow(0px 0px 0px #000);/* -K */
-    	filter: drop-shadow(0px 0px 0px #000);/* -K */
+		-webkit-filter: drop-shadow(0px 0px 0px #000);/* -K */
+		filter: drop-shadow(0px 0px 0px #000);/* -K */
 	}
 	.sponsors img:hover {						/* -K */
-    	-webkit-filter: drop-shadow(0px 0px 5px #00BAFF);/* -K */
-    	filter: drop-shadow(0px 0px 5px #00BAFF);/* -K */
+		-webkit-filter: drop-shadow(0px 0px 5px #00BAFF);/* -K */
+		filter: drop-shadow(0px 0px 5px #00BAFF);/* -K */
 	}
 	
 .footer-widgets {
@@ -2342,7 +2342,7 @@ Gallery - Latest Photos
 	float:left;
 }
 .masked-image .ngg-singlepic {
-    padding: 0!important;
+	padding: 0!important;
 }
 .hover-image {
 	position: absolute;
