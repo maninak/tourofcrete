@@ -217,9 +217,6 @@ a {
 	text-decoration: none;
 }
 
-a img {
-}
-
 /* Custom class for //registration page -K */
 .imgpricelist {											/* -K */
 	max-width: 66%;										/* -K */
@@ -663,9 +660,6 @@ Common Classes
 	width: 1px;
 }
 
-.sticky {
-}
-
 img.centered,
 .aligncenter {
 	display: block;
@@ -913,13 +907,6 @@ img#wpstats {
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 
-.site-header {
-	
-}
-
-.site-header .wrap {
-
-}
 
 /* Title Area
 --------------------------------------------- */
@@ -1147,10 +1134,6 @@ Site Navigation
 	color: #999;
 }
 
-.genesis-nav-menu > .menu-item > a {
-	
-}
-
 .genesis-nav-menu .sub-menu {
 	left: -9999px;
 	opacity: 0;
@@ -1234,10 +1217,6 @@ Site Navigation
 
 /* Primary Navigation
 --------------------------------------------- */
-
-.nav-primary {
-	
-}
 
 .nav-primary a:hover,
 .nav-primary .current-menu-item > a {
@@ -1927,23 +1906,8 @@ Content Area
 	border: none;
 }
 
-.entry-content ol,
-.entry-content p,
-.entry-content ul,
-.quote-caption {
-
-}
-
-.entry-content ol,
-.entry-content ul {
-
-}
-
 .entry-content ol li {
 	list-style-type: decimal;
-}
-
-.entry-content ul li {
 }
 
 .entry-content ol ol,
@@ -2100,9 +2064,6 @@ li.comment {
 
 .entry-pings .reply {
 	display: none;
-}
-
-.bypostauthor {
 }
 
 .form-allowed-tags {
