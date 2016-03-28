@@ -1371,11 +1371,22 @@ Content Area
 			overflow:hidden;
 			margin-bottom:0;
 		}
-		
+	
 	.frameContent .more{
 		width:auto;
 		height:23px;
 		margin-top:5px;
+		-webkit-transition: all 0.1s ease-out;				/* -K */
+		-moz-transition:    all 0.1s ease-out;				/* -K */
+		-ms-transition:     all 0.1s ease-out;				/* -K */
+		-o-transition:      all 0.1s ease-out;				/* -K */
+		transition:         all 0.1s ease-out;				/* -K */
+		filter: hue-rotate(0deg);		                    /* -K */
+		-webkit-filter: hue-rotate(0deg);					/* -K */
+	}	
+	.frameContent .more:hover{                              /* -K */
+		filter: hue-rotate(170deg);		                    /* -K */
+		-webkit-filter: hue-rotate(170deg);                 /* -K */
 	}
 		.frameContent .more .left{
 			background: url(images/more-l.gif) no-repeat left top;
