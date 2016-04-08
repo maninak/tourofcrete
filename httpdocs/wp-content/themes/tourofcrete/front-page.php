@@ -20,7 +20,7 @@ function child_do_custom_loop() {
                 <?php genesis_do_loop(); ?>
                 <div class='more'>
                 	<div class="left"></div>
-                	<a href="/the-tour-of-crete/"><?php _e('Read More','tourofcrete');?>.</a>
+                	<a href="/discover-crete/"><?php _e('Read More','tourofcrete');?></a>
                     <div class="right"></div>
                 </div>
             </div>
