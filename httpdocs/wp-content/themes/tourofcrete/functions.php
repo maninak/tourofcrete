@@ -87,9 +87,6 @@ function custom_header() {
             </div>
        </div>
 </div>
-
-
-
 <?php
 	// Adds google analytics tracking at kmaninak@gmail.com -K
 	add_action('wp_footer', 'add_googleanalytics');
@@ -107,10 +104,6 @@ function custom_header() {
 <?php 
 	} 
 ?>
-
-
-
-
 <?php
 	// Adds facebook analytics tracking -K
 	add_action('wp_footer', 'add_facebookanalytics');
@@ -135,9 +128,6 @@ function custom_header() {
 <?php 
 	} 
 ?>
-
-
-
 <?php 
 }
 
