@@ -12,7 +12,7 @@ $wp_cache_preload_taxonomies = 0; //Added by WP-Cache Manager
 $wp_cache_preload_email_volume = 'many'; //Added by WP-Cache Manager
 $wp_cache_preload_email_me = 0; //Added by WP-Cache Manager
 $wp_cache_preload_interval = 120; //Added by WP-Cache Manager
-$wp_cache_preload_posts = '64'; //Added by WP-Cache Manager
+$wp_cache_preload_posts = '66'; //Added by WP-Cache Manager
 $cache_gc_email_me = 0; //Added by WP-Cache Manager
 $cache_time_interval = '86405'; //Added by WP-Cache Manager
 $cache_scheduled_time = '00:00'; //Added by WP-Cache Manager
@@ -42,7 +42,7 @@ $ossdlcdn = 0;
 // Array of files that have 'wp-' but should still be cached
 $cache_acceptable_files = array( 'wp-comments-popup.php', 'wp-links-opml.php', 'wp-locations.php' );
 
-$cache_rejected_uri = array ( 0 => 'wp-.*\\.php', 1 => 'index\\.php', 2 => 'payment-method-paypal-gateway', ); //Added by WP-Cache Manager
+$cache_rejected_uri = array ( 0 => 'wp-.*\\.php', 1 => 'index\\.php', 2 => 'payment-method-paypal-gateway', 3 => 'gallery', ); //Added by WP-Cache Manager
 $cache_rejected_user_agent = array ( 0 => 'bot', 1 => 'ia_archive', 2 => 'slurp', 3 => 'crawl', 4 => 'spider', 5 => 'Yandex' );
 
 $cache_rebuild_files = 1; //Added by WP-Cache Manager
