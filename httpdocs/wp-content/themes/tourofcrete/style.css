@@ -1093,12 +1093,12 @@ Site Navigation
 }
 
 .parallelogram:hover {																/* -K */
-    border-color: #00BAFF;														/* -K */
+    border-color: #00BAFF;															/* -K */
 }
 
 .genesis-nav-menu li{
 	margin:0 0 0 -2px;
-	border-left: double 6px #F60;
+	border-left: solid 3px RGBA(255, 102, 0, 0.5);									/* -K */
 }
 	.genesis-nav-menu li:hover{
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -1108,11 +1108,11 @@ Site Navigation
 		opacity: 1;
 	}
 .genesis-nav-menu a {
-	background-color: rgba(0, 0, 0, 0.5);										/* -K */
+	background-color: rgba(0, 0, 0, 0.5);											/* -K */
 	min-width:70px;
 	height:41px;
 	border: none;
-	color: #FFF;																/* -K */
+	color: #FFF;																	/* -K */
 	font-size:14px;
 	font-weight:bold;
 	display:inline-block;
