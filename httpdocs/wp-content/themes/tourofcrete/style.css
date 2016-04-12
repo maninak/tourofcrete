@@ -195,11 +195,11 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button {
-	-webkit-transition: all 0.1s ease-out;
-	-moz-transition:    all 0.1s ease-out;
-	-ms-transition:     all 0.1s ease-out;
-	-o-transition:      all 0.1s ease-out;
-	transition:         all 0.1s ease-out;
+	-webkit-transition: all 0.0s ease-out;
+	-moz-transition:    all 0.0s ease-out;
+	-ms-transition:     all 0.0s ease-out;
+	-o-transition:      all 0.0s ease-out;
+	transition:         all 0.0s ease-out;
 }
 
 ::-moz-selection {
@@ -222,11 +222,11 @@ a {
 	max-width: 66%;										/* -K */
 	position: relative;									/* -K */
 	border: 3px solid #292929;							/* -K */
-	-webkit-transition: all 0.1s ease-out;				/* -K */
-	-moz-transition:    all 0.1s ease-out;				/* -K */
-	-ms-transition:     all 0.1s ease-out;				/* -K */
-	-o-transition:      all 0.1s ease-out;				/* -K */
-	transition:         all 0.1s ease-out;				/* -K */
+	-webkit-transition: all 0.0s ease-out;				/* -K */
+	-moz-transition:    all 0.0s ease-out;				/* -K */
+	-ms-transition:     all 0.0s ease-out;				/* -K */
+	-o-transition:      all 0.0s ease-out;				/* -K */
+	transition:         all 0.0s ease-out;				/* -K */
 	-webkit-box-shadow: 0px 0px 0px 0px #000;			/* -K */
 	box-shadow: 0px 0px 0px 0px #000;					/* -K */
 }
@@ -1378,11 +1378,11 @@ Content Area
 		width:auto;
 		height:23px;
 		margin-top:5px;
-		-webkit-transition: all 0.1s ease-out;				/* -K */
-		-moz-transition:    all 0.1s ease-out;				/* -K */
-		-ms-transition:     all 0.1s ease-out;				/* -K */
-		-o-transition:      all 0.1s ease-out;				/* -K */
-		transition:         all 0.1s ease-out;				/* -K */
+		-webkit-transition: all 0.0s ease-out;				/* -K */
+		-moz-transition:    all 0.0s ease-out;				/* -K */
+		-ms-transition:     all 0.0s ease-out;				/* -K */
+		-o-transition:      all 0.0s ease-out;				/* -K */
+		transition:         all 0.0s ease-out;				/* -K */
 		filter: hue-rotate(0deg);		                    /* -K */
 		-webkit-filter: hue-rotate(0deg);					/* -K */
 	}	
@@ -1430,11 +1430,11 @@ Content Area
 		position:absolute;
 		right:20px;
 		top:0;
-		-webkit-transition: all 0.1s ease-out;				/* -K */
-		-moz-transition:    all 0.1s ease-out;				/* -K */
-		-ms-transition:     all 0.1s ease-out;				/* -K */
-		-o-transition:      all 0.1s ease-out;				/* -K */
-		transition:         all 0.1s ease-out;				/* -K */
+		-webkit-transition: all 0.0s ease-out;				/* -K */
+		-moz-transition:    all 0.0s ease-out;				/* -K */
+		-ms-transition:     all 0.0s ease-out;				/* -K */
+		-o-transition:      all 0.0s ease-out;				/* -K */
+		transition:         all 0.0s ease-out;				/* -K */
 		-webkit-box-shadow: 0px 0px 0px 0px #000;			/* -K */
 		box-shadow: 0px 0px 0px 0px #000;					/* -K */
 	}
@@ -1458,11 +1458,11 @@ Content Area
 			width: 266px;									/* -K */
 			box-shadow: 0px 0px 0px 0px #000;				/* -K */
 			-webkit-box-shadow: 0px 0px 0px 0px #000;		/* -K */
-			-webkit-transition: all 0.1s ease-out;			/* -K */
-			-moz-transition:    all 0.1s ease-out;			/* -K */
-			-ms-transition:     all 0.1s ease-out;			/* -K */
-			-o-transition:      all 0.1s ease-out;			/* -K */
-			transition:         all 0.1s ease-out;			/* -K */
+			-webkit-transition: all 0.0s ease-out;			/* -K */
+			-moz-transition:    all 0.0s ease-out;			/* -K */
+			-ms-transition:     all 0.0s ease-out;			/* -K */
+			-o-transition:      all 0.0s ease-out;			/* -K */
+			transition:         all 0.0s ease-out;			/* -K */
 		}													/* -K */
 		.banners a:first-child:hover #box-shadow-indiv{		/* -K */
 			box-shadow: 3px 0px 10px 2px #00BAFF;			/* -K */
@@ -1473,11 +1473,11 @@ Content Area
 			width: 257px;									/* -K */
 			box-shadow: 0px 0px 0px 0px #000;				/* -K */
 			-webkit-box-shadow: 0px 0px 0px 0px #000;		/* -K */
-			-webkit-transition: all 0.1s ease-out;			/* -K */
-			-moz-transition:    all 0.1s ease-out;			/* -K */
-			-ms-transition:     all 0.1s ease-out;			/* -K */
-			-o-transition:      all 0.1s ease-out;			/* -K */
-			transition:         all 0.1s ease-out;			/* -K */
+			-webkit-transition: all 0.0s ease-out;			/* -K */
+			-moz-transition:    all 0.0s ease-out;			/* -K */
+			-ms-transition:     all 0.0s ease-out;			/* -K */
+			-o-transition:      all 0.0s ease-out;			/* -K */
+			transition:         all 0.0s ease-out;			/* -K */
 		}													/* -K */
 		.banners a:nth-child(2):hover #box-shadow-teams{	/* -K */
 			box-shadow: -0px 0px 10px 2px #00BAFF;			/* -K */
@@ -1488,11 +1488,11 @@ Content Area
 			width: 266px;									/* -K */
 			box-shadow: 0px 0px 0px 0px #000;				/* -K */
 			-webkit-box-shadow: 0px 0px 0px 0px #000;		/* -K */
-			-webkit-transition: all 0.1s ease-out;			/* -K */
-			-moz-transition:    all 0.1s ease-out;			/* -K */
-			-ms-transition:     all 0.1s ease-out;			/* -K */
-			-o-transition:      all 0.1s ease-out;			/* -K */
-			transition:         all 0.1s ease-out;			/* -K */
+			-webkit-transition: all 0.0s ease-out;			/* -K */
+			-moz-transition:    all 0.0s ease-out;			/* -K */
+			-ms-transition:     all 0.0s ease-out;			/* -K */
+			-o-transition:      all 0.0s ease-out;			/* -K */
+			transition:         all 0.0s ease-out;			/* -K */
 		}													/* -K */
 		.banners a:last-child:hover #box-shadow-noncy{		/* -K */
 			box-shadow: 0px 0px 10px 2px #00BAFF;			/* -K */
@@ -1793,11 +1793,11 @@ Content Area
 			margin:0;
 			line-height:22px;
 			margin-bottom:15px; 						/* -K */
-			-webkit-transition: all 0.1s ease-out;		/* -K */
-			-moz-transition:    all 0.1s ease-out;		/* -K */
-			-ms-transition:     all 0.1s ease-out;		/* -K */
-			-o-transition:      all 0.1s ease-out;		/* -K */
-			transition:         all 0.1s ease-out;		/* -K */
+			-webkit-transition: all 0.0s ease-out;		/* -K */
+			-moz-transition:    all 0.0s ease-out;		/* -K */
+			-ms-transition:     all 0.0s ease-out;		/* -K */
+			-o-transition:      all 0.0s ease-out;		/* -K */
+			transition:         all 0.0s ease-out;		/* -K */
 		}
 		ul.venues-menu li{
 			width: 16.6%;								/* -K */
@@ -1808,7 +1808,7 @@ Content Area
 			border-bottom: 1px solid #F60;				/* -K */
 			padding-bottom: 10px;						/* -K */
 			margin: 0px 0px 15px;						/* -K */
-			transition: all 0.1s ease-out 0s;			/* -K */
+			transition: all 0.0s ease-out 0s;			/* -K */
 			color: #FFF;								/* -K */
 		}
 		ul.venues-menu li:hover {						/* -K */
@@ -1836,11 +1836,11 @@ Content Area
 			border-bottom:1px solid #F60;				/* -K */
 			padding-bottom:10px;						/* -K */
 			margin: 0 0 10px;							/* -K */
-			-webkit-transition: all 0.1s ease-out;		/* -K */
-			-moz-transition:    all 0.1s ease-out;		/* -K */
-			-ms-transition:     all 0.1s ease-out;		/* -K */
-			-o-transition:      all 0.1s ease-out;		/* -K */
-			transition:         all 0.1s ease-out;		/* -K */
+			-webkit-transition: all 0.0s ease-out;		/* -K */
+			-moz-transition:    all 0.0s ease-out;		/* -K */
+			-ms-transition:     all 0.0s ease-out;		/* -K */
+			-o-transition:      all 0.0s ease-out;		/* -K */
+			transition:         all 0.0s ease-out;		/* -K */
 		}												/* -K */
 		ul.stages-menu li:hover {						/* -K */
 			border-bottom:3px solid #F60;				/* -K */
@@ -1866,11 +1866,11 @@ Content Area
 			padding-bottom:7px;							/* -K */
 			border-bottom:1px solid #f60;				/* -K */
 			margin-bottom: -4px;						/* -K */
-			-webkit-transition: all 0.1s ease-out;		/* -K */
-			-moz-transition:    all 0.1s ease-out;		/* -K */
-			-ms-transition:     all 0.1s ease-out;		/* -K */
-			-o-transition:      all 0.1s ease-out;		/* -K */
-			transition:         all 0.1s ease-out;		/* -K */
+			-webkit-transition: all 0.0s ease-out;		/* -K */
+			-moz-transition:    all 0.0s ease-out;		/* -K */
+			-ms-transition:     all 0.0s ease-out;		/* -K */
+			-o-transition:      all 0.0s ease-out;		/* -K */
+			transition:         all 0.0s ease-out;		/* -K */
 		}												/* -K */
 		ul.all-stages-menu li:hover .thetitle{			/* -K */
 			border-bottom:3px solid #f60;				/* -K */
@@ -2175,11 +2175,11 @@ Footer Widgets
 		margin: 0px 1px 0px 1px;				/* -K */
 		height: 70px;							/* -K */
 		display:inline-block;
-		-webkit-transition: all 0.1s ease-out;	/* -K */
-		-moz-transition:    all 0.1s ease-out;	/* -K */
-		-ms-transition:     all 0.1s ease-out;	/* -K */
-		-o-transition:      all 0.1s ease-out;	/* -K */
-		transition:         all 0.1s ease-out;	/* -K */
+		-webkit-transition: all 0.0s ease-out;	/* -K */
+		-moz-transition:    all 0.0s ease-out;	/* -K */
+		-ms-transition:     all 0.0s ease-out;	/* -K */
+		-o-transition:      all 0.0s ease-out;	/* -K */
+		transition:         all 0.0s ease-out;	/* -K */
 		-webkit-box-shadow: 0px 0px 0px 0px #000;/* -K */
 		box-shadow: 0px 0px 0px 0px #000;		/* -K */
 	}
