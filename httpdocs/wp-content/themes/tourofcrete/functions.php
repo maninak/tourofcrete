@@ -156,11 +156,13 @@ function wpb_list_child_pages() {
 }
 
 // Adds class ".parallelogram" to navbar menu items (for redesign) -K
-function add_custom_nav_menu_item_class ($classes) {
-    $classes[] = 'parallelogram';
+function add_custom_nav_menu_item_class ($classes, $item) {
+	if ($item->id == 'menu-item-6' ) {
+    	$classes[] = 'parallelogram';
+	}
     return $classes;
 }
-add_filter( 'nav_menu_css_class', 'add_custom_nav_menu_item_class', 10, 1);
+add_filter( 'nav_menu_css_class', 'add_custom_nav_menu_item_class', 10, 2);
 
 // add my custom variables to query_vars
 function add_query_vars_filter( $vars ){

@@ -1222,7 +1222,7 @@ Site Navigation
 
 .nav-primary a:hover,
 .nav-primary .current-menu-item > a {
-	color: #000;
+	color: #fff;																		/* -K */
 }
 
 .nav-primary .sub-menu a:hover {
