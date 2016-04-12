@@ -974,7 +974,7 @@ Site Header
 		.header-full-width .right .menu{
 			height:42px; 
 			width:auto;
-			float:right;
+			padding-left: 5px;											/* -K */
 		}
 		
 		.header-full-width .right .language{
@@ -1085,13 +1085,20 @@ Site Navigation
 	text-align: left;
 }
 
+.parallelogram {
+	-webkit-transform: 	skew(10deg); 												/* -K */
+	-moz-transform: 	skew(10deg); 												/* -K */
+	-o-transform: 		skew(10deg); 												/* -K */
+	transform: 			skew(10deg); 												/* -K */
+}
+
+.parallelogram:hover {																/* -K */
+    border-color: #00BAFF;														/* -K */
+}
+
 .genesis-nav-menu li{
-	margin:0 0 0 -11px;
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=80);
-	-moz-opacity:0.8;
-	-khtml-opacity: 0.8;
-	opacity: 0.8;
+	margin:0 0 0 -2px;
+	border-left: double 6px #F60;
 }
 	.genesis-nav-menu li:hover{
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -1100,35 +1107,23 @@ Site Navigation
 		-khtml-opacity: 1;
 		opacity: 1;
 	}
-.genesis-nav-menu span.menu-l{
-	background: url(images/menu-left.png) no-repeat left top;
-	width:8px;
-	height:41px;
-	display:block;
-	float:left;
-	
-}
-.genesis-nav-menu span.menu-r{
-	background: url(images/menu-right.png) no-repeat left top;
-	width:8px;
-	height:41px;
-	display:block;
-	float:left;
-}
 .genesis-nav-menu a {
-	background:rgb(255, 255, 255) url(images/menu-midd.png) repeat-y right top;
+	background-color: rgba(0, 0, 0, 0.5);										/* -K */
 	min-width:70px;
 	height:41px;
 	border: none;
-	color: #000;
-	font-size:12px;
+	color: #FFF;																/* -K */
+	font-size:14px;
 	font-weight:bold;
 	display:inline-block;
 	padding:10px 8px 0;
-	float:left;
 	text-align:center;
 	font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
-	letter-spacing:0.03em;
+	letter-spacing:0.05em;															/* -K */
+}
+
+.genesis-nav-menu a:hover {															/* -K */
+    background-color: rgba(0, 0, 0, 1);												/* -K */
 }
 
 .genesis-nav-menu a:hover,

@@ -44,14 +44,14 @@ remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
 // Add menu, search and lang scripts
 add_action('wp_head', 'ScriptTopNavigation');
 
-function ScriptTopNavigation(){ ?>
+function ScriptTopNavigation(){ /*?>
 	<script language="javascript">
         jQuery(document).ready( function(){							 
             jQuery("#menu-main-menu li a").before("<span class='menu-l'></span>");
 			jQuery("#menu-main-menu li a").after("<span class='menu-r'></span>");
         });
 				
-    </script> <?php
+    </script> <?php */ // Commented-out when redesigning the navbar -K
 }
 
 // Add custom header and include inside the main menu
@@ -154,6 +154,13 @@ function wpb_list_child_pages() {
 	
 	return $string;
 }
+
+// Adds class ".parallelogram" to navbar menu items (for redesign) -K
+function add_custom_nav_menu_item_class ($classes) {
+    $classes[] = 'parallelogram';
+    return $classes;
+}
+add_filter( 'nav_menu_css_class', 'add_custom_nav_menu_item_class', 10, 1);
 
 // add my custom variables to query_vars
 function add_query_vars_filter( $vars ){
