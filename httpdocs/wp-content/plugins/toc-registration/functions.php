@@ -102,7 +102,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
         });
     </script>
 
-    <form class="form" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
+    <form class="form" accept-charset="UTF-8" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
 	<?php 
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
@@ -847,11 +847,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              <div class="row"> 	
              	<div class="OneCol">					 
                      <p><br/><strong>Safe Online Payments</strong><br/>
-                         Your safety is our priority. We chose to use the best online payment solutions. You can now safely pay online for your bookings because:
+                         Your safety is our priority, hence we choose to use the best online payment solutions. You can now safely pay online for your booking because:
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>You can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>With your PayPal account you can use Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -978,7 +978,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		
     </script>
 
-    <form class="form" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
+    <form class="form" accept-charset="UTF-8" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
 	<?php 
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
@@ -2193,11 +2193,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              <div class="row"> 	
              	<div class="OneCol">					 
                      <p><br/><strong>Safe Online Payments</strong><br/>
-                         Your safety is our priority. We chose to use the best online payment solutions. You can now safely pay online for your bookings because:
+                         Your safety is our priority, hence we choose to use the best online payment solutions. You can now safely pay online for your booking because:
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>You can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>With your PayPal account you can use Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -2317,7 +2317,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
         });
     </script>
 
-    <form class="form" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
+    <form class="form" accept-charset="UTF-8" method="post" action="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
 	<?php 
 	date_default_timezone_set('Europe/Athens');
 	$date = date('d/m/Y H:i:s a', time());
@@ -2948,11 +2948,11 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
              <div class="row"> 	
              	<div class="OneCol">					 
                      <p><br/><strong>Safe Online Payments</strong><br/>
-                         Your safety is our priority. We chose to use the best online payment solutions. You can now safely pay online for your bookings because:
+                         Your safety is our priority, hence we choose to use the best online payment solutions. You can now safely pay online for your booking because:
                          <ul>
                             <li>Using PayPal is Safe and Easy.</li>
                             <li>Your payment is Secure and Confidential.</li>
-                            <li>You can pay with your PayPal account, Visa, MasterCard, Maestro, American Express and others.</li>
+                            <li>With your PayPal account you can use Visa, MasterCard, Maestro, American Express and others.</li>
                             <li>You can pay from anywhere at anytime.</li>
                         </ul>
                      </p>
@@ -3019,10 +3019,10 @@ function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost
 	
 	$headers  = "From: Tour of Crete <".$from. ">\r\n" . "CC: info@tourofcrete.com\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html\r\n";
+	$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	
 
-	mail($to, $subject, $body, $headers);
+	mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=', $body, $headers);
 	
 	session_start();
 	$_SESSION['formCost'] = $formCost;
