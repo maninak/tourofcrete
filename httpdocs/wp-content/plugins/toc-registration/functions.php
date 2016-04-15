@@ -258,7 +258,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$surname." ".$name."</strong></font>,</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this registration when in contact with us. <br/>We have received your application and will be reaching you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -367,13 +367,13 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				}else{
 					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
-				$email_message .= "Transaction Date: ".$date."<br/>";
+				$email_message .= "Registration Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
 				$email_message .= "Total Cost: <strong>".number_format($formCost)." &euro;</strong><br/>";
 				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
-				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
+				$email_message .= "<p>In order to complete this registration the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
 				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";
 				$email_message .= $signature;	
@@ -1238,7 +1238,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 			<?php
 		}else{
 				$email_message = "<p>Dear <font color=\"#f60\"><strong>".$teamleader."</strong></font>,</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this registration when in contact with us. <br/>We have received your application and will be reaching you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";	
 				$email_message .= "<table cellpadding='1' cellspacing='1'>";	
 				$email_message .= "<tr><td colspan='".$teammembers."'>";	
@@ -1519,13 +1519,13 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				}else{
 					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
-				$email_message .= "Transaction Date: ".$date."<br/>";
+				$email_message .= "Registration Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
 				$email_message .= "Total Cost: <strong>".number_format($formCost)." &euro;</strong><br/>";
 				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
-				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
+				$email_message .= "<p>In order to complete this registration the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
 				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
 				$email_message .= $signature;
@@ -2440,7 +2440,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 		}else{
 			
 			$email_message = "<p>Dear <font color=\"#f60\"><strong>".$fullname."</strong></font>,</p>";	
-				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this transaction when in contact with us. <br/>We have received your application and will be in contact with you to arrange any outlying details, if any arise.</p>";	
+				$email_message .= "<p>Your booking for the Tour of Crete has been submitted succesfully! Your Registration Code is: <strong>".$regCode."</strong>. <br/>Please safekeep this number for future reference of this registration when in contact with us. <br/>We have received your application and will be reaching you to arrange any outlying details, if any arise.</p>";	
 				$email_message .= "<p>Please review all following information and inform us in case of an error or correction:</p>";
 				$email_message .= "<table>";	
 				$email_message .= "<tr><td>";	
@@ -2521,13 +2521,13 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				}else{
 					$email_message .= "Bank Deposit <br/>National Bank of Greece <br/>IBAN: <strong>".$IBAN."</strong><br/>Account Holder Names: <strong>VAGIONAKI E. / KOSTOMANOLAKIS F.</strong><br/>";
 				}
-				$email_message .= "Transaction Date: ".$date."<br/>";
+				$email_message .= "Registration Date: ".$date."<br/>";
 				$email_message .= "Registration Code: <strong>".$regCode."</strong><br/>";
 				$email_message .= "Total Cost: <strong>".number_format($formCost)." &euro;</strong><br/>";
 				$email_message .= "<br/><em>Make sure you attach your Full Name and Registration Code when submitting your payment.</em><br/>";
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
-				$email_message .= "<p>In order to complete this transaction the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
+				$email_message .= "<p>In order to complete this registration the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
 				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
 				$email_message .= $signature;
