@@ -112,17 +112,17 @@ function getStageInfo($type, $parentID){
 				L.mapbox.accessToken = 'pk.eyJ1IjoibWFuaW5hcyIsImEiOiJjaWpzYmRvZW4wMGFodmxtN3M3bHV6cXhrIn0.Xf1uqAaJ4QSFgmM_UinFkg';
 				var map = L.mapbox.map('map', 'mapbox.streets', {attributionControl: false}).setView([35.2275941, 24.7696794], 8);
 				var featureLayer = L.mapbox.featureLayer()
-						.loadURL('http://tourofcrete.com/wp-content/themes/tourofcrete/geojson/ToC_allstages_lowres_N6_dark.geojson')
+						.loadURL('http://tourofcrete.com/wp-content/themes/tourofcrete/geojson/ToC_allstages_thres=0,0005_N=6_dark_v2.geojson')
 						.addTo(map);  
 				L.control.fullscreen().addTo(map);
 				
 				map.once('move', function() {
 					featureLayer.eachLayer(function(marker) {
-						if (marker.toGeoJSON().properties.name === 'S1  Heraklion - Elounda 114Km') {
-							marker.bindLabel('Stage 1: Heraklion - Elounda 114Km').addTo(map);
+						if (marker.toGeoJSON().properties.name === 'S1  Heraklion - Agios Nikolaos 113Km') {
+							marker.bindLabel('Stage 1: Heraklion - Agios Nikolaos 113Km').addTo(map);
 						}
-						else if (marker.toGeoJSON().properties.name === 'S2 Elounda - Ierapetra 139Km') {
-							marker.bindLabel('Stage 2: Elounda - Ierapetra 139Km').addTo(map);
+						else if (marker.toGeoJSON().properties.name === 'S2 Agios Nikolaos - Ierapetra 132Km') {
+							marker.bindLabel('Stage 2: Agios Nikolaos - Ierapetra 132Km').addTo(map);
 						}
 						else if (marker.toGeoJSON().properties.name === 'S3 Ierapetra - Agia Galinini 147Km') {
 							marker.bindLabel('Stage 3: Ierapetra - Agia Galinini 147Km').addTo(map);

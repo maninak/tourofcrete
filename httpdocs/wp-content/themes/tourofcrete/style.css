@@ -1800,13 +1800,14 @@ Content Area
 			transition:         all 0.0s ease-out;		/* -K */
 		}
 		ul.venues-menu li{
-			width: 16.6%;								/* -K */
+			width: auto;								/* -K */
 			float: left;								/* -K */
 			font-weight: bold;							/* -K */
 			display: block;								/* -K */
 			font-size: 19px;							/* -K */
 			border-bottom: 1px solid #F60;				/* -K */
 			padding-bottom: 10px;						/* -K */
+			padding-right: 21px;						/* -K */
 			margin: 0px 0px 15px;						/* -K */
 			transition: all 0.0s ease-out 0s;			/* -K */
 			color: #FFF;								/* -K */
@@ -1887,6 +1888,7 @@ Content Area
 		ul.all-stages-menu li .route{					/* -K */
 			font-size:12px;								/* -K */
 			font-weight:normal;							/* -K */
+			letter-spacing: -0.08em;					/* -K */
 		}
 		ul.all-stages-menu li .kilometers{
 			font-weight:bold;
