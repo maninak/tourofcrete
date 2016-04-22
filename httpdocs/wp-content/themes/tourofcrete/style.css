@@ -93,7 +93,7 @@
 }
 @font-face{
 	font-family: cargo_becker;
-	src: url(cargo_becker.ttf);
+	src: url(Capsmall_clean.ttf);
 }
 
 /*
@@ -1807,7 +1807,7 @@ Content Area
 			font-size: 19px;							/* -K */
 			border-bottom: 1px solid #F60;				/* -K */
 			padding-bottom: 10px;						/* -K */
-			padding-right: 21px;						/* -K */
+			padding-right: 15px;						/* -K */
 			margin: 0px 0px 15px;						/* -K */
 			transition: all 0.0s ease-out 0s;			/* -K */
 			color: #FFF;								/* -K */
