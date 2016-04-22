@@ -973,7 +973,7 @@ Site Header
 		.header-full-width .right .menu{
 			height:42px; 
 			width:auto;
-			padding-left: 5px;											/* -K */
+			margin-left: -5px;											/* -K */
 		}
 		
 		.header-full-width .right .language{
