@@ -63,13 +63,17 @@ function custom_header() {
 	global $post;
 	$tourDates = get_field('dates', icl_object_id(2, 'page', false));
   ?>
+
   	<div class="header-full-width">
-       <div class="left">
+  	<?php if (ICL_LANGUAGE_CODE == 'el'){ ?>
+		<link rel='stylesheet'   href='<?=get_bloginfo('stylesheet_directory');?>/style_el.css' type='text/css' media='all' />
+	<?php } ?>
+		<div class="left">
        		<a href="<?=get_bloginfo('url'); ?>" alt="<?php print get_bloginfo('name') .' - '. get_bloginfo('description'); ?>">
                <img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/logo.png" title="<?php print get_bloginfo('name') ?>" />
             </a>
-       </div>
-       <div class="right">
+		</div>
+		<div class="right">
        		<div class="menu"><?php genesis_do_nav(); ?></div>
             <div class="language">
             	<div class="left">
@@ -83,7 +87,6 @@ function custom_header() {
                         <area shape="rect" coords="1,1,23,27" href="https://goo.gl/jdKycy" target="_blank" />
                       </map>
                 </div>
-                
             </div>
        </div>
 </div>
