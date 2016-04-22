@@ -1979,6 +1979,11 @@ l_lang_sel_current {																				/* -K */
 	margin-bottom: 2.4rem;
 }
 
+a[href='https://en.wikipedia.org/wiki/Cyclosportive'] {							/* -K */
+	border-bottom: 0px;															/* -K */
+	color: #fff;																/* -K */
+}																				/* -K */
+
 .entry-footer .entry-meta {
 	border-top: 2px solid #f5f5f5;
 	margin: 0 -40px;
