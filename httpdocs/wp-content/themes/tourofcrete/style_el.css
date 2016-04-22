@@ -1,4 +1,28 @@
 @font-face{
-	font-family: crillegr;
+	font-family: tinosgr;
 	src: url(Tinos-Italic.ttf);
+}
+
+h2 {
+	font-family: 'crillee', 'tinosgr', 'Open Sans', Helvetica, Arial, sans-serif !important;
+}
+
+.entry-title {
+	font-family: 'crillee', 'tinosgr', 'Open Sans', Helvetica, Arial, sans-serif !important;
+}
+
+.genesis-nav-menu a {
+	font-family: 'crillee', 'tinosgr', 'Open Sans', Helvetica, Arial, sans-serif !important;
+}
+
+.frameContent .more a{
+	font-family: 'crillee', 'tinosgr', 'Open Sans', Helvetica, Arial, sans-serif !important;
+}
+
+.frameContent .banners{
+		font-family: 'crillee', 'tinosgr', 'Open Sans', Helvetica, Arial, sans-serif !important;
+}
+
+.FullFrame ul li h3{
+	font-family: 'crillee', 'tinosgr', 'Open Sans', Helvetica, Arial, sans-serif !important;
 }

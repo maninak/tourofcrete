@@ -84,15 +84,11 @@
 	src: url(OpenSans-Regular.ttf);
 }
 @font-face{
-	font-family: crillegr;
-	src: url(crillegr.ttf);
+	font-family: crillee;
+	src: url(CrilleeBT-Italic.ttf);
 }
 @font-face{
-	font-family: tt1250m_;
-	src: url(tt1250m_.ttf);
-}
-@font-face{
-	font-family: cargo_becker;
+	font-family: capsmall;
 	src: url(Capsmall_clean.ttf);
 }
 
@@ -318,7 +314,7 @@ h1 {
 	}
 h2 {
 	font-size:30px;
-	font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'crillee',  'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight:bold;
 	letter-spacing:0.05em;
 	margin:0;
@@ -774,7 +770,7 @@ img.alignright,
 	font-size: 19px;
 	font-weight:bold;
 	line-height: 1;
-	font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .entry-title a,
@@ -1036,7 +1032,7 @@ Site Header
 	width:auto;
 	color:#f58220;
 	padding:0 0 0 10px;
-	font-family: 'cargo_becker', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'capsmall', 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size:26px;
 	letter-spacing:0.05em;
 }
@@ -1121,7 +1117,7 @@ Site Navigation
 	display:inline-block;
 	padding:10px 8px 0;
 	text-align:center;
-	font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 	letter-spacing:0.05em;															/* -K */
 }
 
@@ -1440,7 +1436,7 @@ l_lang_sel_current {																				/* -K */
 			text-align:center;
 			color:#000;
 			font-size:12px;
-			font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+			font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 			font-weight:bold;
 			letter-spacing:0.03em;		}
 		.frameContent .more .right{
@@ -1483,7 +1479,7 @@ l_lang_sel_current {																				/* -K */
 	
 	.frameContent .banners{
 		font-size:34px;
-		font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+		font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 		text-align:center;
 		font-weight:bold;
 		letter-spacing:0.05em;
@@ -1612,7 +1608,7 @@ l_lang_sel_current {																				/* -K */
 		
 		.FullFrame ul li h3{
 			font-size:12px;
-			font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+			font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 			font-weight:bold;
 			letter-spacing:0.05em;
 			margin: 0px 0px 4px;						/* -K */
@@ -2391,7 +2387,7 @@ Gallery - Latest Photos
 	float:right;
 	font-size:12px;
 	font-weight:bold;
-	font-family: 'tt1250m_', 'crillegr', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .masked-image {
 	position: relative;
