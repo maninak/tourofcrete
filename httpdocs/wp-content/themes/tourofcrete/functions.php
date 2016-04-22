@@ -81,7 +81,7 @@ function custom_header() {
                 	<img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/header-txt.png" />
                 </div>
             	<div class="right">
-                	<div class="lang"></div>
+                	<div class="lang"><?php do_action('icl_language_selector'); ?></div>
                     <div class="social"><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/social.png" border="0" usemap="#Map" />
                       <map name="Map" id="Map">
                         <area shape="rect" coords="1,1,23,27" href="https://goo.gl/jdKycy" target="_blank" />
