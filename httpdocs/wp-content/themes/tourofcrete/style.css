@@ -1242,6 +1242,10 @@ l_lang_sel_current {																				/* -K */
 	padding-right: 20px !important;																	/* -K */
 }																									/* -K */
 
+#lang_sel {																							/* -K */
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;								/* -K */
+}																									/* -K */
+
 #lang_sel li {																						/* -K */
     width: 110px !important;																		/* -K */			
 }																									/* -K */
