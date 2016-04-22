@@ -24,7 +24,7 @@ do_action( 'genesis_after_footer' );
 echo '</div>'; //* end .site-container or #wrap
 ?>
 	<div class="sponsors">
-    	<div class="title">
+    	<div class="title parallelogram">
         	<h2><?php _e('SPONSORED AND SUPPORTED BY','tourofcrete');?></h2>
         </div>
     	<div class="content" align="center">

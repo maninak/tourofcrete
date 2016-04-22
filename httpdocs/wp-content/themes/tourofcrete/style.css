@@ -2148,15 +2148,19 @@ Footer Widgets
 }
 
 	.sponsors .title{
-		background: url(images/sponsors-frame.png) no-repeat center top;
-		width:956px;
+		width:770px;							/* -K */
 		height:70px;							/* -K */
-		margin:0 auto;
+		margin:0px auto -1px;					/* -K */
+		background-color: rgba(0, 0, 0, 0.92);	/* -K */
 	}
 	
 	.sponsors h2{
 		text-align:center;
 		padding:25px 0 0 0;						/* -K */
+		-webkit-transform: 	skew(-10deg);		/* -K */
+		-moz-transform: 	skew(-10deg);		/* -K */
+		-o-transform: 		skew(-10deg);		/* -K */
+		transform: 			skew(-10deg);		/* -K */
 	}
 	
 	.sponsors .content{
