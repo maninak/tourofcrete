@@ -973,7 +973,8 @@ Site Header
 		.header-full-width .right .menu{
 			height:42px; 
 			width:auto;
-			margin-left: -5px;											/* -K */
+			margin-right: 30px;											/* -K */
+			float:right;												/* -K */
 		}
 		
 		.header-full-width .right .language{
@@ -1269,7 +1270,7 @@ l_lang_sel_current {																				/* -K */
 }																									/* -K */
 
 .icl_lang_sel_current {																				/* -K */
-    padding-right: 11px !important;																	/* -K */
+    padding-right: 14px !important;																	/* -K */
 }																									/* -K */
 
 /* Content Area
