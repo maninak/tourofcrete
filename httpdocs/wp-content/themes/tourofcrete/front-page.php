@@ -20,7 +20,11 @@ function child_do_custom_loop() {
                 <?php genesis_do_loop(); ?>
                 <div class='more'>
                 	<div class="left"></div>
-                	<a href="/discover-crete/"><?php _e('Read More','tourofcrete');?></a>
+                    <?php   if      (ICL_LANGUAGE_CODE == 'en') { $read_more_target = "/discover-crete/";   }
+                            elseif  (ICL_LANGUAGE_CODE == 'el') { $read_more_target = "/el/discover-crete/";}
+                            else                                { $read_more_target = "/discover-crete/";   }
+                    ?>
+                	<a href="<?php echo $read_more_target; ?>"><?php _e('Read More','tourofcrete');?></a>
                     <div class="right"></div>
                 </div>
             </div>
