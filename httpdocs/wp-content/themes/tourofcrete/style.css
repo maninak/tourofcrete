@@ -1090,11 +1090,18 @@ Site Navigation
 	-moz-transform: 	skew(10deg); 												/* -K */
 	-o-transform: 		skew(10deg); 												/* -K */
 	transform: 			skew(10deg); 												/* -K */
-}
+}																					/* -K */
 
 .parallelogram:hover {																/* -K */
     border-color: #00BAFF;															/* -K */
-}
+}																					/* -K */
+
+.parallelogramm a {																	/* -K */
+	-webkit-transform: 	skew(-10deg); 												/* -K */
+	-moz-transform: 	skew(-10deg); 												/* -K */
+	-o-transform: 		skew(-10deg); 												/* -K */
+	transform: 			skew(-10deg); 												/* -K */
+}																					/* -K */
 
 .genesis-nav-menu li{
 	margin:0 0 0 -3px;
