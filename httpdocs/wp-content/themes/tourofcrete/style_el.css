@@ -26,3 +26,11 @@ h2 {
 .FullFrame ul li h3{
 	font-family: 'firagr', 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
+
+
+.parallelogram a {
+	-webkit-transform: 	skew(-3deg) !important;
+	-moz-transform: 	skew(-3deg) !important;
+	-o-transform: 		skew(-3deg) !important;
+	transform: 			skew(-3deg) !important;
+}
