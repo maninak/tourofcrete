@@ -1596,9 +1596,9 @@ l_lang_sel_current {																				/* -K */
 	}													/* -K */
 
 
-	article:not(.post-2) p{								/* -K */
-		line-height: 1.4em !important;					/* -K */
-		font-size: 1.15em !important;					/* -K */
+	article:not(.post-2):not(.post-1505) p{				/* Give all articles more spacious text except en and el homepage -K */
+		line-height: 1.3em !important;					/* -K */
+		font-size: 1.1em !important;					/* -K */
 	}													/* -K */
 	
 	.FullFrame ul{
