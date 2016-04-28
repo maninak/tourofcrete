@@ -301,10 +301,10 @@ h5 {
 
 h1 {
 	color: #ff6600;
-	font-size: 20px;
+	font-size: 2em;											/* -K */
 }
 	h1 span{
-		color: #fff;			/* -K */
+		color: #fff;										/* -K */
 		font-size:17px;
 	}
 	h1.entry-title{
@@ -1587,12 +1587,18 @@ l_lang_sel_current {																				/* -K */
 	.FullFrame h2{
 		color:#ff6600;
 		font-weight:bold;
-		font-size:14px;									/* -K */
+		font-size: 1.4em;								/* -K */
 		padding:10px 0 10px 0;							/* -K */
 	}
 	.FullFrame h6{										/* -K */
 		font-size:12px;									/* -K */
 		margin:0;										/* -K */
+	}													/* -K */
+
+
+	article:not(.post-2) p{								/* -K */
+		line-height: 1.4em !important;					/* -K */
+		font-size: 1.15em !important;					/* -K */
 	}													/* -K */
 	
 	.FullFrame ul{
@@ -1609,7 +1615,7 @@ l_lang_sel_current {																				/* -K */
 		}
 		
 		.FullFrame ul li h3{
-			font-size:12px;
+			font-size: 1.15em;							/* -K */
 			font-family: 'crillee', 'Open Sans', Helvetica, Arial, sans-serif;
 			font-weight:bold;
 			letter-spacing:0.05em;
@@ -1684,6 +1690,7 @@ l_lang_sel_current {																				/* -K */
 	.FullFrame.news .right article.news img.alignleft{
 		margin:0 14px 14px 0;
 	}
+
 	.FullFrame.news .right h1.entry-title {
 		font-size:26px;
 		font-family: 'Open Sans', Helvetica, Arial, sans-serif;

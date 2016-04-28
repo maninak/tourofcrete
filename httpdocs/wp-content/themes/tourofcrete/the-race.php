@@ -36,9 +36,6 @@ function child_do_custom_loop() {
                 ?><img src="<?=get_bloginfo('stylesheet_directory'); ?>/images/the-race.jpg" /> <?php 
             }
             ?>
-            
-       
-
     </div>
 <?php  
 }
@@ -205,10 +202,12 @@ function getStageInfo($type, $parentID){
 				echo "<ul class='venues-menu subpages'>";
 					wp_list_pages('child_of='.$parentID.'&sort_column=post_date&title_li=');
 				echo "</ul>";
-			
-				echo "<div class='entry-content'>";
-					echo "<p>". get_post_field('post_content', 92) . "</p>";
-				echo "</div>";
+				
+				echo "<article>";
+					echo "<div class='entry-content'>";
+						echo "<p>". get_post_field('post_content', 92) . "</p>";
+					echo "</div>";
+				echo "</article>";
 			echo "</div>";	
 			if( !empty($venueImage) ): ?>
 				 <img src="<?php echo $venueImage['url']; ?>" alt="<?php the_title(); ?>" />
