@@ -93,6 +93,17 @@ class WPSEO_OnPage_Option {
 	}
 
 	/**
+	 * Returns the value of the onpage_enabled status
+	 *
+	 * @return bool
+	 */
+	public function is_enabled() {
+		$options = get_option( 'wpseo' );
+
+		return ! empty( $options['onpage_indexability'] );
+	}
+
+	/**
 	 * Getting the option with the OnPage.org data
 	 *
 	 * @return array

@@ -3,7 +3,7 @@
 Plugin Name: WP-GPX-Maps
 Plugin URI: http://www.devfarm.it/
 Description: Draws a GPX track with altitude chart
-Version: 1.3.8
+Version: 1.3.11
 Author: Bastianon Massimo
 Author URI: http://www.pedemontanadelgrappa.it/
 */
@@ -51,7 +51,7 @@ function enqueue_WP_GPX_Maps_scripts()
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'googlemaps', '//maps.googleapis.com/maps/api/js?sensor=false', null, null);
     wp_enqueue_script( 'highcharts', "//code.highcharts.com/3.0.10/highcharts.js", array('jquery'), "3.0.10", true);
-    wp_enqueue_script( 'WP-GPX-Maps', plugins_url('/WP-GPX-Maps.js', __FILE__), array('jquery','googlemaps','highcharts'), "1.3.5");
+    wp_enqueue_script( 'WP-GPX-Maps', plugins_url('/WP-GPX-Maps.js', __FILE__), array('jquery','googlemaps','highcharts'), "1.3.8");
 }
 
 function print_WP_GPX_Maps_styles()
@@ -266,7 +266,7 @@ function handle_WP_GPX_Maps_Shortcodes($attr, $content='')
 		$mtime = 0;
 	}
 	
-	$cacheFileName = "$gpx,$mtime,$w,$mh,$mt,$gh,$showEle,$showW,$showHr,$showAtemp,$showCad,$donotreducegpx,$pointsoffset,$showSpeed,$showGrade,$uomspeed,$uom,$distanceType,v1.3.5";
+	$cacheFileName = "$gpx,$mtime,$w,$mh,$mt,$gh,$showEle,$showW,$showHr,$showAtemp,$showCad,$donotreducegpx,$pointsoffset,$showSpeed,$showGrade,$uomspeed,$uom,$distanceType,v1.3.9";
 
 	$cacheFileName = md5($cacheFileName);
 	
@@ -511,12 +511,16 @@ function handle_WP_GPX_Maps_Shortcodes($attr, $content='')
 		}
 
 		$avg_speed = convertSpeed($avg_speed,$uomspeed,true);
-						
+		$waypoints = '[]';
+		
 		if ($showW == true) {
 			$wpoints = getWayPoints($gpx);
+			/*
 			foreach ($wpoints as $p) {
 				$waypoints .= '['.number_format ( (float)$p[0] , 7 , '.' , '' ).','.number_format ( (float)$p[1] , 7 , '.' , '' ).',\''.unescape($p[4]).'\',\''.unescape($p[5]).'\',\''.unescape($p[7]).'\'],';
 			}
+			*/
+			$waypoints = json_encode($wpoints);
 		}
 
 		if ($showEle == "false")
@@ -630,54 +634,57 @@ function handle_WP_GPX_Maps_Shortcodes($attr, $content='')
 		</div>
 		'. $error .'
 		<script type="text/javascript">
-		    jQuery("#wpgpxmaps_'.$r.'").wpgpxmaps({ targetId    : "'.$r.'",
-							mapType     : "'.$mt.'",
-							mapData     : ['.$points_maps.'],
-							graphDist   : ['.($hideGraph ? '' : $points_graph_dist).'],
-							graphEle    : ['.($hideGraph ? '' : $points_graph_ele).'],
-							graphSpeed  : ['.($hideGraph ? '' : $points_graph_speed).'],
-							graphHr     : ['.($hideGraph ? '' : $points_graph_hr).'],
-							graphAtemp  : ['.($hideGraph ? '' : $points_graph_atemp).'],
-							graphCad    : ['.($hideGraph ? '' : $points_graph_cad).'],
-							graphGrade  : ['.($hideGraph ? '' : $points_graph_grade).'],
-							waypoints   : ['.$waypoints.'],
-							unit        : "'.$uom.'",
-							unitspeed   : "'.$uomspeed.'",
-							color1      : ['.$colors_map.'],
-							color2      : "'.$color_graph.'",
-							color3      : "'.$color_graph_speed.'",
-							color4      : "'.$color_graph_hr.'",
-							color5      : "'.$color_graph_cad.'",
-							color6      : "'.$color_graph_grade.'",
-							color7      : "'.$color_graph_atemp.'",
-							chartFrom1  : "'.$chartFrom1.'",
-							chartTo1    : "'.$chartTo1.'",
-							chartFrom2  : "'.$chartFrom2.'",
-							chartTo2    : "'.$chartTo2.'",
-							startIcon   : "'.$startIcon.'",
-							endIcon     : "'.$endIcon.'",
-							currentIcon : "'.$currentIcon.'",
-							waypointIcon : "'.$waypointIcon.'",
-							currentpositioncon : "'.$currentpositioncon.'",
-							usegpsposition : "'.$usegpsposition.'",
-							zoomOnScrollWheel : "'.$zoomOnScrollWheel.'", 
-							ngGalleries : ['.$ngGalleries.'],
-							ngImages : ['.$ngImages.'],
-							pluginUrl : "'.plugins_url().'",
-							langs : { altitude              : "'.__("Altitude", "wp-gpx-maps").'",
-									  currentPosition       : "'.__("Current Position", "wp-gpx-maps").'",
-									  speed                 : "'.__("Speed", "wp-gpx-maps").'", 
-									  grade                 : "'.__("Grade", "wp-gpx-maps").'", 
-									  heartRate             : "'.__("Heart rate", "wp-gpx-maps").'", 
-									  atemp             	: "'.__("Temperature", "wp-gpx-maps").'", 
-									  cadence               : "'.__("Cadence", "wp-gpx-maps").'",
-									  goFullScreen          : "'.__("Go Full Screen", "wp-gpx-maps").'",
-									  exitFullFcreen        : "'.__("Exit Full Screen", "wp-gpx-maps").'",
-									  hideImages            : "'.__("Hide Images", "wp-gpx-maps").'",
-									  showImages            : "'.__("Show Images", "wp-gpx-maps").'",
-									  backToCenter		    : "'.__("Back to center", "wp-gpx-maps").'"
-									}
-						   });
+			jQuery(document).ready(function() {
+				jQuery("#wpgpxmaps_'.$r.'").wpgpxmaps({ 
+					targetId    : "'.$r.'",
+					mapType     : "'.$mt.'",
+					mapData     : ['.$points_maps.'],
+					graphDist   : ['.($hideGraph ? '' : $points_graph_dist).'],
+					graphEle    : ['.($hideGraph ? '' : $points_graph_ele).'],
+					graphSpeed  : ['.($hideGraph ? '' : $points_graph_speed).'],
+					graphHr     : ['.($hideGraph ? '' : $points_graph_hr).'],
+					graphAtemp  : ['.($hideGraph ? '' : $points_graph_atemp).'],
+					graphCad    : ['.($hideGraph ? '' : $points_graph_cad).'],
+					graphGrade  : ['.($hideGraph ? '' : $points_graph_grade).'],
+					waypoints   : '.$waypoints.',
+					unit        : "'.$uom.'",
+					unitspeed   : "'.$uomspeed.'",
+					color1      : ['.$colors_map.'],
+					color2      : "'.$color_graph.'",
+					color3      : "'.$color_graph_speed.'",
+					color4      : "'.$color_graph_hr.'",
+					color5      : "'.$color_graph_cad.'",
+					color6      : "'.$color_graph_grade.'",
+					color7      : "'.$color_graph_atemp.'",
+					chartFrom1  : "'.$chartFrom1.'",
+					chartTo1    : "'.$chartTo1.'",
+					chartFrom2  : "'.$chartFrom2.'",
+					chartTo2    : "'.$chartTo2.'",
+					startIcon   : "'.$startIcon.'",
+					endIcon     : "'.$endIcon.'",
+					currentIcon : "'.$currentIcon.'",
+					waypointIcon : "'.$waypointIcon.'",
+					currentpositioncon : "'.$currentpositioncon.'",
+					usegpsposition : "'.$usegpsposition.'",
+					zoomOnScrollWheel : "'.$zoomOnScrollWheel.'", 
+					ngGalleries : ['.$ngGalleries.'],
+					ngImages : ['.$ngImages.'],
+					pluginUrl : "'.plugins_url().'",
+					langs : { altitude              : "'.__("Altitude", "wp-gpx-maps").'",
+							  currentPosition       : "'.__("Current Position", "wp-gpx-maps").'",
+							  speed                 : "'.__("Speed", "wp-gpx-maps").'", 
+							  grade                 : "'.__("Grade", "wp-gpx-maps").'", 
+							  heartRate             : "'.__("Heart rate", "wp-gpx-maps").'", 
+							  atemp             	: "'.__("Temperature", "wp-gpx-maps").'", 
+							  cadence               : "'.__("Cadence", "wp-gpx-maps").'",
+							  goFullScreen          : "'.__("Go Full Screen", "wp-gpx-maps").'",
+							  exitFullFcreen        : "'.__("Exit Full Screen", "wp-gpx-maps").'",
+							  hideImages            : "'.__("Hide Images", "wp-gpx-maps").'",
+							  showImages            : "'.__("Show Images", "wp-gpx-maps").'",
+							  backToCenter		    : "'.__("Back to center", "wp-gpx-maps").'"
+							}
+				});
+			});
 		</script>';	
 
 	// print summary

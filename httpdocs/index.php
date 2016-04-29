@@ -1,5 +1,4 @@
 <?php
-include("wejnswpwhitespacefix.php");
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
  * wp-blog-header.php which does and tells WordPress to load the theme.
@@ -7,6 +6,7 @@ include("wejnswpwhitespacefix.php");
  * @package WordPress
  */
 
+include(dirname( __FILE__ ) . 'wejnswpwhitespacefix.php');
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *

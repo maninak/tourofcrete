@@ -63,7 +63,6 @@ function custom_header() {
 	global $post;
 	$tourDates = get_field('dates', icl_object_id(2, 'page', false));
   ?>
-
   	<div class="header-full-width">
   	<?php if (ICL_LANGUAGE_CODE == 'el'){ ?>
 		<link rel='stylesheet'   href='<?=get_bloginfo('stylesheet_directory');?>/style_el.css' type='text/css' media='all' />
