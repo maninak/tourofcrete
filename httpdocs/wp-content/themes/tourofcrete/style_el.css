@@ -1,3 +1,5 @@
+/* Fonts
+ --------------------------------------------------------*/
 @font-face{
 	font-family: firagr;
 	src: url(FiraSans-MediumItalic.ttf);
@@ -28,9 +30,18 @@ h2 {
 }
 
 
+/* Header nav-menu
+ --------------------------------------------------------*/
 .parallelogram a {
 	-webkit-transform: 	skew(-3deg) !important;
 	-moz-transform: 	skew(-3deg) !important;
 	-o-transform: 		skew(-3deg) !important;
 	transform: 			skew(-3deg) !important;
+}
+
+
+/* Registrations 
+ --------------------------------------------------------*/
+.imgpricelist {
+    max-width: 605px;
 }
