@@ -374,7 +374,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this registration the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
-				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
+				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a response from us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";
 				$email_message .= $signature;	
 				
@@ -1526,7 +1526,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this registration the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
-				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
+				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a response from us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
 				$email_message .= $signature;
 				
@@ -2528,7 +2528,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				$email_message .= "<p>In order to complete this registration the user has read and accepted the <a href='http://tourofcrete.com/terms-conditions/' target='_blank'>Terms and Conditions</a>.</p>";	
-				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a reply form us on any corrections or questions you may have.</p>";	
+				$email_message .= "<p>If, for any reason, you deem the above information as inaccurate, please contact us as soon as possible by replying to this e-mail. You will promptly receive a response from us on any corrections or questions you may have.</p>";	
 				$email_message .= "<p>We are gladly at your disposal. <br/>Best regards,</p>";	
 				$email_message .= $signature;
 				
