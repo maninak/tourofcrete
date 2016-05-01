@@ -87,7 +87,7 @@ require_once(get_template_directory()."/mycaptcha.php");
 				$email_message .= "</td></tr>";	
 				$email_message .= "</table><br/>";		
 				
-				sendmail_contact_form($email_message, $contact_email, $contact_subject);
+				sendmail_contact_form($contact_name, $contact_email, $contact_subject, $email_message);
 				
 			}
 		
@@ -189,28 +189,25 @@ function redirect_contact_form($url){
     echo $string;
 }
 
-function sendmail_contact_form($email_message, $toEmail, $subject){
+function sendmail_contact_form($contact_name, $contact_email, $contact_subject, $email_message){
 
-	$subject = 'Tour of Crete: Contact form - Subject: '.$subject;
+	$from ="info@tourofcrete.com"; //From email
+	$to = $contact_email; //To email
+	$subject = 'Tour of Crete Contact form - Subject: ' . $contact_subject;
 	$body = $email_message;
-	$from ="info@tourofcrete.com"; //From email.
-	$to = $toEmail; //To email
-	$cc = "info@tourofcrete.com"; //client email to add to cc headers
 
-	$headers  = "From: Tour of Crete <".$from. ">\r\n" . "CC: info@tourofcrete.com\r\n";
+	$headers  = "From: Tour of Crete <".$from.">\r\n" . "BCC: info@tourofcrete.com\r\n" . "BCC: fan.kost@yahoo.gr\r\n" . "Reply-To: ".$contact_name." <".$contact_email.">\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html\r\n";
+	$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 
-$emailsent = mail($to, $subject, $body, $headers);
+	$emailsent = mail($to, $subject, $body, $headers);
 
-	if ($emailsent == true){
-	
+	if ($emailsent == true){	
 		redirect_contact_form('http://tourofcrete.com/contact-form-confirmation/');
 	}
-	else 
-	{	
+	else {	
 		redirect_contact_form('http://tourofcrete.com/contact-form/');
-		}
+	}
 
 }
 

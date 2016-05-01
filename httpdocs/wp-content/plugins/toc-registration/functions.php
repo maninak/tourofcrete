@@ -383,7 +383,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					 "\" value=\"".htmlspecialchars($value)."\"/>\n";
 				}
 				
-				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $regCode);
+				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $regCode, $name);
 			
 			}
 		
@@ -2538,7 +2538,7 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					 "\" value=\"".htmlspecialchars($value)."\"/>\n";
 				}
 				
-				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $regCode);
+				sendmail($email_message, $incomingcategory['category'], $email, $PaymentMethod, $formCost, $regCode, $name);
 			
 			}
 		
@@ -3009,7 +3009,7 @@ function redirect($url){
     echo $string;
 }
 
-function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost, $regCode){
+function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost, $regCode, $registrant_name){
 
 	$subject = 'Tour of Crete: Registration for '.$formType;
 	$body = $email_message;
@@ -3017,13 +3017,13 @@ function sendmail($email_message, $formType, $toEmail, $PaymentMethod, $formCost
 	$to = $toEmail; //To email
 	$cc = "info@tourofcrete.com"; //client email to add to cc headers
 	
-	$headers  = "From: Tour of Crete <".$from. ">\r\n" . "CC: info@tourofcrete.com\r\n";
+	$headers  = "From: Tour of Crete <".$from. ">\r\n" . "BCC: info@tourofcrete.com\r\n" . "BCC: fan.kost@yahoo.gr\r\n" . "Sender: ".$registrant_name." <".$to. ">\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	
 
-	mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=', $body, $headers);
-	
+	mail($to, $subject, $body, $headers);
+
 	session_start();
 	$_SESSION['formCost'] = $formCost;
 	$_SESSION['transNum'] = $regCode;
