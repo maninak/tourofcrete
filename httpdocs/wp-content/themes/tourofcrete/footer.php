@@ -100,6 +100,15 @@ echo '</div>'; //* end .site-container or #wrap
             <a href="http://www.redcross.gr/" target="_blank" alt="Hellenic Red Cross">
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/red_cross_hellenic.png" title="Hellenic Red Cross" border="0" height="70" width="82"/>
             </a>
+			<div id="attribution">
+				<div>&copy; Cretan Sports Cycling <?php echo date("Y"); ?> </div>
+				<div id="developer">
+					Engineered with 
+					<img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/emoji_heart_white.png" alt="💚" class="emoji" draggable="false"> 
+					by 
+					<a href="mailto:Kostis Maninakis<kmaninak@gmail.com>?Subject=Hey,%20about%20your%20Tour%20of%20Crete%20website" target="_top">Kostis Maninakis</a>
+				</div>
+			</div>
         </div>
     </div>
 <?php
