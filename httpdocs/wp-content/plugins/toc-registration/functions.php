@@ -883,8 +883,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					</div>			 
              
               <div class="row"> 
-                  <div class="OneCol" align="right">
-                      <input type="submit" id="submit" name="submit" value="Checkout">
+                  <div class="OneCol" align="center">
+                      <input type="submit" id="submit" name="submit" value="Register and Proceed to Checkout">
                       <input type="hidden" name="action" value="new_post" />
                   </div>
               </div>
@@ -2229,8 +2229,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					</div>
 					
               <div class="row"> 
-                  <div class="OneCol" align="right">
-                      <input type="submit" id="submit" name="submit" value="Checkout">
+                  <div class="OneCol" align="center">
+                      <input type="submit" id="submit" name="submit" value="Register and Proceed to Checkout">
                       <input type="hidden" name="action" value="new_post" />
                   </div>
               </div>
@@ -2983,8 +2983,8 @@ if ($incomingcategory['category'] == "individual"){ //START INDIVIDUAL FORM
 					</div>			 
              
               <div class="row"> 
-                  <div class="OneCol" align="right">
-                      <input type="submit" id="submit" name="submit" value="Checkout">
+                  <div class="OneCol" align="center">
+                      <input type="submit" id="submit" name="submit" value="Register and Proceed to Checkout">
                       <input type="hidden" name="action" value="new_post" />
                   </div>
               </div>
