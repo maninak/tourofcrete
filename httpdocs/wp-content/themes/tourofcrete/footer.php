@@ -101,7 +101,7 @@ echo '</div>'; //* end .site-container or #wrap
                <img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/red_cross_hellenic.png" title="Hellenic Red Cross" border="0" height="70" width="82"/>
             </a>
 			<div id="attribution">
-				<div>&copy; Cretan Sports Cycling <?php echo date("Y"); ?> </div>
+				<div>&copy; <?php echo date("Y"); ?> Cretan Sports Cycling. All rights reserved. </div>
 				<div id="developer">
 					Engineered with 
 					<img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/emoji_heart_white.png" alt="💚" class="emoji" draggable="false"> 
