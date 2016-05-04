@@ -1724,16 +1724,17 @@ l_lang_sel_current {																				/* -K */
 		font-style:italic;
 	}
 
-/* The Race --------------------------------------------- */
+/* The Race 
+--------------------------------------------- */
 
 #map {														/* -K */
 	height: 600px; 											/* -K */
 	width:	841px;											/* -K */
-}
+}															/* -K */
 
 .leaflet-tile-pane {	/* Workaround fix for maproute overlay being offsetted for some reason -K */
 	margin-top: -15px;										/* -K */
-}
+}															/* -K */
 
 .mainFrame .mainFrameFull{
 	background: url(images/main-frame.png) no-repeat left top;
@@ -1814,7 +1815,7 @@ l_lang_sel_current {																				/* -K */
 	
 	
 	ul.all-stages-menu, ul.venues-menu{
-		margin:-3px 0 20px 0;								/* -K */
+		margin:-3px 0 20px 0;							/* -K */
 		list-style-type:none;
 		font-size:13px;
 		line-height:22px;
@@ -1939,7 +1940,39 @@ l_lang_sel_current {																				/* -K */
 			font-size:12px;								/* -K */
 			font-weight:normal;							/* -K */
 		}
-	
+
+
+/* Individual stage maps' download button */
+#down-arrow {											/* -K */
+    margin-top: 0px;									/* -K */
+    margin-right: 15px;									/* -K */
+    margin-bottom: -4px;								/* -K */
+    height: 1.5em;										/* -K */
+}														/* -K */
+
+.gpxfile {												/* -K */
+    border: none;										/* -K */
+    font-family: inherit;								/* -K */
+    font-size: inherit;									/* -K */
+    cursor: pointer;									/* -K */
+    display: inline-block;								/* -K */
+    margin-bottom: 20px;								/* -K */
+    text-transform: uppercase;							/* -K */
+    letter-spacing: 0.15em;								/* -K */
+    font-weight: 700;									/* -K */
+    outline: none;										/* -K */
+    position: relative;									/* -K */
+    -webkit-transition: all 0.3s;						/* -K */
+    -moz-transition: all 0.3s;							/* -K */
+    transition: all 0.3s;								/* -K */
+    overflow: hidden;									/* -K */
+    background: #f60;									/* -K */
+    color: #000;										/* -K */
+    border-radius: 7px;									/* -K */
+    box-shadow: 0px 5px #d24600;						/* -K */
+    padding: 10px 20px 10px 20px;						/* -K */
+}														/* -K */
+
 /* Entries
 --------------------------------------------- */
 

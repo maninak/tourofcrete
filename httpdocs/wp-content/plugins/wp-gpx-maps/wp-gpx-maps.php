@@ -728,7 +728,7 @@ function handle_WP_GPX_Maps_Shortcodes($attr, $content='')
 			$dummy = ( defined('WP_SITEURL') ) ? WP_SITEURL : get_bloginfo('url');
 			$gpxurl = $dummy.$gpxurl;
 		}		
-		$output.="<a href='$gpxurl' target='_new'>".__("Download", "wp-gpx-maps")."</a>";
+		$output.="<a class='gpxfile' href='$gpxurl' download >" .__(" <img id='down-arrow' src='http://tourofcrete.com/wp-content/themes/tourofcrete/images/319-arrow-down2.svg'> DOWNLOAD .GPX", "wp-gpx-maps")."</a>";
 	}
 
 	return $output;
