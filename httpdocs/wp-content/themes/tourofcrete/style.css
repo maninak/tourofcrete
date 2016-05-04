@@ -1973,10 +1973,16 @@ l_lang_sel_current {																				/* -K */
     padding: 10px 20px 10px 20px;						/* -K */
 }														/* -K */
 
+.gpxfile:hover {										/* -K */
+    margin-top: 1px;									/* -K */
+    margin-bottom: 19px;								/* -K */
+    box-shadow: 0px 4px #d24600;						/* -K */
+}														/* -K */
+
 .gpxfile:active {										/* -K */
-	box-shadow: none;									/* -K */
-	margin-top: 5px;									/* -K */
-	margin-bottom: 15px;
+	box-shadow: none !important;						/* -K */
+	margin-top: 5px !important;							/* -K */
+	margin-bottom: 15px !important;						/* -K */
 }														/* -K */
 
 /* Entries
