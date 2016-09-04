@@ -62,7 +62,7 @@
 			$this->start_element('nextgen_gallery.image', 'item', $image);
 			
 			?>
-    	<a href="<?php echo esc_attr($settings['link']); ?>"
+    	<a href="<?php echo esc_url($settings['link']); ?>"
 		     title="<?php echo esc_attr($image->description)?>"
              data-src="<?php echo esc_attr($storage->get_image_url($image)); ?>"
              data-thumbnail="<?php echo esc_attr($storage->get_image_url($image, 'thumb')); ?>"
@@ -72,7 +72,7 @@
              target='<?php echo esc_attr($target); ?>'
              <?php echo $effect_code ?>>
             <img class="ngg-singlepic"
-             src="<?php echo esc_attr($storage->get_image_url($image, 'thumb')); ?>"
+             src="<?php echo $thumbnail_url; ?>"
              alt="<?php echo esc_attr($image->alttext); ?>"
              title="<?php echo esc_attr($image->alttext); ?>"
              <?php if ($width) { ?> width="<?php echo esc_attr($width); ?>" <?php } ?>

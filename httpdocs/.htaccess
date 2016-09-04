@@ -23,7 +23,7 @@
 # END Caching on web files
 
 # BEGIN Removes whitespace-in-php-files error (fix for many xml, rss, plugin errors)
-#php_value auto_prepend_file "/httpdocs/wejnswpwhitespacefix.php"
+#php_value "auto_prepend_file" /httpdocs/wejnswpwhitespacefix.php
 # END whitespace fix
 
 # -----------------------------------------------------------------------
@@ -54,9 +54,7 @@
 
 
 # Wordfence WAF
-<IfModule mod_suphp.c>
-	suPHP_ConfigPath '/var/www/vhosts/tourofcrete.com/httpdocs'
-</IfModule>
+
 <Files ".user.ini">
 <IfModule mod_authz_core.c>
 	Require all denied
@@ -68,6 +66,8 @@
 </Files>
 
 # END Wordfence WAF
+
+
 
 # BEGIN WPSuperCache
 <IfModule mod_rewrite.c>
