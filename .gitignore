@@ -22,5 +22,6 @@ credentials
 httpdocs/wp-content/plugins/bwp-minify/cache/*
 httpdocs/wp-content/uploads/gpx/~cache/*
 httpdocs/wp-content/cache/*
+httpdocs/wp-content/wflogs/*
 **/*~
 **/*.orig

@@ -5,6 +5,7 @@ template name: The Race
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_loop', 'child_do_custom_loop' );
 add_action( 'genesis_after_content_sidebar_wrap', 'news_gallery' );
+add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 
 function child_do_custom_loop() {
 	global $wp_query;
@@ -52,7 +53,7 @@ function getStageInfo($type, $parentID){
 	//	  'order' => 'ASC',
 		  'post_type' => 'page',
 		  'meta_key'			=> 'orderstage',
-		  'orderby'			=> 'meta_value_num',
+		  'orderby'				=> 'meta_value_num',
 		  'order'				=> 'ASC'	  
 		);
 	}

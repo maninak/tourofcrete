@@ -2290,6 +2290,7 @@ Footer Widgets
 	    color: rgba(255, 255, 255, 0.95);							/* -K */
 	    padding-top: 10px;											/* -K */
 	    font-size: 0.95em;											/* -K */
+	    height: 4em;												/* -K */
 	}																/* -K */
 
 	#developer a{
