@@ -1727,8 +1727,13 @@ l_lang_sel_current {																				/* -K */
 --------------------------------------------- */
 
 #map {														/* -K */
-	height: 600px; 											/* -K */
+	height: 450px; 											/* -K */
 	width:	841px;											/* -K */
+}															/* -K */
+
+.wpgpxmaps_osm_footer,
+.gm-style-cc {										/* -K */
+    display: none !important;								/* -K */
 }															/* -K */
 
 .leaflet-tile-pane {	/* Workaround fix for maproute overlay being offsetted for some reason -K */
