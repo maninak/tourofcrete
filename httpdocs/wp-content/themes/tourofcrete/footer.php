@@ -104,7 +104,7 @@ echo '</div>'; //* end .site-container or #wrap
 				<div>&copy; <?php echo date("Y"); ?> Cretan Sports Cycling. All rights reserved. </div>
 				<div id="developer">
 					Engineered with 
-					<img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/emoji_heart_white.png" alt="💚" class="emoji" draggable="false"> 
+					<img src="http://tourofcrete.com/wp-content/themes/tourofcrete/images/emoji_heart_white.png" alt="love" class="emoji" draggable="false"> 
 					by 
 					<a href="mailto:Kostis Maninakis<kmaninak@gmail.com>?Subject=Hey,%20about%20your%20Tour%20of%20Crete%20website" target="_top">Kostis Maninakis</a>
 				</div>
