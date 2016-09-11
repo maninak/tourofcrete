@@ -1111,7 +1111,7 @@ Site Navigation
     	background-color: rgba(0, 0, 0, 1);											/* -K */
 	}
 .genesis-nav-menu a {
-	min-width:70px;
+	min-width:60px;																	/* -K */
 	height:41px;
 	border: none;
 	color: #FFF;																	/* -K */
