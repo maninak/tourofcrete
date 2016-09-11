@@ -44,21 +44,25 @@ function child_do_custom_loop() {
 		    </a>
             <div class="clear"></div>
             <div class="banners">
-                <a href="<?php get_site_url(); ?>/registration/individuals/">
+            	<?php   if      (ICL_LANGUAGE_CODE == 'en') { $registration_target = "/registration/";   }
+                        elseif  (ICL_LANGUAGE_CODE == 'el') { $registration_target = "/el/registration/";}
+                        else                                { $registration_target = "/registration/";   }
+                ?>
+                <a href="<?php echo $registration_target; ?>">
 					<div id="box-shadow-indiv"></div>
                 	<div class="individuals banner">
                 		<?php _e('INDIVIDUALS','tourofcrete');?>
                 		<span> > <?php _e('Register','tourofcrete');?> < </span>
                 	</div>
                 </a>
-                <a href="<?php get_site_url(); ?>/registration/teams/">
+                <a href="<?php echo $registration_target; ?>">
 					<div id="box-shadow-teams"></div>
                 	<div class="teams banner">
                 		<?php _e('GROUPS','tourofcrete');?>
                 		<span> > <?php _e('Register','tourofcrete');?> < </span>
                 	</div>
                 </a>
-                <a href="<?php get_site_url(); ?>/registration/non-cyclists/">
+                <a href="<?php echo $registration_target; ?>">
 					<div id="box-shadow-noncy"></div>
                 	<div class="non-cyclists banner">
                 		<?php _e('NON-CYCLISTS','tourofcrete');?>
