@@ -458,21 +458,30 @@ table {
 .tablepress thead th {
 	background-color:#ff6600!important;
 	font-size:11px!important;
-	border-bottom:none!important;
+	border-bottom: none!important;
 }
 
-.tablepress .even td, .tablepress td {
+.tablepress tbody tr:nth-child(even) {
 	background-color: #111!important;
-	color:#fff!important;
+	color:#ddd!important;
 }
 
-.tablepress .odd td {
-	background-color: #222!important;
-	color:#fff!important;
+.tablepress tbody tr:nth-child(odd) {
+	background-color: #161616!important;
+	color:#ddd!important;
 }
 
 .tablepress tbody td, .tablepress tfoot th {
-	border-top: 1px solid #000!important;
+	border-top: none!important;
+}
+
+.tablepress .row-hover tr.row-2 td {
+    background-color: #222!important;
+    font-weight: bold!important;
+}
+
+.tablepress .row-hover tr:hover:not(.row-2) td {
+    background-color: #444!important;
 }
 
 th,
