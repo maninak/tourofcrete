@@ -110,29 +110,29 @@ function getStageInfo($type, $parentID){
 				L.mapbox.accessToken = 'pk.eyJ1IjoibWFuaW5hcyIsImEiOiJjaWpzYmRvZW4wMGFodmxtN3M3bHV6cXhrIn0.Xf1uqAaJ4QSFgmM_UinFkg';
 				var map = L.mapbox.map('map', 'mapbox.streets', {attributionControl: false}).setView([35.2275941, 24.7696794], 8);
 				var featureLayer = L.mapbox.featureLayer()
-						.loadURL('http://tourofcrete.com/wp-content/themes/tourofcrete/geojson/ToC17_allstages_thres=0,0005_N=6_dark.geojson')
+						.loadURL('http://tourofcrete.com/wp-content/themes/tourofcrete/geojson/ToC17_allstages_thres=0,0005_N=6_dark_v2.geojson')
 						.addTo(map);  
 				L.control.fullscreen().addTo(map);
 				
 				map.once('move', function() {
 					featureLayer.eachLayer(function(marker) {
-						if (marker.toGeoJSON().properties.name === 'S1  Heraklion - Sfakia 140Km 3133m') {
-							marker.bindLabel('S1  Heraklion - Sfakia 140Km 3133m').addTo(map);
+						if (marker.toGeoJSON().properties.name === 'S1  Heraklion - Fragokastello 131Km 2873m') {
+							marker.bindLabel(marker.toGeoJSON().properties.name).addTo(map);
 						}
-						else if (marker.toGeoJSON().properties.name === 'S2 Sfakia - Platanias 105Km 2769m') {
-							marker.bindLabel('S2 Sfakia - Platanias 105Km 2769m').addTo(map);
+						else if (marker.toGeoJSON().properties.name === 'S2 Fragokastello - Platanias 111Km 2559m') {
+							marker.bindLabel(marker.toGeoJSON().properties.name).addTo(map);
 						}
 						else if (marker.toGeoJSON().properties.name === 'S3 Topolianos Gyros 123Km 2525m') {
-							marker.bindLabel('S3 Topolianos Gyros 123Km 2525m').addTo(map);
+							marker.bindLabel(marker.toGeoJSON().properties.name).addTo(map);
 						}
 						else if (marker.toGeoJSON().properties.name === 'S4 Therisso Gorge 52Km 1073m') {
-							marker.bindLabel('S4 Therisso Gorge 52Km 1073m').addTo(map);
+							marker.bindLabel(marker.toGeoJSON().properties.name).addTo(map);
 						}
 						else if (marker.toGeoJSON().properties.name === 'S5 Platanias - Rethymnon 98Km 1682m') {
-							marker.bindLabel('S5 Platanias - Rethymnon 98Km 1682m').addTo(map);
+							marker.bindLabel(marker.toGeoJSON().properties.name).addTo(map);
 						}
 						else if (marker.toGeoJSON().properties.name === 'S6 Rethymnon - Skinakas - Heraklion 139Km 3670m') {
-							marker.bindLabel('S6 Rethymnon - Skinakas - Heraklion 139Km 3670m').addTo(map);
+							marker.bindLabel(marker.toGeoJSON().properties.name).addTo(map);
 						}
 						else {
 							marker.bindLabel('Stage start').addTo(map);
