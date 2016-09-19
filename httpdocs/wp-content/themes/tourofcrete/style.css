@@ -162,13 +162,13 @@ Defaults
 
 html {
 	font-size: 62.5%; /* 10px browser default */
-	background: black url(images/DSC_6533-zoom1-oil2-scaled-tiny.jpg) no-repeat center top fixed; 
+	background: black url(images/DSC_6533_HSL6425-10_crop1_resized_tiny.JPG) no-repeat center top fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg.jpg', sizingMethod='scale')";
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/DSC_6533_HSL6425-10_crop1_resized_tiny.JPG', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/DSC_6533_HSL6425-10_crop1_resized_tiny.JPG', sizingMethod='scale');
 	min-width: 1024px;
 }
 
