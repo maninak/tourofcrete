@@ -39,6 +39,9 @@ h2 {
 	transform: 			skew(-3deg) !important;
 }
 
+.genesis-nav-menu a {
+    letter-spacing: 0.01em !important;
+}
 
 /* Registrations 
  --------------------------------------------------------*/
