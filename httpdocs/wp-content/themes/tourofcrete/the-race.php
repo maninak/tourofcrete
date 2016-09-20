@@ -151,6 +151,7 @@ function getStageInfo($type, $parentID){
 			$stageTable = get_field('stage_details_table');
 			$mapGPX = get_field('gpx_map');
 			$children = wp_list_pages('title_li=&child_of=29&echo=0');
+			$skinakas = '<div id="skinakas-title">'. get_the_title($post) .'</div>'; // TODO Change hardcoded title to $post->title
 			
 			echo '<div class="race-left">';
 				wp_nav_menu(array('theme_location' => 'the-race-menu', 'container_class' => 'race-menu'));
@@ -159,9 +160,14 @@ function getStageInfo($type, $parentID){
 			echo "</div>";
 
 			echo '<div class="race-right">';
-				echo "<ul class='stages-menu subpages'>";
+				if ($post->ID == 1940) {
+					echo $skinakas;
+				}
+				else {
+					echo "<ul class='stages-menu subpages'>";
 					echo $children;
-				echo "</ul>";				
+					echo "</ul>";
+				}				
 			?>
 				<h1><span><?php echo $stageDescription; ?></span></h1>
             	<?php genesis_do_loop(); ?>

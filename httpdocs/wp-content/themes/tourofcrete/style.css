@@ -1133,6 +1133,52 @@ Site Navigation
 	letter-spacing:0.05em;															/* -K */
 }
 
+.racey:hover {																		/* -K */
+	background: url(./images/racing-flag-background.jpg) right no-repeat;			/* -K */
+}																					/* -K */
+
+.racey:hover a {																	/* -K */
+	color: black;																	/* -K */
+}																					/* -K */
+
+.post-1940 em { /* .post-1940 == Skinakas Challenge page */							/* -K */
+	font-size: 1.2em;																/* -K */
+	line-height: 1.3em;																/* -K */
+}																					/* -K */
+
+.post-1940 .ngg-gallery-thumbnail-box {												/* -K */
+    float: left;																	/* -K */
+    max-width: 100% !important;														/* -K */
+    padding: 0 6px;																	/* -K */
+}																					/* -K */
+
+.ngg-gallery-thumbnail {															/* -K */
+    background-color: #000 !important;												/* -K */
+    border-color: #000 !important;													/* -K */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);								/* -K */
+}																					/* -K */
+
+body:not(.page-template-the-race) .ngg-gallery-thumbnail {							/* -K */
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);								/* -K */
+}																					/* -K */
+
+body:not(.page-template-the-race) .ngg-galleryoverview {							/* -K */
+    padding-left: 40px;																/* -K */
+}																					/* -K */
+
+.ngg-navigation a.page-numbers,														/* -K */
+.ngg-navigation a.next,																/* -K */
+.ngg-navigation a.prev,																/* -K */
+.ngg-navigation span.page-numbers,													/* -K */
+.ngg-navigation span.next,															/* -K */
+.ngg-navigation span.prev {															/* -K */
+    border: 0px solid #000 !important;												/* -K */
+}																					/* -K */
+
+.slideshowlink a {																	/* -K */
+	border-bottom: none !important;													/* -K */
+}																					/* -K */
+
 .genesis-nav-menu .sub-menu {
 	left: -9999px;
 	opacity: 0;
@@ -1146,7 +1192,7 @@ Site Navigation
 }
 
 .genesis-nav-menu ul.sub-menu {														/* -K */
-	margin-left:-2px;																/* -K */
+	margin-left:-6px;																/* -K */
 	-webkit-transform: 	skew(-10deg); 												/* -K */
 	-moz-transform: 	skew(-10deg); 												/* -K */
 	-o-transform: 		skew(-10deg); 												/* -K */
@@ -1166,7 +1212,7 @@ Site Navigation
 	font-size: 14px;
 	font-size: 1.4rem;
 	position: relative;
-	min-width: 80px;
+	min-width: 90px;
 	text-align: left;																/* -K */
 	transform: skew(10deg);															/* -K */
 	letter-spacing: 0;
@@ -1741,7 +1787,7 @@ l_lang_sel_current {																				/* -K */
 }															/* -K */
 
 .wpgpxmaps_osm_footer,
-.gm-style-cc {										/* -K */
+.gm-style-cc {												/* -K */
     display: none !important;								/* -K */
 }															/* -K */
 
@@ -1785,6 +1831,19 @@ l_lang_sel_current {																				/* -K */
 		width:670px;
 		float:right;
 	}
+		.race-right #skinakas-title{					/* -K */
+			background: url(./images/checkered-flag.png) right no-repeat; /* -K */
+			border-bottom:1px solid #ff6600;			/* -K */
+			height:23px;								/* -K */
+			font-size:19px;								/* -K */
+			font-weight:bold;							/* -K */
+			line-height:20px;							/* -K */
+			margin-bottom: 10px;						/* -K */
+			padding-bottom: 25px;						/* -K */
+			color:#fff;									/* -K */
+			letter-spacing: 0.05em;						/* -K */
+		}												/* -K */
+
 		.race-right p{
 			font-size:12px;
 			color:#fff;
@@ -1792,8 +1851,7 @@ l_lang_sel_current {																				/* -K */
 			font-style:normal;
 		}
 	
-	.race-menu{
-		width:147px;
+	.race-menu {
 		height:auto;
 		overflow:hidden;
 		margin:0 0 20px 0;
@@ -1808,15 +1866,22 @@ l_lang_sel_current {																				/* -K */
 			margin:3px 0 0 0;							/* -K */
 			padding-bottom: 25px;						/* -K */
 		}
-			.race-menu ul li a{
+			.race-menu ul li a {
 				color:#fff;
 			}
-			.race-menu ul li:hover a{ 					/* -K */
-				color:#00BAFF!important;				/* -K */
-			}											/* -K */
-			.race-menu ul li.current-menu-item a{		/* -K */
+
+			.race-menu ul li.current-menu-item a {		/* -K */
 				color:#f60;								/* -K */
 			}											/* -K */
+
+			.race-menu ul li:hover a { 					/* -K */
+				color:#00BAFF;							/* -K */
+			}											/* -K */
+
+			#menu-the-race li.racey:hover a {			/* -K */
+				color: #fff;							/* -K */
+			}											/* -K */
+
 	.racecontent img.bottom{
 		position:absolute;
 		bottom:20px;
@@ -2503,6 +2568,7 @@ Gallery - Latest Photos
 .masked-image .ngg-singlepic {
 	padding: 0!important;
 }
+
 .hover-image {
 	position: absolute;
 	left:0; top:0;
