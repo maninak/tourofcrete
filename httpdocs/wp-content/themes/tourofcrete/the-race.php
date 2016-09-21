@@ -151,8 +151,7 @@ function getStageInfo($type, $parentID){
 			$stageTable = get_field('stage_details_table');
 			$mapGPX = get_field('gpx_map');
 			$children = wp_list_pages('title_li=&child_of=29&echo=0');
-			$skinakas = '<div id="skinakas-title">'. get_the_title($post) .'</div>'; // TODO Change hardcoded title to $post->title
-			
+			$skinakas = '<div id="skinakas-title">'. get_the_title($post) .'</div>'.'<script>document.documentElement.className += "bg-skinakas";</script>';
 			echo '<div class="race-left">';
 				wp_nav_menu(array('theme_location' => 'the-race-menu', 'container_class' => 'race-menu'));
 				remove_action( 'genesis_entry_header', 'genesis_do_post_title' );

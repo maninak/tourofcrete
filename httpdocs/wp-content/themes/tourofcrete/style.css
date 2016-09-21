@@ -162,14 +162,24 @@ Defaults
 
 html {
 	font-size: 62.5%; /* 10px browser default */
-	background: black url(images/DSC_6533_HSL6425-10_crop1_resized_tiny.JPG) no-repeat center top fixed; 
+	background: black url(images/DSC_6533_HSL2460-10_crop1_resized_tiny.JPG) no-repeat center top fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/DSC_6533_HSL6425-10_crop1_resized_tiny.JPG', sizingMethod='scale')";
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/DSC_6533_HSL6425-10_crop1_resized_tiny.JPG', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/DSC_6533_HSL2460-10_crop1_resized_tiny.JPG', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/DSC_6533_HSL2460-10_crop1_resized_tiny.JPG', sizingMethod='scale');
 	min-width: 1024px;
+}
+
+.bg-skinakas {
+	background: black url(images/skinakas_crop3.1_oil1_scaled_HSL2460-10_tiny.jpg) no-repeat center top fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/skinakas_crop3.1_oil1_scaled_HSL2460-10_tiny.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/skinakas_crop3.1_oil1_scaled_HSL2460-10_tiny.jpg', sizingMethod='scale');
 }
 
 body {
@@ -1173,6 +1183,10 @@ body:not(.page-template-the-race) .ngg-galleryoverview {							/* -K */
 .ngg-navigation span.next,															/* -K */
 .ngg-navigation span.prev {															/* -K */
     border: 0px solid #000 !important;												/* -K */
+}																					/* -K */
+
+#fancybox-content {																	/* -K */
+    border-color: #000;																/* -K */
 }																					/* -K */
 
 .slideshowlink a {																	/* -K */
