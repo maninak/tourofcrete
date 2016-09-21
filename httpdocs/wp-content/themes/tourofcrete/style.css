@@ -1186,7 +1186,7 @@ body:not(.page-template-the-race) .ngg-galleryoverview {							/* -K */
 }																					/* -K */
 
 #fancybox-content {																	/* -K */
-    border-color: #000;																/* -K */
+    border-color: #000 !important;													/* -K */
 }																					/* -K */
 
 .slideshowlink a {																	/* -K */
@@ -1877,7 +1877,8 @@ l_lang_sel_current {																				/* -K */
 			font-size:14px;
 			font-weight:bold;
 			line-height:20px;
-			margin:3px 0 0 0;							/* -K */
+			margin:0;									/* -K */
+			padding-top: 5px;							/* -K */
 			padding-bottom: 25px;						/* -K */
 		}
 			.race-menu ul li a {
