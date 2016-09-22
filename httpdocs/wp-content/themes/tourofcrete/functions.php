@@ -203,49 +203,81 @@ function news_gallery(){
             <div style="padding:18px 0 0 57px; clear:both;">
 				<?php
 				global $wpdb;
-				$pictures = $wpdb->get_results("SELECT * FROM wp_ngg_pictures WHERE galleryid = '5' ORDER BY imagedate DESC LIMIT 9");
+				$pictures = $wpdb->get_results("SELECT * FROM wp_ngg_pictures WHERE pid='211' OR pid='221' OR pid='242'"
+																			   ."OR pid='334' OR pid='288' OR pid='268'"
+																			   ."OR pid='340' OR pid='243' OR pid='379'"
+				);
 				$i=1;
 				foreach( $pictures as $p ) {
-					if ($i <= 3) {
+					if ($i == 1) {
 						echo ('<div class="masked-image">');
-						echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
-						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo ('</div>');
+					}
+
+					else if ($i == 2) {
+						echo ('<div class="masked-image">');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo ('</div>');
+					}
+
+					else if ($i == 3) {
+						echo ('<div class="masked-image">');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
 						echo ('</div>');
 					}
 						
-					else if ($i==4) {
+					else if ($i == 4) {
 						echo ('</div>');
 						echo ('<div style="padding:6px 0 0 73px; clear:both;">');
 						echo ('<div class="masked-image">');
-						echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
-						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
 						echo ('</div>');
 					}
 
-					else if ($i<=6) {
+					else if ($i == 5) {
 						echo ('<div class="masked-image">');
-						echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
-						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
 						echo ('</div>');
 					}
 
-					else if ($i==7) {
+					else if ($i == 6) {
+						echo ('<div class="masked-image">');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo ('</div>');
+					}
+
+					else if ($i == 7) {
 						echo ('</div>');
 						echo ('<div style="padding:6px 0 0 89px; clear:both;">');
 						echo ('<div class="masked-image">');
-						echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
-						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
 						echo ('</div>');
 					}
 					
-					else if ($i>7) {
+					else if ($i == 8) {
 						echo ('<div class="masked-image">');
-						echo do_shortcode("[singlepic id=".$p->pid.",199,9]");
-						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/promo-video-shoot/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
 						echo ('</div>');					
 					}
+
+					else if ($i == 9) {
+						echo ('</div>');
+						echo ('<div class="masked-image">');
+						echo do_shortcode("[singlepic id=".$p->pid.",999,9]");
+						echo ('<a class="ngg-fancybox" target="_self" data-title="'.$p->alttext.'" data-image-id="'.$p->pid.'" href="http://tourofcrete.com/wp-content/gallery/tour-of-crete-2016/'.$p->filename.'"><div class="hover-image"></div></a>');
+						echo ('</div>');
+					}
 						
-					else if ($i>=10) {
+					else {
 						break;
 					}
 
