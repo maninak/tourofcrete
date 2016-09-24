@@ -2340,7 +2340,7 @@ Footer Widgets
 	.sponsors .title{
 		width:770px;							/* -K */
 		height:70px;							/* -K */
-		margin:0px auto -1px;					/* -K */
+		margin:0px auto;						/* -K */
 		background-color: rgba(0, 0, 0, 0.92);	/* -K */
 	}
 	
