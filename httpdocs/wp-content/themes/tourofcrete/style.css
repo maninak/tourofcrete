@@ -264,8 +264,7 @@ blockquote::before {
 }
 
 blockquote {
-	margin: 40px 40px 24px;
-	margin: 4rem 4rem 2.4rem;
+	margin: 4rem;										/* -K */
 }
 
 blockquote::before {
@@ -281,10 +280,14 @@ blockquote::before {
 	blockquote * {										/* -K */
 		letter-spacing: 0.05em;							/* -K */
 		font-style: italic;								/* -K */
-	}
+	}													/* -K */
 	blockquote p {										/* -K */
 		font-size: 14px;								/* -K */
-	}
+	}													/* -K */
+	blockquote em {										/* -K */
+		font-size: 1.2em;								/* -K */
+		line-height: 1.3em;								/* -K */
+	}													/* -K */
 
 .entry-content code {
 	background-color: #333;
@@ -1151,12 +1154,7 @@ Site Navigation
 	color: black;																	/* -K */
 }																					/* -K */
 
-.post-1940 em { /* .post-1940 == Skinakas Challenge page */							/* -K */
-	font-size: 1.2em;																/* -K */
-	line-height: 1.3em;																/* -K */
-}																					/* -K */
-
-.post-1940 .ngg-gallery-thumbnail-box {												/* -K */
+.post-1940 .ngg-gallery-thumbnail-box { /* .post-1940 == Skinakas Challenge page */ /* -K */
     float: left;																	/* -K */
     max-width: 100% !important;														/* -K */
     padding: 0 6px;																	/* -K */
